@@ -1,0 +1,66 @@
+{
+	"id": 0,
+	"name": "",
+	"description": "",
+	"nickname": "",
+	"appearance": "",
+	"haven": "",
+	"background": "",
+	"creation": "",
+	"disciplines": [
+		"",
+		"",
+		""
+	],
+	"weaknesses": "",
+	"organization": "",
+	"quote": "",
+	"stereotypessects": [
+		{
+			"sect": "Anarchs",
+			"opinion": ""
+		},
+		{
+			"sect": "Camarilla",
+			"opinion": ""
+		},
+		{
+			"sect": "Sabbat",
+			"opinion": ""
+		}
+	],
+	"stereotypesclans": [
+		{
+			"clan": "brujah",
+			"opinion": ""
+		},
+		{
+			"clan": "caitiff",
+			"opinion": ""
+		},
+		{
+			"clan": "gangrel",
+			"opinion": ""
+		},
+		{
+			"clan": "malkavian",
+			"opinion": ""
+		},
+		{
+			"clan": "nosferatu",
+			"opinion": ""
+		},
+		{
+			"clan": "toreador",
+			"opinion": ""
+		},
+		{
+			"clan": "tremere",
+			"opinion": ""
+		},
+		{
+			"clan": "ventrue",
+			"opinion": ""
+		}
+	]
+}

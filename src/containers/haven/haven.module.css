@@ -1,0 +1,43 @@
+
+:local .frontVideo video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+  
+:local .frontVideo {  
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+:local .frontVideo img {    
+    animation: logoFadein 3s ease-in;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1800px) {
+    :local .frontVideo img {
+        width: 100%;
+    }
+}
+
+@keyframes logoFadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

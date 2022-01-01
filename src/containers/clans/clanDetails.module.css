@@ -1,0 +1,51 @@
+:local .lowerPage {
+    padding: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: "fadeIn" 2s;
+}
+
+:local .clanText {
+    animation: "fadeIn" 1s;
+}
+
+:local .clanPicture {
+    justify-self: center;
+    border-radius: 10px;
+}
+
+:local .clanHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    animation: "fadeIn" 1s;
+    text-align: center;
+}
+
+:local .prevNextClan {
+    transform: scale(0.5);
+    opacity: 0.3;
+    transition: opacity 500ms;
+}
+
+:local .prevNextClan:hover {
+    opacity: 1;
+}
+
+:local .clanHeaderQuote {
+    grid-column: span 3;
+}
+
+:local .clanHeader img {
+    max-height: 200px;
+}
+
+:local .detailsNavGrid {
+    animation: "fadeIn" 1.5s;
+    padding: 1em 0.5em 1em 0.5em;
+    border-top: 1px solid white;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+}
+

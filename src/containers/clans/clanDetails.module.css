@@ -1,3 +1,14 @@
+:local .navigationActive {
+    opacity: 0.5;
+    text-decoration: none;
+    cursor: default;
+    /*text-decoration: underline 0.15em rgb(158, 0, 0);*/
+}
+:local .navigationActive:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
 :local .lowerPage {
     padding: 3em;
     display: grid;
@@ -10,6 +21,7 @@
 }
 
 :local .clanPicture {
+    animation: "fadeIn" 1s;
     justify-self: center;
     border-radius: 10px;
 }
@@ -19,6 +31,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     animation: "fadeIn" 1s;
     text-align: center;
+}
+
+:local .clanHeader h1 {
+    margin-top: 0px;
 }
 
 :local .prevNextClan {
@@ -49,3 +65,24 @@
     border-bottom: 1px solid white;
 }
 
+:local .sectOpinions {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+:local .clanOpinionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+:local .clanOpinion {
+    display: flex;
+    align-items: center;
+}
+
+:local .clanOpinion img {
+    height: 4em;
+    padding-right: 2em;
+}

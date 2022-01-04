@@ -1,9 +1,11 @@
-import { Link, Navigate, Route, Routes } from "react-router-dom";
+import { Link, Navigate, NavLink, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { Clan } from "../../models/clan";
 import { clans } from "../../services/clanService";
 import { ParseJsonText } from "../../utilities/parser";
 import styles from './clanDetails.module.css';
+import logoCaitiff from '../../services/clans_data/caitiff/logo.png';
+import { sects } from "../../services/sectService";
 
 function ClanDescription(clan: Clan) {
     return (
@@ -57,18 +59,41 @@ function ClanStrWeak(clan: Clan) {
 
 function ClanOpinions(clan: Clan) {
     return (
-        <div className={styles.clanText}>
-            {clan.stereotypesClans.map((opinion) => {
-                if(opinion.opinion === ""){
-                    return <div/>
-                }
-                return (
-                    <div>
-                        <h3>{opinion.clan}</h3>
-                        <p>{opinion.opinion}</p>
-                    </div>
-                )
-            })}
+        <div className={`${styles.clanText}`}>
+            <h3>{clan.name} Opinons on Sects:</h3>
+            <div className={styles.sectOpinions}>
+                {clan.stereotypesSects.map((opinion) => {
+                    if(opinion.opinion !== ""){
+                        return (
+                            <div className={styles.clanOpinion}>
+                                <img title={`The ${opinion.sect}`} alt={`The ${opinion.sect}`} src={sects.find(x => opinion.sect.toLowerCase().startsWith(x.name.toLowerCase()))?.logo} />
+                                <p>"{opinion.opinion}"</p>
+                            </div>
+                        )
+                    }
+
+                })}
+            </div>
+
+            <h3>{clan.name} Opinions on Clans:</h3>
+            <div className={`${styles.clanOpinionGrid}`}>
+                {clan.stereotypesClans.map((opinion) => {
+                    let logo = clans.find(x => x.name.toLowerCase() === opinion.clan.toLowerCase())?.logo;
+                    if(logo == null) {
+                        logo = logoCaitiff;
+                    }
+                    
+                    if(opinion.opinion !== ""){
+                        return (
+                            <div className={styles.clanOpinion}>
+                                {logo && <img title={`${opinion.clan}s`} alt={`${opinion.clan}s`} src={`${logo}`} />}
+                                <p>"{opinion.opinion}"</p>
+                            </div>
+                        )
+                    }
+
+                })}
+            </div>
         </div>
     )
 }
@@ -79,6 +104,14 @@ function RenderClan(clan: Clan) {
             <h1>Clan {clan.name}</h1>
             <img src={clan.logo}/>
         </div>
+    )
+}
+
+function NavigationLinker(props: { to: string, name: string }) {
+    return (
+        <NavLink to={props.to} className={
+            ({ isActive }) => isActive ? styles.navigationActive : "" 
+        }>{props.name}</NavLink>
     )
 }
 
@@ -99,11 +132,11 @@ function ClanDetail() {
 
     return (
         <div className={styles.page}>
-            <div className={styles.clanHeader}>
+            <div className={styles.clanHeader} key={`${clan.name}_header`}>
                 <div className={styles.prevNextClan}>
                 { 
                     prevClan != null && 
-                    <Link to={`/clans/${prevClan.name}`}>
+                    <Link to={`/clans/${prevClan.name}/description`}>
                         <RenderClan {...prevClan} />
                     </Link>
                 }
@@ -122,13 +155,13 @@ function ClanDetail() {
                 <p className={styles.clanHeaderQuote}>"{clan.quote}"</p>
             </div>
             <div className={styles.detailsNavGrid}>
-                <Link to="description">Description</Link>
-                <Link to="appearance">Appearance</Link>
-                <Link to="traits">Traits</Link>
-                <Link to="strengthsandweaknesses">Strengths and weaknesses</Link>
-                <Link to="opinions">Opinions</Link>
+                <NavigationLinker to="description" name="Description"/>
+                <NavigationLinker to="appearance" name="Appearance"/>
+                <NavigationLinker to="traits" name="Traits"/>
+                <NavigationLinker to="strengthsandweaknesses" name="Strengths and weaknesses"/>
+                <NavigationLinker to="opinions" name="Opinions"/>
             </div>
-            <div className={styles.lowerPage}>
+            <div className={styles.lowerPage} key={`${clan.name}_lowerPage`}>
                 <Routes >
                     <Route path={`description`} element={<ClanDescription {...clan} />}/>
                     <Route path={`appearance`} element={<ClanAppearance {...clan} />}/>
@@ -137,7 +170,7 @@ function ClanDetail() {
                     <Route path={`opinions`} element={<ClanOpinions {...clan} />}/>
                     <Route path={`/`} element={<Navigate to="description" />} />
                 </Routes>
-                <div className={styles.clanPicture} >
+                <div className={styles.clanPicture}>
                     <img src={clan.picture.img} />
                     <p>Credit: <a href={`${clan.picture.link}`} target={`_blank`}>{clan.picture.credit}</a></p>
                 </div>

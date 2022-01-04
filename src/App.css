@@ -29,9 +29,11 @@ h4 {
   margin-right: 4em;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
 
 a {
-  
   font-size: clamp(1rem, 2vw, 1.1rem);
   color: white;
   text-decoration: none;
@@ -44,3 +46,4 @@ a {
 a:hover {
   text-decoration-color: rgb(158, 0, 0);  
 }
+

@@ -146,7 +146,7 @@ function ClanDetail() {
                     <div className={styles.prevNextClan}>
                     { 
                         nextClan != null && 
-                        <Link to={`/clans/${nextClan.name}`}>
+                        <Link to={`/clans/${nextClan.name}/description`}>
                             <RenderClan {...nextClan} /> 
                         </Link>
                     }

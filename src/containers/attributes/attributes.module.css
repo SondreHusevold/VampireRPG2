@@ -1,0 +1,53 @@
+:local .attributeGrid {
+    animation: "fadeIn" 1s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    text-align: center;
+    column-gap: 5em;
+    row-gap: 1em;
+}
+
+:local .attributeButton {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 500ms;
+}
+
+:local .attributeButton h1 {
+    font-size: 4em;
+    margin-top: 0px;
+}
+
+:local .attributeButton:hover {
+    opacity: 1;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+}
+
+:local .attributeButton p {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+:local .attributeButton:hover p {
+    text-decoration: underline 0.15em solid rgb(158, 0, 0);
+}
+
+:local .physicalSection {
+    grid-column: 1;
+}
+
+:local .socialSection {
+    grid-column: 2;
+}
+
+:local .mentalSection {
+    grid-column: 3;
+}

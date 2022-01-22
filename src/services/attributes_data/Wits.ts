@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Getting the Jump on Others", "Witty Bon Mots", "Changes in Strategy", "Ambushes"],
 	icon: "nf-mdi-lightbulb_on_outline",
-	image: picture
+	image: {
+		img: picture,
+		credit: "Hetza",
+		creditLink: "https://www.pixiv.net/en/users/46899"
+	}
 }
 
 export default attribute;

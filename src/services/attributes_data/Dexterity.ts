@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Precise", "Swift", "Feline Grace", "Lightning Reflexes"],
 	icon: "nf-mdi-run_fast",
-	image: picture
+	image: {
+		img: picture,
+		credit: "Oshred",
+		creditLink: "https://twitter.com/oshredart"
+	}
 }
 
 export default attribute;

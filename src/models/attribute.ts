@@ -5,7 +5,11 @@ export interface Attribute {
 	levels: string[];
 	specialties: string[];
     icon: string;
-    image: string;
+    image: {
+        img: string;
+        credit: string;
+        creditLink: string;
+    }
 }
 
 export enum AttributeSections {

@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Book Knowledge", "Creative", "Analytical", "Problem Solver", "Subject Authority"],
 	icon: "nf-mdi-book_open_page_variant",
-	image: picture
+	image: {
+		img: picture,
+		credit: "VtM Book",
+		creditLink: ""
+	}
 }
 
 export default attribute;

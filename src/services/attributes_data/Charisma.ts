@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Graceful", "Smooth Talker", "Forceful", "Urbane", "Witty", "Eloquent", "Hustler"],
 	icon: "nf-fa-comments",
-	image: picture
+	image: {
+		img: picture,
+		credit: "VtM: Swansong",
+		creditLink: "https://twitter.com/VampireSwansong/status/1479483106209980423"
+	}
 }
 
 export default attribute;

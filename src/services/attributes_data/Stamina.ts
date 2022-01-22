@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Tireless", "Determined", "Tough as Nails", "Vigorous"],
 	icon: "nf-fa-heart",
-	image: picture
+	image: {
+		img: picture,
+		credit: "VtM book",
+		creditLink: ""
+	}
 }
 
 export default attribute;

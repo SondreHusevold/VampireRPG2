@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Never Lets Go", "Powerful Arms", "Reserves of Strength", "Vicious"],
 	icon: "nf-mdi-dumbbell",
-	image: picture
+	image: {
+		img: picture,
+		credit: "Alexey Kruglov",
+		creditLink: "https://www.artstation.com/alexeykruglov"
+	}
 }
 
 export default attribute;

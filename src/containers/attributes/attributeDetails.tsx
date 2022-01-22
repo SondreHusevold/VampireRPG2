@@ -50,8 +50,8 @@ function AttributeDetails() {
                         })}
                     </div>
                     <div className={styles.attributePicture}>
-                        <img src={attribute.image} />
-                        <p>Credit: <a href={`asdasdasd`} target={`_blank`}>Credit</a></p>
+                        <img src={attribute.image.img} />
+                        <p>Credit: <a href={`${attribute.image.creditLink}`} target={`_blank`}>{attribute.image.credit}</a></p>
                     </div> 
                 </div>
             </div>

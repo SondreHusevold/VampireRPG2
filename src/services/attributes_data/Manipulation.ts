@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Persuasive", "Seductive", "Well-Reasoned", "Misdirection", "Conjurer of Facts"],
 	icon: "nf-mdi-guy_fawkes_mask",
-	image: picture
+	image: {
+		img: picture,
+		credit: "VtM book",
+		creditLink: ""
+	}
 }
 
 export default attribute;

@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Unconventional Looks", "Photogenic", "Fashion Sense", "Unforgettable Face", "Memorable Pose"],
 	icon: "nf-weather-stars",
-	image: picture
+	image: {
+		img: picture,
+		credit: "Emanuel Mendez",
+		creditLink: "https://www.artstation.com/pemamendez"
+	}
 }
 
 export default attribute;

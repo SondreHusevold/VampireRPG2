@@ -14,7 +14,11 @@ const attribute: Attribute = {
 	],
 	specialties: ["Attentive", "Insightful", "Careful", "Discerning", "Tactical"],
 	icon: "nf-fa-eye",
-	image: picture
+	image: {
+		img: picture,
+		credit: "Natasha Haiduk",
+		creditLink: "https://www.artstation.com/natahaiduk"
+	}
 }
 
 export default attribute;

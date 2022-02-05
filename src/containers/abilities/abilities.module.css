@@ -105,5 +105,23 @@
 :local .lowerContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 0.5em;
+}
+
+:local .dotHeader {
+    grid-column: span 2;
+}
+
+:local .dotLevel {
+    grid-column: 1;
+}
+
+:local .dotLevelRight {
+    grid-column: 2;
+}
+
+:local .split {
+    grid-column: span 2;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
 }

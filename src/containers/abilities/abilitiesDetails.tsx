@@ -31,25 +31,14 @@ function AbilitiesDetails() {
                         
                         <div className={styles.lowerContent}>
                             <div>
-                                <h3>{ability.name} dots:</h3>
-                                {
-                                    ability.levels.map((lvl, index) => {
-                                        return (
-                                            <div className={styles.dotLevel}>
-                                                <p>{PrintDots(index+1)}</p>
-                                                <p>{lvl}</p>
-                                            </div>
-                                        )  
-                                    })
-                                }
-                            </div>
-                            <div>
                                 <h3>Specialties:</h3>
                                 {ability.specialties.map((special, index) => {
                                     return (
                                         <span>{special}{ability.specialties.length !== index+1 ? ", " : "."}</span>
                                     )
                                 })}
+                            </div>
+                            <div>
                                 <h3>Possessed by:</h3>
                                 {
                                     ability.possessedBy.map((possessedBy, index) => {
@@ -58,6 +47,24 @@ function AbilitiesDetails() {
                                         )
                                     })
                                 }
+                            </div>
+                            <span className={styles.split}/>
+                            <h3 className={styles.dotHeader}>{ability.name} dots:</h3>
+                            {
+                                ability.levels.map((lvl, index) => {
+                                    return (
+                                        <div 
+                                            className={`${index+1 > 3 ? styles.dotLevelRight : styles.dotLevel }`} 
+                                            style={{gridRow: index+1 > 3 ? ((index + 1) % 4) + 4 : 'auto'}}
+                                        >
+                                            <span>{PrintDots(index+1)}</span>
+                                            <p>{lvl}</p>
+                                        </div>
+                                    )  
+                                })
+                            }
+                            <div>
+                                
                             </div>
                         </div>
                          

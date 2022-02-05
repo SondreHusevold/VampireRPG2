@@ -16,8 +16,8 @@ const attribute: Attribute = {
 	icon: "nf-mdi-book_open_page_variant",
 	image: {
 		img: picture,
-		credit: "VtM Book",
-		creditLink: ""
+		credit: "Nocturnal Ghost",
+		creditLink: "https://www.reddit.com/r/vtmb/comments/sbi8ay/planning_on_doing_an_illustration_series_of_all/"
 	}
 }
 

@@ -4,6 +4,11 @@
     gap: 3em;
 }
 
+:local .attributesGrid h1 {
+    margin-top: 0px;
+    animation: "fadeIn" 1.5s;
+}
+
 :local .leftMenuGrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -12,6 +17,7 @@
     border-right: 1px solid white;
     padding-right: 5vw;
     margin-bottom: 60px;
+    animation: "fadeIn" 2s;
 }
 
 :local .leftMenuItem {
@@ -49,11 +55,11 @@
 }
 
 :local .attributeText {
-    animation: "fadeIn" 1s;
+    animation: "fadeIn" 1.5s;
 }
 
 :local .attributePicture {
-    animation: "fadeIn" 1s;
+    animation: "fadeIn" 1.5s;
     justify-self: center;
 }
 

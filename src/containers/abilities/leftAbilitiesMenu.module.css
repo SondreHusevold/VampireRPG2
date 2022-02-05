@@ -1,0 +1,56 @@
+
+:local .leftMenuGrid {
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    border-right: 1px solid white;
+    padding-right: 5vw;
+    animation: "fadeIn" 2s;
+    margin-bottom: 3em;
+}
+
+:local .leftMenuSection {
+    display: grid;
+    grid-template-columns: 5px 130px 5px;
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 3em;
+}
+
+:local .leftMenuItem {
+    grid-column: 2;
+}
+
+:local .leftMenuItem a span {
+    margin-right: 0.5em;
+}
+
+:local .leftMenuSection h3 {
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+:local .leftMenuSection h3 span {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+:local .disabled {
+    opacity: 0.5;
+}
+
+:local .active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+:local .active:hover {
+    opacity: 0.5;
+}
+
+:local .activeLink {
+    opacity: 0.5;
+}

@@ -1,19 +1,11 @@
 import { Link, useParams } from 'react-router-dom';
 import { Attribute } from '../../models/attribute';
 import { attributes } from '../../services/attributesService';
+import { PrintDots } from '../../utilities/dotprinter';
 import { ParseJsonText } from '../../utilities/parser';
 import styles from './attributeDetails.module.css';
 import LeftMenu from './leftMenu';
 
-function PrintDots(amount: number) {
-    let dots = "";
-    
-    for (let index = 0; index < amount; index++) {
-        dots += "●";
-    }
-
-    return dots;
-}
 
 function AttributeDetails() {
     const { name } = useParams();
@@ -23,7 +15,7 @@ function AttributeDetails() {
         <div className={styles.attributesGrid}>
             <LeftMenu attributes={attributes} />
             <div>
-                <h1 className={styles.headerText}> <span className={`nf ${attribute.icon}`}/> {attribute.name}</h1>
+                <h1 key={`${attribute.name}_title`} className={styles.headerText}> <span className={`nf ${attribute.icon}`}/> {attribute.name}</h1>
                 <div className={styles.lowerPage} key={`${attribute.name}_lowerPage`}>
                     <div className={styles.attributeText}>
                         <p>{ParseJsonText(attribute.description)}</p>

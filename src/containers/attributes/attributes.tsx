@@ -25,8 +25,8 @@ function Attributes() {
                     attributes.map((attribute) => {
                         return (
                             <Link to={`${attribute.name}`} className={`${sectionStyle(attribute.section)} ${styles.attributeButton}`}>
+                                <span className={`nf ${attribute.icon}`}/> 
                                 <p>{attribute.name}</p>
-                                <h1><span className={`nf ${attribute.icon}`}/></h1>
                             </Link>
                         )
                     })

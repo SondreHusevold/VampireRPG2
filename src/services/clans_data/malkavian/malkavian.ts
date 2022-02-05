@@ -7,8 +7,8 @@ const clan: Clan = {
 	logo: logo,
 	picture: {
 		img: picture,
-		credit: "アリサ",
-		link: "https://twitter.com/milky_tossy"
+		credit: "Amy Wilkins",
+		link: "https://www.artstation.com/amywilkinsart"
 	},
 	description: "Clan Malkavian is twice damned: once by the curse of being Kindred, and again by the turmoil that disturbs their hearts and minds. Upon the Embrace, every Malkavian is afflicted with an insurmountable insanity that fractures her outlook for every night thereafter, making her unlife one of madness. Some consider this a form of oracular insight, while others simply consider them dangerous. \nMake no mistake: Malkavian insanity is a painful, alienating phenomenon, but it occasionally provides the Lunatics with bursts of insight or heretofore unknown perspective. Madness for the Malkavians may take the form of any clinical form of insanity, or it may be a hyperacuity of senses others don’t know they have; a supernatural puppeteer pulling the Malkavian’s strings, or a sense that the Malkavian is somehow ahead of evolutionary schedule. A Malkavian may believe herself to be an idea given physical form or an avatar of some concept the World of Darkness has yet to encounter. She may be a nonstop ravening psychopath, or may be a mostly lucid individual sometimes rendered catatonic by fear of an impending cosmic cataclysm. \nTheir precarious stability makes it hard for other Kindred (or, indeed, any vessels with whom they may meet) to interact with Malkavians. The Clan sometimes indulges in elaborate, terrifying, and dangerous “pranks” which do little to endear them to other vampires. These incidents are nominally meant to educate the target, but the lesson can often be lost between the vampire’s scramble for safety and the inability to parse the Malkavian’s inner logic. Common pranks might be to replace a vain Toreador’s haven door with a guillotine or to redistribute a Brujah elder’s wealth while he’s at Elysium, or it might take the form of giving a hunter the location where the Nosferatu gather. Kindred both dread and resent the word “prank” almost as much as they do the Lunatics themselves.",
 	nickname: "Lunatics",

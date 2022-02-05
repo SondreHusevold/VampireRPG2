@@ -12,6 +12,8 @@
     padding-top: 1em;
     display: flex;
     flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 2em;
     border: 1px solid white;
     opacity: 0.4;
     border-radius: 10px;
@@ -21,8 +23,8 @@
     transition: opacity 500ms;
 }
 
-:local .attributeButton h1 {
-    font-size: 4em;
+:local .attributeButton span {
+    font-size: 3em;
     margin-top: 0px;
 }
 

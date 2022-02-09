@@ -1,0 +1,92 @@
+:local .disciplineHeader {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    animation: "fadeIn" 1s;
+    text-align: center;
+}
+
+
+:local .headerDiscipline span {
+    font-size: 6em;
+}
+
+:local .headerLinkText {
+    margin-top: 0px;
+    margin-bottom: 0.3em;
+}
+
+
+:local .lowerPage {
+    padding: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: "fadeIn" 2s;
+}
+
+:local .lowerPage h3 {
+    text-align: center;
+}
+
+:local .picture {
+    margin-top: 3em;
+    animation: "fadeIn" 1s;
+    justify-self: center;
+}
+
+:local .picture img {
+    border-radius: 10px;
+}
+
+:local .disciplineText {
+    grid-column: span 2;
+}
+
+:local .dotLevelSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+:local .dots {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+:local .dotLevel {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+:local .dotHover {
+    opacity: 1;
+}
+
+:local .printedDot {
+    content: '●';
+}
+
+:local .printedEmptyDot {
+    content: '○';
+}
+
+:local .printedEmptyDot:hover {
+    content: '●';
+}
+
+
+:local .prevNextDisc {
+    transform: scale(0.6);
+    opacity: 0.3;
+    transition: opacity 500ms;
+    text-decoration: none;
+}
+
+:local .prevNextDisc:hover {
+    opacity: 1;
+}
+
+:local .prevNextDisc a {
+    text-decoration: none;
+}

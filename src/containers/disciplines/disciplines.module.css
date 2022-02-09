@@ -1,0 +1,45 @@
+:local .disciplinesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3em;
+}
+
+:local .disciplinesGrid h1 {
+    margin-top: 0px;
+    animation: "fadeIn" 1.5s;
+}
+
+
+:local .disciplineButton {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    border: 1px solid white;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 500ms;
+}
+
+:local .disciplineButton span {
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+:local .disciplineButton:hover {
+    opacity: 1;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+}
+
+:local .disciplineButton p {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+:local .disciplineButton:hover p {
+    text-decoration: underline 0.15em solid rgb(158, 0, 0);
+}

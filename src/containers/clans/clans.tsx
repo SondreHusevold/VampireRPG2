@@ -18,7 +18,8 @@ function Clans() {
                             onClick={() => goToClan(clan.name)}
                             className={`${clan.playerClan ? styles.playerClan : styles.npcClan}`}
                         >
-                            {clan.name} <p><img className={styles.gridClanLogo} src={clan.logo} /></p>
+                            <img className={styles.gridClanLogo} src={clan.logo} />
+                            <p>{clan.name}</p>
                         </button>
                     )
                 })

@@ -5,6 +5,8 @@ import AttributeDetails from "../attributes/attributeDetails";
 import Attributes from "../attributes/attributes";
 import ClanDetail from "../clans/clanDetails";
 import Clans from "../clans/clans";
+import Disciplines from "../disciplines/disciplines";
+import DisciplineDetails from "../disciplines/disciplineDetails";
 import Haven from "../haven/haven";
 import Information from "../information/information";
 
@@ -19,6 +21,8 @@ function NavigationRouter() {
             <Route path="/attributes/:name" element={<AttributeDetails />} />
             <Route path="/abilities" element={<Abilities/>} />
             <Route path="/abilities/:name" element={<AbilitiesDetails />} />
+            <Route path="/disciplines" element={<Disciplines />} />
+            <Route path="/disciplines/:name" element={<DisciplineDetails />} />
         </Routes>
     )
 }

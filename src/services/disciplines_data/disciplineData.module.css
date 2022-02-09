@@ -1,0 +1,12 @@
+:local .twoColumnSection {
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    
+}
+
+:local .twoColumnSection label {
+    padding-bottom: 1em;
+}

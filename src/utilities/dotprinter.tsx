@@ -7,3 +7,13 @@ export function PrintDots(amount: number) {
 
     return dots;
 }
+
+export function PrintEmptyDots(amount: number) {
+    let dots = "";
+    
+    for (let index = 0; index < amount; index++) {
+        dots += "○";
+    }
+
+    return dots;
+}

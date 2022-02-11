@@ -27,7 +27,7 @@ function AbilitiesDetails() {
                 <h1 className={`nf ${ability.icon} ${styles.bigIcon}`}/>
                 <div className={styles.lowerPage} key={`${ability.name}_lowerPage`}>
                     <div className={styles.abilityText}>
-                        <p>{ParseJsonText(ability.description)}</p>
+                        {ParseJsonText(ability.description)}
                         
                         <div className={styles.lowerContent}>
                             <div>

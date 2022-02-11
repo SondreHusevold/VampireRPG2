@@ -19,7 +19,7 @@ function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
     const lvl = props.discipline.levels[props.dots-1];
     return (
         <div>
-            <h3>{lvl.name}</h3>
+            <h3>{lvl.name.toUpperCase()}</h3>
             {lvl.description}
             {lvl.system}
         </div>
@@ -84,6 +84,13 @@ function DisciplineDetails() {
                 }
             </div>
             <div className={styles.lowerPage} key={`${discipline.name}_lowerPage`}>
+                <div className={styles.ownedByClan}>
+                    {discipline.clans.map((clan) => {
+                        return (
+                            <Link to={`/clans/${clan.name}/description`}>Clan {clan.name}</Link>
+                        )
+                    })}
+                </div>
                 <div className={styles.disciplineText}>
                     {ParseJsonText(discipline.description)}
                 </div>

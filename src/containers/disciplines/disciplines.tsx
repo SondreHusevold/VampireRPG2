@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Disciplines() {
     return (
-        <div>
+        <div className={styles.disciplines}>
             <h1>Disciplines</h1>
             <div className={styles.disciplinesGrid}>
                 {

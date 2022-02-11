@@ -4,13 +4,17 @@
     top: 0;
     display: flex;
     width: 100%;
-    color: white;
-    border-bottom: 1px solid white;
+    color: #e0e0db;
+    border-bottom: 1px solid #e0e0db;
     justify-content: space-evenly;
     padding-top: 1em;
     padding-bottom: 1em;
-    background: black;
     z-index: 300;
+}
+
+:local .navbar a {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 :local .activeLink {
@@ -25,9 +29,9 @@
 
 @keyframes underliner {
   from {
-    border-bottom: 0px solid white;
+    border-bottom: 0px solid #e0e0db;
   }
   to {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e0e0db;
   }
 }

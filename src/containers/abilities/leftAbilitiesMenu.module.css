@@ -5,7 +5,7 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: flex-start;
-    border-right: 1px solid white;
+    border-right: 1px solid #e0e0db;
     padding-right: 5vw;
     animation: "fadeIn" 2s;
     margin-bottom: 3em;

@@ -1,14 +1,14 @@
-:local .disciplinesGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3em;
-}
-
-:local .disciplinesGrid h1 {
+:local .disciplines h1 {
     margin-top: 0px;
     animation: "fadeIn" 1.5s;
 }
 
+:local .disciplinesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3em;
+    animation: "fadeIn" 2s;
+}
 
 :local .disciplineButton {
     padding-top: 1em;
@@ -16,7 +16,7 @@
     flex-direction: column;
     padding-top: 3em;
     padding-bottom: 2em;
-    border: 1px solid white;
+    border: 1px solid #e0e0db;
     opacity: 0.4;
     border-radius: 10px;
     justify-content: center;
@@ -26,7 +26,7 @@
 }
 
 :local .disciplineButton span {
-    font-size: 3em;
+    font-size: 4em;
     margin-top: 0px;
 }
 
@@ -36,10 +36,7 @@
 }
 
 :local .disciplineButton p {
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
-}
-
-:local .disciplineButton:hover p {
-    text-decoration: underline 0.15em solid rgb(158, 0, 0);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 1.3em;
 }

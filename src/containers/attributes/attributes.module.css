@@ -14,7 +14,7 @@
     flex-direction: column;
     padding-top: 3em;
     padding-bottom: 2em;
-    border: 1px solid white;
+    border: 1px solid #e0e0db;
     opacity: 0.4;
     border-radius: 10px;
     justify-content: center;
@@ -34,8 +34,7 @@
 }
 
 :local .attributeButton p {
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
+    font-weight: normal;
 }
 
 :local .attributeButton:hover p {

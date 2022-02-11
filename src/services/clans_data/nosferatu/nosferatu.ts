@@ -4,7 +4,7 @@ import picture from './picture.jpg';
 
 const clan: Clan = {
 	name: "Nosferatu",
-	logo: logo,
+	logo: "X",
 	picture: {
 		img: picture,
 		credit: "Oshred",

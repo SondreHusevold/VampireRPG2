@@ -1,6 +1,7 @@
 import { Discipline } from "../../../models/discipline";
-import Brujah from '../../clans_data/brujah/brujah';
+import Malkavian from '../../clans_data/malkavian/malkavian';
 import Toreador from '../../clans_data/toreador/toreador';
+import Tremere from '../../clans_data/tremere/tremere';
 import Picture from './Auspex.jpg';
 import { auspexLevels } from "./auspex_levels";
 import styles from '../disciplineData.module.css';
@@ -16,7 +17,7 @@ const discipline: Discipline = {
     `,
     system: null,
     levels: auspexLevels,
-    clans: [Brujah, Toreador],
+    clans: [Malkavian, Toreador, Tremere],
     icon: "nf-mdi-eye_outline",
     image: {
         credit: "Oshred",

@@ -8,7 +8,7 @@
  @font-face {
     font-family: 'NerdFontsSymbols Nerd Font';
     /* @TODO you need to adjust the path to the font: */
-    src: url("RobotoNerdFont.woff2") format("woff2");
+    src: url("fonts/RobotoNerdFont.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
   }

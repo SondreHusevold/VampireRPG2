@@ -18,7 +18,7 @@ function AttributeDetails() {
                 <h1 key={`${attribute.name}_title`} className={styles.headerText}> <span className={`nf ${attribute.icon}`}/> {attribute.name}</h1>
                 <div className={styles.lowerPage} key={`${attribute.name}_lowerPage`}>
                     <div className={styles.attributeText}>
-                        <p>{ParseJsonText(attribute.description)}</p>
+                        {ParseJsonText(attribute.description)}
                         <h3>{attribute.name} dots:</h3>
                         <div className={styles.dotLevelSection}>
                             <div>

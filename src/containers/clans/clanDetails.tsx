@@ -80,13 +80,13 @@ function ClanOpinions(clan: Clan) {
                 {clan.stereotypesClans.map((opinion) => {
                     let logo = clans.find(x => x.name.toLowerCase() === opinion.clan.toLowerCase())?.logo;
                     if(logo == null) {
-                        logo = logoCaitiff;
+                        logo = "I";
                     }
                     
                     if(opinion.opinion !== ""){
                         return (
                             <div className={styles.clanOpinion}>
-                                {logo && <img title={`${opinion.clan}s`} alt={`${opinion.clan}s`} src={`${logo}`} />}
+                                <span className={`vtm-clan-icon ${styles.opinionClanIcon}`} title={`${opinion.clan}s`}>{logo}</span>
                                 <p>"{opinion.opinion}"</p>
                             </div>
                         )
@@ -102,7 +102,7 @@ function RenderClan(clan: Clan) {
     return (
         <div>
             <h1>Clan {clan.name}</h1>
-            <img src={clan.logo}/>
+            <h1 className={`vtm-clan-icon ${styles.clanIcon}`}>{clan.logo}</h1>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import picture from './picture.jpg';
 
 const clan: Clan = {
 	name: "Tremere",
-	logo: logo,
+	logo: "h",
 	picture: {
 		img: picture,
 		credit: "Bella Bergolts",

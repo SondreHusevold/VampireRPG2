@@ -5,11 +5,12 @@ import Picture from './Celerity.jpg';
 
 const discipline: Discipline = {
     name: "Celerity",
-    description: `
-    Not all vampires are slow, meticulous creatures. When needed, some vampires can move fast — really fast. Celerity allows Brujah, and Toreadors to move with astonishing swiftness, becoming practically a blur.
-    The Toreador are more inclined to use Celerity to provide an air of unnatural grace to live performances or for an extra push to complete a masterpiece on time, but they can be as quick to draw blood as any assassin or punk when angered.
-    Brujah, on the other hand, simply like the edge that the power gives them against overwhelming odds. 
-    `,
+    description: <>
+        <p>Not all vampires are slow, meticulous creatures. When needed, some vampires can move fast — really fast. Celerity allows Brujah, and Toreadors to move with astonishing swiftness, becoming practically a blur.</p>
+        <p>The Toreador are more inclined to use Celerity to provide an air of unnatural grace to live performances or for an extra push to complete a masterpiece on time, but they can be as quick to draw blood as any assassin or punk when angered.</p>
+        <p>Brujah, on the other hand, simply like the edge that the power gives them against overwhelming odds. </p>
+    </>
+    ,
     system: (
         <>
             <p>
@@ -60,7 +61,7 @@ const discipline: Discipline = {
         }
     ],
     clans: [Brujah, Toreador],
-    icon: "nf-fa-bolt",
+    icon: "C",
     image: {
         credit: "Jae Hyeok Jang",
         creditLink: "https://www.artstation.com/realcrimson",

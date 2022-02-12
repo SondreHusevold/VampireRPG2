@@ -9,7 +9,7 @@ export interface DisciplineLevel {
 
 export interface Discipline {
     name: string;
-    description: string;
+    description: JSX.Element;
     system: JSX.Element | null;
 	levels: DisciplineLevel[];
 	clans: Clan[];

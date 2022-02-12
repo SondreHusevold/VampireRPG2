@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink, useParams } from "react-router-dom";
 import { Discipline } from "../../models/discipline";
 import { disciplines } from "../../services/disciplineService";
@@ -10,7 +10,7 @@ function RenderDiscipline(discipline: Discipline) {
     return (
         <div className={styles.headerDiscipline}>
             <h1 key={`${discipline.name}_title`} className={styles.headerLinkText}>{discipline.name}</h1>
-            <span className={`nf ${discipline.icon}`}/>
+            <span className={`vtm-icon`}>{discipline.icon}</span>
         </div>
     )
 }
@@ -18,7 +18,7 @@ function RenderDiscipline(discipline: Discipline) {
 function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
     const lvl = props.discipline.levels[props.dots-1];
     return (
-        <div>
+        <div className={styles.dotInfoSection} key={`discipline_${lvl.name}`}>
             <h3>{lvl.name.toUpperCase()}</h3>
             {lvl.description}
             {lvl.system}
@@ -39,8 +39,7 @@ interface RenderDotsNavigationProps {
 
 function RenderDotsNavigation(props: RenderDotsNavigationProps) {
     const [dots, setDots] = useState(props.dots);
-    const [hovering, setHovering] = useState(false);
-
+    
     return (
         <div className={styles.dots} onMouseLeave={() => setDots(props.dots)} onClick={() => props.setDots(dots)}>
             <RenderDot filled={props.dots > 0} setDots={() => setDots(1)} hovering={dots > 0} />
@@ -59,6 +58,10 @@ function DisciplineDetails() {
     const discipline = disciplines.filter(x => x.name.toLowerCase() === name?.toLowerCase())[0];
     const prevDisc = disciplines[disciplines.findIndex(x => x === discipline)-1];
     const nextDisc = disciplines[disciplines.findIndex(x => x === discipline)+1];
+
+    useEffect(() => {
+        setDotsChosen(1);
+    }, [name])
 
     return (
         <div className={styles.disciplinesGrid}> 
@@ -92,7 +95,7 @@ function DisciplineDetails() {
                     })}
                 </div>
                 <div className={styles.disciplineText}>
-                    {ParseJsonText(discipline.description)}
+                    {discipline.description}
                 </div>
                 <div>
                 {

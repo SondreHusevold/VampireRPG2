@@ -11,7 +11,7 @@ function Disciplines() {
                     disciplines.map((disc) => {
                         return (
                             <Link to={`${disc.name}`} className={`${styles.disciplineButton}`}>
-                                <span className={`nf ${disc.icon}`}/> 
+                                <span className={`vtm-icon`}>{disc.icon}</span>
                                 <p>{disc.name}</p>
                             </Link>
                         )

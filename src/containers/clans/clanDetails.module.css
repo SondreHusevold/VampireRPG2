@@ -103,5 +103,20 @@
     font-size: 11em;
     margin: 0px;
     padding: 0px;
-    
+}
+
+:local .disciplinesHeader {
+    margin-bottom: 0px;
+}
+
+:local .disciplinesFlex {
+    display: flex;
+    align-items: center;
+    column-gap: 4em;
+}
+
+:local .disciplineButton {
+    display: flex;
+    justify-content: space-between;
+    width: 5em;
 }

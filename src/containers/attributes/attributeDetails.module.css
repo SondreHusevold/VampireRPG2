@@ -60,7 +60,7 @@
 }
 
 :local .lowerPage {
-    padding: 3em;
+    padding: 1.3em 3em 3em 3em;
     display: grid;
     grid-template-columns: 1fr 0.7fr;
     animation: "fadeIn" 2s;

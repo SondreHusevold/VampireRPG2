@@ -20,7 +20,7 @@ function AttributeDetails() {
                 <div className={styles.lowerPage} key={`${attribute.name}_lowerPage`}>
                     <div className={styles.attributeText}>
                         {ParseJsonText(attribute.description)}
-                        <h3>{attribute.name} dots:</h3>
+                        <h3>{attribute.name} dots</h3>
                         <div className={styles.dotLevelSection}>
                             <div>
                             {
@@ -35,7 +35,7 @@ function AttributeDetails() {
                             }
                             </div>
                         </div>
-                        <h3>Specialties:</h3>
+                        <h3>Specialties</h3>
                         {attribute.specialties.map((special, index) => {
                             return (
                                 <span>{special}{attribute.specialties.length !== index+1 ? ", " : "."}</span>

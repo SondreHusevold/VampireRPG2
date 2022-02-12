@@ -31,7 +31,7 @@ function AbilitiesDetails() {
                         
                         <div className={styles.lowerContent}>
                             <div>
-                                <h3>Specialties:</h3>
+                                <h3>Specialties</h3>
                                 {ability.specialties.map((special, index) => {
                                     return (
                                         <span>{special}{ability.specialties.length !== index+1 ? ", " : "."}</span>
@@ -39,7 +39,7 @@ function AbilitiesDetails() {
                                 })}
                             </div>
                             <div>
-                                <h3>Possessed by:</h3>
+                                <h3>Possessed by</h3>
                                 {
                                     ability.possessedBy.map((possessedBy, index) => {
                                         return (
@@ -49,7 +49,7 @@ function AbilitiesDetails() {
                                 }
                             </div>
                             <span className={styles.split}/>
-                            <h3 className={styles.dotHeader}>{ability.name} dots:</h3>
+                            <h3 className={styles.dotHeader}>{ability.name} dots</h3>
                             {
                                 ability.levels.map((lvl, index) => {
                                     return (

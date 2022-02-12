@@ -6,6 +6,7 @@ import { ParseJsonText } from "../../utilities/parser";
 import styles from './clanDetails.module.css';
 import logoCaitiff from '../../services/clans_data/caitiff/logo.png';
 import { sects } from "../../services/sectService";
+import { disciplines } from "../../services/disciplineService";
 
 function ClanDescription(clan: Clan) {
     return (
@@ -42,17 +43,34 @@ function ClanTraits(clan: Clan) {
     )
 }
 
+function RenderDisciplinesStrength(clan: Clan) {
+    return (
+        <div className={styles.disciplinesFlex}>
+        {
+            clan.disciplines.map((disc) => {
+            const discipline = disciplines.find(x => x.name.toLowerCase() === disc.toLowerCase());
+            if(discipline == null) {
+                return <p>ERROR: Discipline not found.</p>
+            }
+    
+            return (
+                <Link to={`/disciplines/${disc}`} className={styles.disciplineButton} key={`${disc}_button`}>
+                    <span className={`nf ${discipline.icon}`}/>
+                    {disc}
+                </Link>
+            )})
+        }
+    </div>
+    )
+}
+
 function ClanStrWeak(clan: Clan) {
     return (
         <div className={styles.clanText}>
             <h3>Curse:</h3>
             {ParseJsonText(clan.weaknesses)}
-            <h3>Disciplines:</h3>
-            {clan.disciplines.map((disc) => {
-                return (
-                    <p>{disc}</p>
-                )
-            })}
+            <h3 className={styles.disciplinesHeader}>Disciplines:</h3>
+            <RenderDisciplinesStrength {... clan} /> 
         </div>
     )
 }

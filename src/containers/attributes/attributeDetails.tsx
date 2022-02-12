@@ -15,7 +15,8 @@ function AttributeDetails() {
         <div className={styles.attributesGrid}>
             <LeftMenu attributes={attributes} />
             <div>
-                <h1 key={`${attribute.name}_title`} className={styles.headerText}> <span className={`nf ${attribute.icon}`}/> {attribute.name}</h1>
+                <h1 key={`${attribute.name}_title`} className={styles.headerText}> {attribute.name}</h1>
+                <h1 key={`${attribute.name}_title_icon`} className={`nf ${attribute.icon} ${styles.headerTextIcon}`}></h1>
                 <div className={styles.lowerPage} key={`${attribute.name}_lowerPage`}>
                     <div className={styles.attributeText}>
                         {ParseJsonText(attribute.description)}

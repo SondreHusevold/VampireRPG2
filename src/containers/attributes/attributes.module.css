@@ -30,15 +30,11 @@
 
 :local .attributeButton:hover {
     opacity: 1;
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    border-color: #e0e0db;
 }
 
 :local .attributeButton p {
     font-weight: normal;
-}
-
-:local .attributeButton:hover p {
-    text-decoration: underline 0.15em solid rgb(158, 0, 0);
 }
 
 :local .physicalSection {

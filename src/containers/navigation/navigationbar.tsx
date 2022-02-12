@@ -3,7 +3,7 @@ import styles from './navigation.module.css'
 
 function isActivated(link: { isActive: boolean }) {
     if(link.isActive) {
-        return styles.activeLink;
+        return "activeLink";
     }
     return "";
 }

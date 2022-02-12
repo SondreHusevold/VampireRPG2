@@ -1,6 +1,8 @@
 :local .clansGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 10em;
+    margin-right: 10em;
     gap: 1.5em;
 }
 
@@ -11,7 +13,7 @@
 }
 
 :local .clansGrid button {
-    padding: 0.50em 0.5em 0.0em 0.5em;
+    padding: 0.75em 0.5em 0.0em 0.5em;
     font-size: clamp(2rem, 1vw, 1.1rem);
     font-weight: lighter;
     text-transform: uppercase;

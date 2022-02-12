@@ -32,7 +32,7 @@
 
 :local .disciplineButton:hover {
     opacity: 1;
-    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    border-color: #e0e0db;
 }
 
 :local .disciplineButton p {

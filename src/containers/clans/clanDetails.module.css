@@ -54,6 +54,10 @@
     opacity: 1;
 }
 
+:local .prevNextClan h1 {
+    cursor: pointer;
+}
+
 :local .clanHeaderQuote {
     grid-column: span 3;
 }

@@ -121,6 +121,17 @@
 
 :local .disciplineButton {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 5em;
+}
+
+:local .disciplineButton:hover {
+    border-color: transparent;
+}
+
+:local .disciplineButton h1 {
+    text-transform: none;
+    margin: 0px;
 }

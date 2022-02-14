@@ -55,8 +55,8 @@ function RenderDisciplinesStrength(clan: Clan) {
     
             return (
                 <Link to={`/disciplines/${disc}`} className={styles.disciplineButton} key={`${disc}_button`}>
-                    <span className={`nf ${discipline.icon}`}/>
-                    {disc}
+                    <p>{disc}</p>
+                    <h1 className={`vtm-icon`}>{discipline.icon}</h1>
                 </Link>
             )})
         }

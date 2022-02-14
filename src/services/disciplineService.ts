@@ -4,6 +4,7 @@ import Celerity from './disciplines_data/celerity/celerity';
 import Dementation from './disciplines_data/dementation/dementation';
 import Dominate from './disciplines_data/dominate/dominate';
 import Fortitude from './disciplines_data/fortitude/fortitude';
+import Obfuscate from './disciplines_data/obfuscate/obfuscate';
 
 export const disciplines = [
     Animalism,
@@ -12,7 +13,7 @@ export const disciplines = [
     Dementation,
     Dominate,
     Fortitude,
-    // Obfuscate,
+    Obfuscate,
     // Potence,
     // Presence,
     // Protean,

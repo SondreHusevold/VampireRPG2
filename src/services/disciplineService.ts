@@ -5,6 +5,8 @@ import Dementation from './disciplines_data/dementation/dementation';
 import Dominate from './disciplines_data/dominate/dominate';
 import Fortitude from './disciplines_data/fortitude/fortitude';
 import Obfuscate from './disciplines_data/obfuscate/obfuscate';
+import Potence from './disciplines_data/potence/potence';
+
 
 export const disciplines = [
     Animalism,
@@ -14,7 +16,7 @@ export const disciplines = [
     Dominate,
     Fortitude,
     Obfuscate,
-    // Potence,
+    Potence,
     // Presence,
     // Protean,
     // Thaumaturgy,

@@ -6,6 +6,7 @@ import Dominate from './disciplines_data/dominate/dominate';
 import Fortitude from './disciplines_data/fortitude/fortitude';
 import Obfuscate from './disciplines_data/obfuscate/obfuscate';
 import Potence from './disciplines_data/potence/potence';
+import Presence from './disciplines_data/presence/presence';
 
 
 export const disciplines = [
@@ -17,7 +18,7 @@ export const disciplines = [
     Fortitude,
     Obfuscate,
     Potence,
-    // Presence,
+    Presence,
     // Protean,
     // Thaumaturgy,
 ]

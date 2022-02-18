@@ -101,3 +101,7 @@
 :local .dotInfoSection {
     animation: "fadeIn" 1s;
 }
+
+:local .dotInfoSection h4 {
+    text-align: center;
+}

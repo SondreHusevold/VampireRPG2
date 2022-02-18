@@ -24,14 +24,16 @@ h2 {
 
 h3 {
   color: #e0e0db;
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-transform: uppercase;
   font-weight: normal;
 }
 
 h4 {
   color: #e0e0db;
-  font-size: 0.5em;
+  font-size: 1.35em;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 label {

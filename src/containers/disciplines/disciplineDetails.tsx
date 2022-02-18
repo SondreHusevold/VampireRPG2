@@ -21,6 +21,7 @@ function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
         <div className={styles.dotInfoSection} key={`discipline_${lvl.name}`}>
             <h3>{lvl.name.toUpperCase()}</h3>
             {lvl.description}
+            <h4>Rules:</h4>
             {lvl.system}
         </div>
     )
@@ -39,7 +40,13 @@ interface RenderDotsNavigationProps {
 
 function RenderDotsNavigation(props: RenderDotsNavigationProps) {
     const [dots, setDots] = useState(props.dots);
-    
+
+    useEffect(() => {
+        if(props.dots === 1) {
+            setDots(1);
+        }
+    }, [props.dots]);
+
     return (
         <div className={styles.dots} onMouseLeave={() => setDots(props.dots)} onClick={() => props.setDots(dots)}>
             <RenderDot filled={props.dots > 0} setDots={() => setDots(1)} hovering={dots > 0} />
@@ -108,7 +115,7 @@ function DisciplineDetails() {
                 <div>
                     <h3>{discipline.name} dots:</h3>
                     <RenderDotsNavigation dots={dotsChosen} setDots={setDotsChosen}/>
-                    <div className={styles.dotLevelSection}>
+                    <div className={styles.dotLevelSection} key={`${discipline.name}_dots`}>
                         <RenderDotInformation discipline={discipline} dots={dotsChosen}/>
                     </div>
                 </div>

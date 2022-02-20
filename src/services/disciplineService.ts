@@ -8,6 +8,7 @@ import Obfuscate from './disciplines_data/obfuscate/obfuscate';
 import Potence from './disciplines_data/potence/potence';
 import Presence from './disciplines_data/presence/presence';
 import Protean from './disciplines_data/protean/protean';
+import Thaumaturgy from './disciplines_data/thaumaturgy/thaumaturgy';
 
 export const disciplines = [
     Animalism,
@@ -20,5 +21,5 @@ export const disciplines = [
     Potence,
     Presence,
     Protean,
-    // Thaumaturgy,
+    Thaumaturgy,
 ]

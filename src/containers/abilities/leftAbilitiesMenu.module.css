@@ -1,19 +1,19 @@
 
 :local .leftMenuGrid {
-    width: 150px;
+    width: 200px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: flex-start;
     border-right: 1px solid #e0e0db;
-    padding-right: 5vw;
+    padding-right: 4.5vw;
     animation: "fadeIn" 2s;
     margin-bottom: 3em;
 }
 
 :local .leftMenuSection {
     display: grid;
-    grid-template-columns: 5px 130px 5px;
+    grid-template-columns: 70px 130px 70px;
     justify-content: center;
     column-gap: 2em;
     row-gap: 3em;

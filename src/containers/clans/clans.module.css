@@ -1,8 +1,6 @@
 :local .clansGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 10em;
-    margin-right: 10em;
     gap: 1.5em;
 }
 
@@ -13,8 +11,8 @@
 }
 
 :local .clansGrid button {
-    padding: 0.75em 0.5em 0.0em 0.5em;
-    font-size: clamp(2rem, 1vw, 1.1rem);
+    
+    font-size: 1.5vw;
     font-weight: lighter;
     text-transform: uppercase;
     background: transparent;
@@ -33,7 +31,7 @@
 
 :local .clansGrid button p {
   transition: opacity 500ms;
-  margin-top: 0.5em;
+  
   opacity: 0.5;
 }
 
@@ -48,18 +46,34 @@
 }
 
 :local .gridClanLogo {
-  margin-top: 0.5em;
-  max-height: 11vh;
   opacity: 0.5;
   transition: opacity 350ms;
 }
 
 :local .playerClan {
+  padding: 2.3vh;
   grid-column: span 3;
+  display: flex;
+  text-align: center;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+:local .playerClan h1 {
+  font-size: 7vw;
+}
+
+:local .playerClan p {
+  font-size: 2.2vw;
 }
 
 :local .npcClan {
+  padding-top: 0.75em;
   grid-column: span 2;
 }
 
+:local .npcClan p {
+  margin-top: 0.25em;
+}
 

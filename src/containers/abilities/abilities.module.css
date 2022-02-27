@@ -25,10 +25,6 @@
     margin-top: 0px;
 }
 
-:local .abilitiesGrid h2 {
-    margin-top: 0;
-}
-
 :local .abilitiesColumn {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;

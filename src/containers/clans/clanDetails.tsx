@@ -22,9 +22,9 @@ function ClanDescription(clan: Clan) {
 function ClanAppearance(clan: Clan) {
     return (
         <div className={styles.clanText}>
-            <h3>Appearance:</h3>
+            <h3>Appearance</h3>
             {ParseJsonText(clan.appearance)}
-            <h3>Haven:</h3>
+            <h3>Haven</h3>
             {ParseJsonText(clan.haven)}
         </div>
     )
@@ -33,11 +33,11 @@ function ClanAppearance(clan: Clan) {
 function ClanTraits(clan: Clan) {
     return (
         <div className={styles.clanText}>
-            <h3>Background:</h3>
+            <h3>Background</h3>
             {ParseJsonText(clan.background)}
-            <h3>Creation:</h3>
+            <h3>Creation</h3>
             {ParseJsonText(clan.creation)}
-            <h3>Organization:</h3>
+            <h3>Organization</h3>
             {ParseJsonText(clan.organization)}
         </div>
     )
@@ -67,9 +67,9 @@ function RenderDisciplinesStrength(clan: Clan) {
 function ClanStrWeak(clan: Clan) {
     return (
         <div className={styles.clanText}>
-            <h3>Curse:</h3>
+            <h3>Curse</h3>
             {ParseJsonText(clan.weaknesses)}
-            <h3 className={styles.disciplinesHeader}>Disciplines:</h3>
+            <h3 className={styles.disciplinesHeader}>Disciplines</h3>
             <RenderDisciplinesStrength {... clan} /> 
         </div>
     )

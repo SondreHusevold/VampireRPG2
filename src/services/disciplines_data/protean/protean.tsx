@@ -24,7 +24,7 @@ const discipline: Discipline = {
     system: null,
     levels: proteanLevels,
     clans: [Gangrel],
-    icon: "I",
+    icon: "J",
     image: {
         credit: "Lilian Helvecio",
         creditLink: "https://www.pinterest.com/lilianhelvecio/",

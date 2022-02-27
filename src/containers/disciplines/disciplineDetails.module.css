@@ -28,7 +28,6 @@
 }
 
 :local .picture {
-    margin-top: 1em;
     animation: "fadeIn" 1s;
     justify-self: center;
 }
@@ -39,6 +38,10 @@
 
 :local .disciplineText {
     grid-column: span 2;
+}
+
+:local .dotSection h3 {
+    margin-bottom: 0px;
 }
 
 :local .dotLevelSection {

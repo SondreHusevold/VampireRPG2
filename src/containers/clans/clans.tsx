@@ -11,6 +11,7 @@ function Clans() {
 
     return (
         <div className={styles.clansGrid}>
+            <h1>Clans</h1>
             {
                 clans.map((clan, index) => {
                     return (

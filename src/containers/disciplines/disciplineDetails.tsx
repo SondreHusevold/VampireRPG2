@@ -21,7 +21,7 @@ function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
         <div className={styles.dotInfoSection} key={`discipline_${lvl.name}`}>
             <h3>{lvl.name.toUpperCase()}</h3>
             {lvl.description}
-            <h4>Rules:</h4>
+            <h4>Rules</h4>
             {lvl.system}
         </div>
     )
@@ -58,6 +58,13 @@ function RenderDotsNavigation(props: RenderDotsNavigationProps) {
     )
 }
 
+function getScrollAmount() {
+    let scrollTop = window.scrollY;
+    let docHeight = document.body.offsetHeight;
+    let winHeight = window.innerHeight;
+    let scrollPercent = scrollTop / (docHeight - winHeight);
+    return Math.round(scrollPercent * 100);
+}
 
 function DisciplineDetails() {
     const [dotsChosen, setDotsChosen] = useState<number>(1);
@@ -108,12 +115,12 @@ function DisciplineDetails() {
                 {
                     discipline.system &&
                     <div>
-                        <h3>System:</h3>
+                        <h3>System</h3>
                         {discipline.system}
                     </div>
                 }
-                <div>
-                    <h3>{discipline.name} dots:</h3>
+                <div className={styles.dotSection}>
+                    <h3>{discipline.name} dots</h3>
                     <RenderDotsNavigation dots={dotsChosen} setDots={setDotsChosen}/>
                     <div className={styles.dotLevelSection} key={`${discipline.name}_dots`}>
                         <RenderDotInformation discipline={discipline} dots={dotsChosen}/>

@@ -9,6 +9,7 @@ import Disciplines from "../disciplines/disciplines";
 import DisciplineDetails from "../disciplines/disciplineDetails";
 import Haven from "../haven/haven";
 import Information from "../information/information";
+import Combat from "../combat/combat";
 
 function NavigationRouter() {
     return (
@@ -23,6 +24,7 @@ function NavigationRouter() {
             <Route path="/abilities/:name" element={<AbilitiesDetails />} />
             <Route path="/disciplines" element={<Disciplines />} />
             <Route path="/disciplines/:name" element={<DisciplineDetails />} />
+            <Route path="/combat/" element={<Combat />} />
         </Routes>
     )
 }

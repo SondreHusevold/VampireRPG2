@@ -7,11 +7,11 @@ function Combat() {
             <div className={styles.combatGrid}>
                 <button>
                     <h1 className='nf nf-fa-sort_numeric_asc'/>
-                    <h3>Combat tages</h3>
+                    <h3>Combat Stages</h3>
                 </button>
                 <button>
                     <h1 className={`nf nf-mdi-dice_d10`}></h1>
-                    <h3>Combat and damage types</h3>
+                    <h3>Combat {'&'} damage types</h3>
                 </button>
                 <button>
                     <h1 className='nf nf-mdi-heart_half_full'></h1>

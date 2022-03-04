@@ -11,7 +11,7 @@
 }
 
 :local .combatGrid button {
-    padding: 2em;
+    padding: 5em;
     font-weight: lighter;
     text-transform: uppercase;
     background: transparent;
@@ -33,13 +33,18 @@
   opacity: 0.5;
 }
 
+
+:local .combatGrid button h1 {
+  transition: opacity 500ms;
+  opacity: 0.5;
+}
+
 :local .combatGrid button:hover h1 {
   cursor: pointer;
   opacity: 1;
 }
 
-
-:local .combatGrid button:hover p {
+:local .combatGrid button:hover h3 {
   opacity: 1;
 }
 

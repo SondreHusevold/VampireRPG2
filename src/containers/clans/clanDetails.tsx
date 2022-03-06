@@ -7,6 +7,7 @@ import styles from './clanDetails.module.css';
 import logoCaitiff from '../../services/clans_data/caitiff/logo.png';
 import { sects } from "../../services/sectService";
 import { disciplines } from "../../services/disciplineService";
+import NavigationLinker from "../common/navigationLinker";
 
 function ClanDescription(clan: Clan) {
     return (
@@ -122,14 +123,6 @@ function RenderClan(clan: Clan) {
             <h1>Clan {clan.name}</h1>
             <h1 className={`vtm-clan-icon ${styles.clanIcon}`}>{clan.logo}</h1>
         </div>
-    )
-}
-
-function NavigationLinker(props: { to: string, name: string }) {
-    return (
-        <NavLink to={props.to} className={
-            ({ isActive }) => isActive ? styles.navigationActive : "" 
-        }>{props.name}</NavLink>
     )
 }
 

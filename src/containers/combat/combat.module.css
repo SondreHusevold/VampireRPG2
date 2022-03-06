@@ -1,7 +1,8 @@
 :local .combatGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5em;
+    column-gap: 3em;
 }
 
 :local .combatGrid h1 {
@@ -10,10 +11,9 @@
   margin-top: 0px;
 }
 
-:local .combatGrid button {
-    padding: 5em;
+:local .combatGrid a {
+    padding: 3em;
     font-weight: lighter;
-    text-transform: uppercase;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
@@ -22,29 +22,33 @@
     animation: "fadeIn" 1s;
 }
 
-:local .combatGrid button:hover {
+:local .combatGrid a:hover {
   text-decoration-color: rgb(158, 0, 0);  
   cursor: pointer;
   border-color: #e0e0db;
 }
 
-:local .combatGrid button h3 {
+:local .combatGrid a h4 {
+  text-align: center;
+  margin: 0.5em;
+  text-transform: none;
   transition: opacity 500ms;
   opacity: 0.5;
 }
 
 
-:local .combatGrid button h1 {
+:local .combatGrid a h1 {
+  text-align: center;
   transition: opacity 500ms;
   opacity: 0.5;
 }
 
-:local .combatGrid button:hover h1 {
+:local .combatGrid a:hover h1 {
   cursor: pointer;
   opacity: 1;
 }
 
-:local .combatGrid button:hover h3 {
+:local .combatGrid a:hover h4 {
   opacity: 1;
 }
 

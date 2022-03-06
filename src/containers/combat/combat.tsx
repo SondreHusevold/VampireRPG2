@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './combat.module.css';
 
 function Combat() {
@@ -5,30 +6,30 @@ function Combat() {
         <>
             <h1>Combat</h1>
             <div className={styles.combatGrid}>
-                <button>
+                <Link to="stages">
                     <h1 className='nf nf-fa-sort_numeric_asc'/>
-                    <h3>Combat Stages</h3>
-                </button>
-                <button>
-                    <h1 className={`nf nf-mdi-dice_d10`}></h1>
-                    <h3>Combat {'&'} damage types</h3>
-                </button>
-                <button>
-                    <h1 className='nf nf-mdi-heart_half_full'></h1>
-                    <h3>Health</h3>
-                </button>
-                <button>
+                    <h4>Combat Stages</h4>
+                </Link>
+                <Link to="types">
+                    <h1 className={`nf nf-mdi-dice_d10`}/>
+                    <h4>Combat {'&'} damage types</h4>
+                </Link>
+                <Link to="health">
+                    <h1 className='nf nf-mdi-heart_half_full'/>
+                    <h4>Health</h4>
+                </Link>
+                <Link to="maneuvers">
                     <h1 className='nf nf-mdi-karate'/>
-                    <h3>Maneuvers</h3>
-                </button>
-                <button>
+                    <h4>Maneuvers</h4>
+                </Link>
+                <Link to="statuses">
                     <h1 className='nf nf-fa-low_vision'/>
-                    <h3>Status Effects</h3>
-                </button>
-                <button>
-                    <h1 className={`nf nf-fae-shirt`}></h1>
-                    <h3>Equipment Charts</h3>
-                </button>
+                    <h4>Status Effects</h4>
+                </Link>
+                <Link to="equipment">
+                    <h1 className={`nf nf-fae-shirt`}/>
+                    <h4>Equipment Charts</h4>
+                </Link>
             </div>
         </>
     )

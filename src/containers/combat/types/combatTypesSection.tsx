@@ -1,6 +1,8 @@
+import styles from './combatTypes.module.css';
+
 function CombatTypesSection() {
     return (
-        <>
+        <div className={styles.fadeInLoad}>
             <h2>Combat Types</h2>
             <p>
                 There are two types of combat, each involving the same basic system with minor differences:
@@ -27,7 +29,7 @@ function CombatTypesSection() {
                 must normally be within sight (and weapon range) of
                 each other to engage in a firefight.
             </p>
-        </>
+        </div>
     )
 }
 

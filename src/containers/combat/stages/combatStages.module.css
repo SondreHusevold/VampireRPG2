@@ -39,7 +39,7 @@
 :local .picture {
     animation: "fadeIn" 1.5s;
     justify-self: center;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 :local .picture img {

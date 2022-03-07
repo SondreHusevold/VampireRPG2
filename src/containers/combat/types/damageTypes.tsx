@@ -2,7 +2,7 @@ import styles from './combatTypes.module.css';
 
 function DamageTypes() {
     return (
-        <>
+        <div className={styles.fadeInLoad}>
             <h2>Damage Types</h2>
             <p>
                 All attacks have specific damage ratings, indicating 
@@ -54,7 +54,7 @@ function DamageTypes() {
                 Aggravated damage cannot be soaked except with Fortitude, and it takes quite a while to heal. Aggravated damage is applied to the Health boxes on your character sheet with
                 an asterisk <span className={styles.damageBox}>✱</span>
             </p>
-        </>
+        </div>
     )
 }
 

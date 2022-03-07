@@ -19,8 +19,9 @@
 
 :local .lowerPage {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 1fr 0.6fr;
     padding: 0em 3em 0em 3em;
+    margin-bottom: 2em;
 }
 
 :local .fadeInLoad {
@@ -28,11 +29,6 @@
 }
 
 :local .fadeInLoad h2 { 
-    margin-bottom: 0px;
-}
-
-:local .summary h3 {
-    padding: 0px;
     margin-bottom: 0px;
 }
 
@@ -46,6 +42,17 @@
     border-radius: 10px;
 }
 
-:local .damageBox {
-    padding: 0px 5px 0px 5px;
+:local .chartGrid {
+    display: grid;
+    
+    grid-template-columns: 200px 200px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+:local .gridHr {
+    grid-column: span 3;
+    border-top: 1px solid #e0e0db;
 }

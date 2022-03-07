@@ -15,9 +15,9 @@ function CombatTypesSection() {
             </p>
             <p>
                 Opponents must be
-                within touching distance (one yard/meter) to engage
+                within touching distance (one meter) to engage
                 in unarmed combat. Melee involves handheld weapons, from broken bottles to swords. Opponents must
-                be within two yards/meters of each other to engage in
+                be within two meters of each other to engage in
                 melee.
             </p>
             <h3>Ranged Combat:</h3>

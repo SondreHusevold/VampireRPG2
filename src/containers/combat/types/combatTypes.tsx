@@ -4,6 +4,7 @@ import Armor from "./armor";
 import styles from './combatTypes.module.css';
 import CombatTypesSection from "./combatTypesSection";
 import DamageTypes from "./damageTypes";
+import picture from './combatTypes.jpg';
 
 function CombatNavigations() {
     return (
@@ -23,7 +24,7 @@ function CombatTypes() {
             <div className={styles.headerTop}>
                 <h1>Combat and Damage types</h1>
                 <p>
-                    Close combat, ranged combat, aggravated or lethal? 
+                    Close combat, ranged combat and four damage types. Additionally there's armor to reduce damage.
                 </p>
             </div>
 
@@ -38,8 +39,8 @@ function CombatTypes() {
                     </Routes>
                 </div>
                 <div className={styles.picture}>
-                    {/* <img src={picture} />
-                    <p>Credit: <a href={`https://www.artstation.com/wen-jr`} target={`_blank`}>Jonathan Romeo</a></p> */}
+                    <img src={picture} />
+                    <p>Credit: <a href={`https://twitter.com/ebiblue`} target={`_blank`}>Ebiblue</a></p>
                 </div>
             </div>
         </>

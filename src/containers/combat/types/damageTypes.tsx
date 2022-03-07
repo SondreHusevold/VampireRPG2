@@ -9,11 +9,20 @@ function DamageTypes() {
                 the number of dice to roll for the attack's damage called the damage dice pool.
             </p>
             <p>
+                Damage dice pools can never be reduced to lower
+                than one die; any attack that strikes its target has at
+                least a small chance of inflicting damage before a soak
+                roll is made. Moreover, damage effect rolls cannot
+                botch; a botched roll simply means the attack glances
+                harmlessly off the target.
+            </p>
+            <p>
                 Some damage dice pools
                 are based on the attacker's Strength, while others are
                 based on the weapon used. <b>Damage dice rolls are made
                 versus difficulty 6.</b>
             </p>
+            
             <p>
                 Each success on the damage roll inflicts one health level of damage on the target. However, the damage applied may be one of three types:
             </p>
@@ -44,14 +53,6 @@ function DamageTypes() {
             <p>
                 Aggravated damage cannot be soaked except with Fortitude, and it takes quite a while to heal. Aggravated damage is applied to the Health boxes on your character sheet with
                 an asterisk <span className={styles.damageBox}>✱</span>
-            </p>
-            <p>
-                Damage dice pools can never be reduced to lower
-                than one die; any attack that strikes its target has at
-                least a small chance of inflicting damage before a soak
-                roll is made. Moreover, damage effect rolls cannot
-                botch; a botched roll simply means the attack glances
-                harmlessly off the target.
             </p>
         </>
     )

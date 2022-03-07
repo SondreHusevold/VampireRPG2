@@ -18,7 +18,7 @@ function NavigationBar() {
             <NavLink className={(navData) => isActivated(navData)} to="/abilities">Abilities</NavLink>
             <NavLink className={(navData) => isActivated(navData)} to="/disciplines">Disciplines</NavLink>
             <NavLink className={(navData) => isActivated(navData)} to="/combat">Combat</NavLink>
-            <NavLink className={(navData) => isActivated(navData)} to="/sheets">Sheets</NavLink>
+            <a target={`_blank`} href="/CharacterSheet.pdf">Sheets</a>
         </nav>
     )
 }

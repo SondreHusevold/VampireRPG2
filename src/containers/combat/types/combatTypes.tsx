@@ -40,7 +40,7 @@ function CombatTypes() {
                 </div>
                 <div className={styles.picture}>
                     <img src={picture} />
-                    <p>Credit: <a href={`https://twitter.com/ebiblue`} target={`_blank`}>Ebiblue</a></p>
+                    <p>Credit: <a href={`https://www.artstation.com/kamyu`} target={`_blank`}>Carlos Díaz Asenjo</a></p>
                 </div>
             </div>
         </>

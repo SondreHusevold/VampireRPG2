@@ -1,6 +1,9 @@
+import Death from "./death";
+import styles from './health.module.css';
+
 function ApplyingDamage() {
     return (
-        <>
+        <div className={styles.fadeInLoad}>
             <h2>Applying Damage</h2>
             <p>This is where you apply bashing, leathal and aggravated damage. Below is the same chart you have on your character sheet.</p>
             <p>Bashing and lethal damage differ in their effects, but for vampires, both types of damage are considered normal.</p>
@@ -17,7 +20,8 @@ function ApplyingDamage() {
                 The same applies for bashing and lethal damage. If you have a box with bashing, and you get damaged with lethal damage, 
                 you "move" the bashing damage down to the box below, and make the previous bashing damage into an [X].
             </p>
-        </>
+            <Death/>
+        </div>
     )
 }
 

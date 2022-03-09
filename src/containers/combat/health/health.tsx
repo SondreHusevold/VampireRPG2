@@ -5,16 +5,17 @@ import HealthChart from './chart';
 import styles from './health.module.css';
 import picture from './Health.jpg';
 import ApplyingDamage from './applying';
+import Healing from './healing';
+import Death from './death';
 
 function HealthNavigations() {
     return (
         <>
             <div className={styles.navGrid}>
-                <NavigationLinker to="information" name="Information"/>
+                <NavigationLinker to="summary" name="Summary"/>
                 <NavigationLinker to="chart" name="Chart"/>
-                <NavigationLinker to="applying_damage" name="Applying damage"/>
-                <NavigationLinker to="attack" name="Healing damage"/>
-                <NavigationLinker to="attack" name="Final death"/>
+                <NavigationLinker to="applying" name="Applying damage"/>
+                <NavigationLinker to="healing" name="Healing damage"/>
             </div>
         </>
     )
@@ -35,10 +36,11 @@ function Health() {
             <div className={styles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
-                    <Route path={`applying_damage`} element={<ApplyingDamage />} />
+                        <Route path={`healing`} element={<Healing />} />
+                        <Route path={`applying`} element={<ApplyingDamage />} />
                         <Route path={`chart`} element={<HealthChart />} />
-                        <Route path={`information`} element={<AboutHealth />} />
-                        <Route path={`/`} element={<Navigate to="information" />} />
+                        <Route path={`summary`} element={<AboutHealth />} />
+                        <Route path={`/`} element={<Navigate to="summary" />} />
                     </Routes>
                 </div>
                 <div className={styles.picture}>

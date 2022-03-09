@@ -49,10 +49,64 @@
     justify-content: center;
     align-items: center;
     gap: 1em;
-    text-align: center;
 }
 
 :local .gridHr {
     grid-column: span 3;
     border-top: 1px solid #e0e0db;
 }
+
+:local .applyingExample {
+    display: grid;
+    grid-template-columns: 0.5fr 600px;
+    align-items: center;
+    row-gap: 10px;
+}
+
+:local .applyingExample h2 {
+    grid-column: span 2;
+    margin: 0px;
+}
+
+:local .applyingExampleGrid {
+    display: grid;
+    grid-template-columns: 100px 25px;
+    row-gap: 10px;
+}
+
+
+:local .applyingExampleGrid p {
+    grid-column: 1;
+}
+
+:local .applyingExampleGrid span {
+    border: 1px solid white;
+    padding: 0px;
+    grid-column: 2;
+    text-align: center;
+}
+
+:local .applyingExampleButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+:local .applyingExampleButtons button {
+    font-size: 1vw;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 1em;
+    color: #e0e0db;
+    transition: border-color 500ms;
+    transition: opacity 300ms;
+    opacity: 0.5;
+}
+
+:local .applyingExampleButtons button:hover {
+    cursor: pointer;
+    border-color: #e0e0db;
+    opacity: 1;
+}
+

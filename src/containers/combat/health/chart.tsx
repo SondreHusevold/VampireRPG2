@@ -1,4 +1,7 @@
+import React from 'react';
 import styles from './health.module.css';
+import { healthLevels } from './healthLevels';
+
 
 function HealthChart() {
     return (
@@ -15,33 +18,17 @@ function HealthChart() {
                     <span>Dice Pool Penalty</span>
                     <span>Movement Penalty</span>
                     <span className={styles.gridHr} />
-                    <p>Bruised</p>
-                    <p>0</p>
-                    <p>Character is only bruised and suffers no dice pool penalties due to damage.</p>
-                    <p>Hurt</p>
-                    <p>-1</p>
-                    <p>Character is superficially hurt and suffers no movement hindrance.</p>
-                    <p>Injured</p>
-                    <p>-1</p>
-                    <p>Character suffers minor injuries and movement is mildly inhibited (halve maximum running speed).</p>
-                    <p>Wounded</p>
-                    <p>-2</p>
-                    <p>Character suffers significant damage and may not run (though he may still walk). Character can only move or attack; he always loses dice when moving and attacking in the same turn.</p>
-                    <p>Mauled</p>
-                    <p>-2</p>
-                    <p>Character is badly injured and may only hobble about (three meters per turn).</p>
-                    <p>Crippled</p>
-                    <p>-5</p>
-                    <p>Character is catastrophically injured and may only crawl (one meter per turn).</p>
-                    <p>Incapacitated</p>
-                    <span/>
-                    <p>Character is incapable of movement and is likely unconscious. Incapacitated vampires with no blood in their bodies enter torpor.</p>
-                    <p>Torpor</p>
-                    <span/>
-                    <p>Character enters a deathlike trance. He may do nothing, not even spend blood, until a period of time has passed.</p>
-                    <p>Final Death</p>
-                    <span/>
-                    <p>Character is killed permanently.</p>
+                    {
+                        healthLevels.map((lvl) => {
+                            return (
+                                <React.Fragment>
+                                    <p>{lvl.level}</p>
+                                    <p>{lvl.penalty}</p>
+                                    <p>{lvl.movement}</p>
+                                </React.Fragment>
+                            )
+                        })
+                    }
                 </div>
             </div>
 

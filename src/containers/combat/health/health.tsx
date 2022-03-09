@@ -4,6 +4,7 @@ import AboutHealth from './aboutHealth';
 import HealthChart from './chart';
 import styles from './health.module.css';
 import picture from './Health.jpg';
+import ApplyingDamage from './applying';
 
 function HealthNavigations() {
     return (
@@ -11,7 +12,7 @@ function HealthNavigations() {
             <div className={styles.navGrid}>
                 <NavigationLinker to="information" name="Information"/>
                 <NavigationLinker to="chart" name="Chart"/>
-                <NavigationLinker to="attack" name="Applying damage"/>
+                <NavigationLinker to="applying_damage" name="Applying damage"/>
                 <NavigationLinker to="attack" name="Healing damage"/>
                 <NavigationLinker to="attack" name="Final death"/>
             </div>
@@ -34,6 +35,7 @@ function Health() {
             <div className={styles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
+                    <Route path={`applying_damage`} element={<ApplyingDamage />} />
                         <Route path={`chart`} element={<HealthChart />} />
                         <Route path={`information`} element={<AboutHealth />} />
                         <Route path={`/`} element={<Navigate to="information" />} />

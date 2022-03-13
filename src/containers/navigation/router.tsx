@@ -13,6 +13,7 @@ import Combat from "../combat/combat";
 import CombatStages from "../combat/stages/combatStages";
 import CombatTypes from "../combat/types/combatTypes";
 import Health from "../combat/health/health";
+import Maneuvers from "../combat/maneuvers/maneuvers";
 
 function NavigationRouter() {
     return (
@@ -31,6 +32,7 @@ function NavigationRouter() {
             <Route path="/combat/stages/*" element={<CombatStages />} />
             <Route path="/combat/types/*" element={<CombatTypes />} />
             <Route path="/combat/health/*" element={<Health />} />
+            <Route path="/combat/maneuvers/*" element={<Maneuvers />} />
         </Routes>
     )
 }

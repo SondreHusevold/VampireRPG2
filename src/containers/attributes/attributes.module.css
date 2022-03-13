@@ -8,6 +8,10 @@
     row-gap: 1em;
 }
 
+:local .attributeGrid h2 {
+    margin-bottom: 0.7em;
+}
+
 :local .attributeButton {
     padding-top: 1em;
     display: flex;

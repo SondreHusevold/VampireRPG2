@@ -51,7 +51,7 @@
 }
 
 :local .playerClan {
-  padding: 2.3vh;
+  padding: 2.7vh;
   grid-column: span 3;
   display: flex;
   text-align: center;

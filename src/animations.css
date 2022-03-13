@@ -1,3 +1,15 @@
+.fadeIn {
+  animation: "fadeIn" 1s;
+}
+
+.fadeInSlower {
+  animation: "fadeIn" 1.5s;
+}
+
+.fadeInSlowest {
+  animation: "fadeIn" 2s;
+}
+
 @keyframes fadeIn {
     from {
       opacity: 0;

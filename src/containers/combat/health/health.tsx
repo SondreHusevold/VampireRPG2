@@ -6,7 +6,6 @@ import styles from './health.module.css';
 import picture from './Health.jpg';
 import ApplyingDamage from './applying';
 import Healing from './healing';
-import Death from './death';
 
 function HealthNavigations() {
     return (

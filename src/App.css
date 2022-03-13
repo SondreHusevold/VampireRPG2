@@ -45,6 +45,17 @@ label {
   font-size: 1.2em;
 }
 
+li {
+  color: #e0e0db;
+  font-size: 1.15em;
+  padding: 0.3em;
+}
+
+ul {
+  margin-left: 0px;
+  padding-left: 15px;
+}
+
 .vampPage {
   margin-left: 4em;
   margin-top: 6em;

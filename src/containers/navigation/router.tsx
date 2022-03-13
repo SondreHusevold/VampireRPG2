@@ -14,6 +14,8 @@ import CombatStages from "../combat/stages/combatStages";
 import CombatTypes from "../combat/types/combatTypes";
 import Health from "../combat/health/health";
 import Maneuvers from "../combat/maneuvers/maneuvers";
+import StatusEffects from "../combat/statuseffects/statusEffects";
+import Frenzy from "../combat/frenzy/frenzy";
 
 function NavigationRouter() {
     return (
@@ -33,6 +35,8 @@ function NavigationRouter() {
             <Route path="/combat/types/*" element={<CombatTypes />} />
             <Route path="/combat/health/*" element={<Health />} />
             <Route path="/combat/maneuvers/*" element={<Maneuvers />} />
+            <Route path="/combat/frenzy/*" element={<Frenzy />} />
+            <Route path="/combat/statuses/*" element={<StatusEffects />} />
         </Routes>
     )
 }

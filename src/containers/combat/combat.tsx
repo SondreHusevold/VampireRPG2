@@ -22,10 +22,15 @@ function Combat() {
                     <h1 className='nf nf-mdi-karate'/>
                     <h4>Maneuvers</h4>
                 </Link>
+                <Link to="frenzy">
+                    <h1 className={`nf nf-fae-drop`}/>
+                    <h4>Frenzy</h4>
+                </Link>
                 <Link to="statuses">
                     <h1 className='nf nf-fa-low_vision'/>
                     <h4>Status Effects</h4>
                 </Link>
+                
                 <Link to="equipment">
                     <h1 className={`nf nf-fae-shirt`}/>
                     <h4>Equipment Charts</h4>

@@ -42,13 +42,11 @@
     border-radius: 10px;
 }
 
-:local .provocationGrid {
+:local .twoColumnSection {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    row-gap: 1em;
+    grid-template-columns: 0.3fr 0.5fr;
 }
 
-:local .provocationGrid p {
-    margin-bottom: 0.3em;
-    font-weight: bold;
+:local .twoColumnSection p {
+    margin-bottom: 0px;
 }

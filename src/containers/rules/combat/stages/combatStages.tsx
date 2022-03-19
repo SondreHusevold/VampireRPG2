@@ -1,5 +1,5 @@
 import { Navigate, NavLink, Route, Routes } from "react-router-dom"
-import NavigationLinker from "../../common/navigationLinker";
+import NavigationLinker from "../../../common/navigationLinker";
 import Attack from "./attack";
 import styles from './combatStages.module.css';
 import Initiatives from "./initiative";

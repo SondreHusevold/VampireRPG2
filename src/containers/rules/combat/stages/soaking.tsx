@@ -3,7 +3,7 @@ import styles from './combatStages.module.css';
 function Soaking() {
     return (
         <div className={styles.fadeInLoad}>
-            <h2>Soaking:</h2>
+            <h2>Soaking</h2>
             <p>
                 Characters can resist a certain degree of physical
                 punishment; this is called soaking damage.

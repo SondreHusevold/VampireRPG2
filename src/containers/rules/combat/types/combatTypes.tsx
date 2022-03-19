@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import NavigationLinker from "../../common/navigationLinker";
+import NavigationLinker from "../../../common/navigationLinker";
 import Armor from "./armor";
 import styles from './combatTypes.module.css';
 import CombatTypesSection from "./combatTypesSection";

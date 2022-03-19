@@ -16,7 +16,7 @@ function AboutHealth() {
             <p>
                 As your character gets more and more battered, it's increasingly difficult for him to perform even the simplest of tasks. 
                 The dice penalty is subtracted from your dice pool for every action (except reflexive actions such as soak) until the wound heals. 
-                The penalty also indicates impaired movement. See the <Link to="/combat/health/chart">chart</Link> for further information.
+                The penalty also indicates impaired movement. See the <Link to="/rules/health/chart">chart</Link> for further information.
             </p>
             <p>Damage can be healed using a blood point with the exception of aggravated which takes 5 points plus a full day of rest.</p>
             <p>If a vampire is incapacitated or in torpor and takes one more level of aggravated damage or extreme damage, he dies a final death.</p>

@@ -9,13 +9,14 @@ import Disciplines from "../disciplines/disciplines";
 import DisciplineDetails from "../disciplines/disciplineDetails";
 import Haven from "../haven/haven";
 import Information from "../information/information";
-import Combat from "../combat/combat";
-import CombatStages from "../combat/stages/combatStages";
-import CombatTypes from "../combat/types/combatTypes";
-import Health from "../combat/health/health";
-import Maneuvers from "../combat/maneuvers/maneuvers";
-import StatusEffects from "../combat/statuseffects/statusEffects";
-import Frenzy from "../combat/frenzy/frenzy";
+import Rules from "../rules/rules";
+import CombatStages from "../rules/combat/stages/combatStages";
+import CombatTypes from "../rules/combat/types/combatTypes";
+import Health from "../rules/health/health";
+import Maneuvers from "../rules/combat/maneuvers/maneuvers";
+import StatusEffects from "../rules/combat/statuseffects/statusEffects";
+import Frenzy from "../rules/frenzy/frenzy";
+import BloodBond from "../rules/bloodbond/bloodbond";
 
 function NavigationRouter() {
     return (
@@ -30,13 +31,14 @@ function NavigationRouter() {
             <Route path="/abilities/:name" element={<AbilitiesDetails />} />
             <Route path="/disciplines" element={<Disciplines />} />
             <Route path="/disciplines/:name" element={<DisciplineDetails />} />
-            <Route path="/combat/" element={<Combat />} />
-            <Route path="/combat/stages/*" element={<CombatStages />} />
-            <Route path="/combat/types/*" element={<CombatTypes />} />
-            <Route path="/combat/health/*" element={<Health />} />
-            <Route path="/combat/maneuvers/*" element={<Maneuvers />} />
-            <Route path="/combat/frenzy/*" element={<Frenzy />} />
-            <Route path="/combat/statuses/*" element={<StatusEffects />} />
+            <Route path="/rules/" element={<Rules />} />
+            <Route path="/rules/combat/stages/*" element={<CombatStages />} />
+            <Route path="/rules/combat/types/*" element={<CombatTypes />} />
+            <Route path="/rules/combat/maneuvers/*" element={<Maneuvers />} />
+            <Route path="/rules/health/*" element={<Health />} />
+            <Route path="/rules/frenzy/*" element={<Frenzy />} />
+            <Route path="/rules/bloodbond/*" element={<BloodBond />} />
+            <Route path="/rules/statuses/*" element={<StatusEffects />} />
         </Routes>
     )
 }

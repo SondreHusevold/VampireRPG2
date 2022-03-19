@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import NavigationLinker from '../../common/navigationLinker';
+import NavigationLinker from '../../../common/navigationLinker';
 import styles from './maneuvers.module.css';
 import picture from './Maneuvers.jpg';
 import GeneralManeuvers from './general';

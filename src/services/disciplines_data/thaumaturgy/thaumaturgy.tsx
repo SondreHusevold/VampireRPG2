@@ -48,8 +48,8 @@ const discipline: Discipline = {
     clans: [Tremere],
     icon: "T",
     image: {
-        credit: "Arvid Antonsen",
-        creditLink: "https://www.artstation.com/aantonsen",
+        credit: "Eryk Szczygieł",
+        creditLink: "https://www.artstation.com/typhonart",
         img: Picture
     }
 }

@@ -1,0 +1,63 @@
+:local .headerTop {
+    animation: "fadeIn" 1s;
+    text-align: center;
+}
+
+:local .headerTop h1 {
+    margin-bottom: 0px;
+}
+
+:local .navGrid {
+    animation: "fadeIn" 2s;
+    padding: 1em 0.5em 1em 0.5em;
+    border-top: 1px solid #e0e0db;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #e0e0db;
+}
+
+:local .lowerPage {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    padding: 0em 3em 0em 3em;
+    margin-bottom: 2em;
+}
+
+:local .fadeInLoad {
+    animation: "fadeIn" 1s;
+}
+
+:local .fadeInLoad h2 { 
+    margin-bottom: 0px;
+}
+
+:local .picture {
+    animation: "fadeIn" 1.5s;
+    justify-self: center;
+    margin-top: 3em;
+}
+
+:local .picture img {
+    border-radius: 10px;
+}
+
+:local .provocationGrid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    row-gap: 1em;
+}
+
+:local .provocationGrid p {
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+:local .twoColumnSection {
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr;
+}
+
+:local .twoColumnSection p {
+    margin-bottom: 0px;
+}

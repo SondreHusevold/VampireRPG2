@@ -5,6 +5,7 @@ import styles from './frenzy.module.css';
 import FrenzyInformation from "./frenzyinfo";
 import FrenzySystem from "./frenzysystem";
 import Provocations from "./provocations";
+import Rotschreck from "./rotschreck";
 
 function FrenzyNavigations() {
     return (
@@ -13,6 +14,7 @@ function FrenzyNavigations() {
                 <NavigationLinker to="information" name="Information"/>
                 <NavigationLinker to="system" name="System"/>
                 <NavigationLinker to="provocations" name="Provocations"/>
+                <NavigationLinker to="rotschreck" name="Rötschreck"/>
             </div>
         </>
     )
@@ -29,6 +31,7 @@ function Frenzy() {
             <div className={styles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
+                        <Route path={`rotschreck`} element={<Rotschreck />} />
                         <Route path={`provocations`} element={<Provocations />} />
                         <Route path={`system`} element={<FrenzySystem />} />
                         <Route path={`information`} element={<FrenzyInformation />} />

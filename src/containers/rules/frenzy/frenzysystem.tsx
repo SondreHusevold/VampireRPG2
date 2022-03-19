@@ -2,6 +2,10 @@ function FrenzySystem() {
     return (
         <div className="fadeIn">
             <h2>System</h2>
+            <p>
+                Vampires in frenzy will blindly destroy what made them angry. Hungry vampires will feed regardless of source and without concern or care. 
+                Vampires struck by fear will do anything to get away, no matter the consequences.
+            </p>
             <p>A vampire in frenzy gains several temporary benefits from the state.</p>
             <ul>
                 <li>

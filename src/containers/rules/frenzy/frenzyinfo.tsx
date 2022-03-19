@@ -4,11 +4,11 @@ function FrenzyInformation() {
             <h2>Information</h2>
             <p>
                 During a frenzy, a character literally — and usually unwillingly — gives into the darkest instincts of the vampiric nature. 
-                The character is consumed with rage or hunger, unable — or unwilling — to consider the effects of any action. 
+                The character is consumed with rage or hunger, unable or unwilling to consider the effects of any action. 
                 Friends, foes, lovers, ethics: None of these things matter to a vampire in frenzy.
             </p>
             <p>
-                If a vampire in frenzy is hungry, he will feed from whoever is closest without regard for the vessel’s well-being. If the vampire is angry, 
+                If a vampire in frenzy is hungry, he will feed from whoever is closest without regard for the vessel's well-being. If the vampire is angry, 
                 he will do everything in his power to destroy the cause of his anger. A vampire struck by fear will commit any atrocity to remove himself from the source of his terror, 
                 regardless of the consequences.
             </p>

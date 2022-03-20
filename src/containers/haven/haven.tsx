@@ -10,7 +10,7 @@ function Haven() {
                 <source src={Background} />
             </video>
 
-            <img src={Logo} alt="logo"/>
+            <img src={Logo} alt={`VtM: Miami 2 logo`}/>
       </div>
     )
 }

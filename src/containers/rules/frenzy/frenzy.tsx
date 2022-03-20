@@ -39,7 +39,7 @@ function Frenzy() {
                     </Routes>
                 </div>
                 <div className={styles.picture}>
-                    <img src={picture} />
+                    <img alt="Complete frenzy" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/jon`} target={`_blank`}>Jon Dunham</a></p>
                 </div>
             </div>

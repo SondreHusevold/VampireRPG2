@@ -1,10 +1,8 @@
-import { Link, Navigate, NavLink, Route, Routes } from "react-router-dom";
+import { Link, Navigate, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { Clan } from "../../models/clan";
 import { clans } from "../../services/clanService";
-import { ParseJsonText } from "../../utilities/parser";
 import styles from './clanDetails.module.css';
-import logoCaitiff from '../../services/clans_data/caitiff/logo.png';
 import { sects } from "../../services/sectService";
 import { disciplines } from "../../services/disciplineService";
 import NavigationLinker from "../common/navigationLinker";
@@ -15,7 +13,7 @@ function ClanDescription(clan: Clan) {
             <h3>Nickname</h3>
             <p>{clan.nickname}</p>
             <h3>Description</h3>
-            {ParseJsonText(clan.description)}
+            {clan.description}
         </div>
     )
 }
@@ -24,9 +22,9 @@ function ClanAppearance(clan: Clan) {
     return (
         <div className={styles.clanText}>
             <h3>Appearance</h3>
-            {ParseJsonText(clan.appearance)}
+            {clan.appearance}
             <h3>Haven</h3>
-            {ParseJsonText(clan.haven)}
+            {clan.haven}
         </div>
     )
 }
@@ -35,11 +33,11 @@ function ClanTraits(clan: Clan) {
     return (
         <div className={styles.clanText}>
             <h3>Background</h3>
-            {ParseJsonText(clan.background)}
+            {clan.background}
             <h3>Creation</h3>
-            {ParseJsonText(clan.creation)}
+            {clan.creation}
             <h3>Organization</h3>
-            {ParseJsonText(clan.organization)}
+            {clan.organization}
         </div>
     )
 }
@@ -69,7 +67,7 @@ function ClanStrWeak(clan: Clan) {
     return (
         <div className={styles.clanText}>
             <h3>Curse</h3>
-            {ParseJsonText(clan.weaknesses)}
+            {clan.weaknesses}
             <h3 className={styles.disciplinesHeader}>Disciplines</h3>
             <RenderDisciplinesStrength {... clan} /> 
         </div>
@@ -90,7 +88,7 @@ function ClanOpinions(clan: Clan) {
                             </div>
                         )
                     }
-
+                    return ""
                 })}
             </div>
 
@@ -110,7 +108,7 @@ function ClanOpinions(clan: Clan) {
                             </div>
                         )
                     }
-
+                    return "";
                 })}
             </div>
         </div>
@@ -182,7 +180,7 @@ function ClanDetail() {
                     <Route path={`/`} element={<Navigate to="description" />} />
                 </Routes>
                 <div className={styles.clanPicture}>
-                    <img src={clan.picture.img} />
+                    <img alt={`${clan.name}`} src={clan.picture.img} />
                     <p>Credit: <a href={`${clan.picture.link}`} target={`_blank`}>{clan.picture.credit}</a></p>
                 </div>
                 

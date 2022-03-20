@@ -1,5 +1,4 @@
 import { DisciplineLevel } from "../../../models/discipline";
-import styles from '../disciplineData.module.css';
 
 const level1: DisciplineLevel = {
     name: "A Taste for Blood",

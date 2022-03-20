@@ -39,7 +39,7 @@ function CombatTypes() {
                     </Routes>
                 </div>
                 <div className={styles.picture}>
-                    <img src={picture} />
+                    <img alt="Combat" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/kamyu`} target={`_blank`}>Carlos Díaz Asenjo</a></p>
                 </div>
             </div>

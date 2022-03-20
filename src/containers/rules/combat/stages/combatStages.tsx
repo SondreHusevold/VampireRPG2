@@ -1,4 +1,4 @@
-import { Navigate, NavLink, Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 import NavigationLinker from "../../../common/navigationLinker";
 import Attack from "./attack";
 import styles from './combatStages.module.css';
@@ -47,7 +47,7 @@ function CombatStages() {
                     </Routes>
                 </div>
                 <div className={styles.picture}>
-                    <img src={picture} />
+                    <img alt="Combat" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/wen-jr`} target={`_blank`}>Jonathan Romeo</a></p>
                 </div>
             </div>

@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Discipline } from "../../models/discipline";
 import { disciplines } from "../../services/disciplineService";
-import { PrintDots, PrintEmptyDots } from "../../utilities/dotprinter";
-import { ParseJsonText } from "../../utilities/parser";
 import styles from './disciplineDetails.module.css';
 
 function RenderDiscipline(discipline: Discipline) {
@@ -56,14 +54,6 @@ function RenderDotsNavigation(props: RenderDotsNavigationProps) {
             <RenderDot filled={props.dots > 4} setDots={() => setDots(5)} hovering={dots > 4} />
         </div>
     )
-}
-
-function getScrollAmount() {
-    let scrollTop = window.scrollY;
-    let docHeight = document.body.offsetHeight;
-    let winHeight = window.innerHeight;
-    let scrollPercent = scrollTop / (docHeight - winHeight);
-    return Math.round(scrollPercent * 100);
 }
 
 function DisciplineDetails() {
@@ -128,7 +118,7 @@ function DisciplineDetails() {
                 </div>
                 </div>
                 <div className={styles.picture}>
-                    <img src={discipline.image.img} />
+                    <img alt={`${discipline.name}`} src={discipline.image.img} />
                     <p>Credit: <a href={`${discipline.image.creditLink}`} target={`_blank`}>{discipline.image.credit}</a></p>
                 </div>
             </div>

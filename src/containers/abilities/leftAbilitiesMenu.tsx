@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/heading-has-content */
+
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Ability, AbilitySections } from "../../models/ability";
-import { AbilitiesSection, knowledges } from "../../services/abilityService";
+import { AbilitiesSection } from "../../services/abilityService";
 import styles from './leftAbilitiesMenu.module.css';
 
 interface LeftMenuProps {
@@ -24,7 +26,7 @@ function RenderSection(props: RenderSectionProps) {
     function goLeftRight(right: boolean) {
 
         const currentIndex = abilitySections.indexOf(props.section.section);
-        if((currentIndex === 0 && !right) || currentIndex === 2 && right) {
+        if(((currentIndex === 0 && !right) || (currentIndex === 2)) && right) {
             return;
         }
         else {
@@ -44,11 +46,11 @@ function RenderSection(props: RenderSectionProps) {
 
     return (
         <div className={styles.leftMenuSection}>
-            <h3 onClick={() => goLeftRight(false)} className={`nf  nf-mdi-arrow_left_bold ${disableArrow(false)}`}/>
+            <h3 onClick={() => goLeftRight(false)} className={`nf nf-mdi-arrow_left_bold ${disableArrow(false)}`}/>
             <h3>
                 {props.section.name}
             </h3>
-            <h3 onClick={() => goLeftRight(true)} className={`nf  nf-mdi-arrow_right_bold ${disableArrow(true)}`}/>
+            <h3 onClick={() => goLeftRight(true)} className={`nf nf-mdi-arrow_right_bold ${disableArrow(true)}`}/>
             {
                 props.section.abilities.map((attr) => {
                     return (

@@ -40,7 +40,7 @@ function Maneuvers() {
                     </Routes>
                 </div>
                 <div className={styles.picture}>
-                    <img src={picture} />
+                    <img alt="Dripping" src={picture} />
                     <p>Credit: <a href={`https://www.twitter.com/oshredart`} target={`_blank`}>Oshred</a></p>
                 </div>
             </div>

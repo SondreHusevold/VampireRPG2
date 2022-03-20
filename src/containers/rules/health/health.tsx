@@ -43,7 +43,7 @@ function Health() {
                     </Routes>
                 </div>
                 <div className={styles.picture}>
-                    <img src={picture} />
+                    <img alt="Health" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/aoxenuk`} target={`_blank`}>Anton Oxenuk</a></p>
                 </div>
             </div>

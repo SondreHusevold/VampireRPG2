@@ -1,6 +1,4 @@
-import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { Attribute, AttributeSections } from '../../models/attribute';
 import styles from './attributeDetails.module.css';
 
@@ -24,7 +22,6 @@ function getSectionName(section: AttributeSections) {
 }
 
 function RenderSection(props: RenderSectionProps) {
-    const match = useLocation();
 
     return (
         <div className={styles.leftMenuSection}>
@@ -41,6 +38,7 @@ function RenderSection(props: RenderSectionProps) {
                                 </div>
                             )
                         }
+                        return "";
                     })
                 }
         </div>

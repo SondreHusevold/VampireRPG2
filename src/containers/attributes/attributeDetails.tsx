@@ -1,5 +1,6 @@
-import { Link, useParams } from 'react-router-dom';
-import { Attribute } from '../../models/attribute';
+/* eslint-disable jsx-a11y/heading-has-content */
+
+import { useParams } from 'react-router-dom';
 import { attributes } from '../../services/attributesService';
 import { PrintDots } from '../../utilities/dotprinter';
 import { ParseJsonText } from '../../utilities/parser';
@@ -43,7 +44,7 @@ function AttributeDetails() {
                         })}
                     </div>
                     <div className={styles.attributePicture}>
-                        <img src={attribute.image.img} />
+                        <img alt={`${attribute.name}`} src={attribute.image.img} />
                         <p>Credit: <a href={`${attribute.image.creditLink}`} target={`_blank`}>{attribute.image.credit}</a></p>
                     </div> 
                 </div>

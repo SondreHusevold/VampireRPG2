@@ -17,6 +17,16 @@ function BloodBondIntroduction() {
                 Such is the blood bond's power that a mighty elder can be bound to a lowly neonate; in this respect, the blood of a Thirteenth-Generation fledgling is (presumably) 
                 as strong as that of Caine himself.
             </p>
+            <p>
+                A full blood bond, once formed, is nearly inviolate. Once bound, a thrall is under the sway of her regnant and her regnant only. 
+                She cannot be bound again by another vampire unless the first blood bond wears away “naturally.” 
+                A vampire can experience lesser (one- and two-drink) bonds toward several individuals; indeed, many Kindred enjoy such bonds, 
+                as they create artificial passion in their dead hearts. Upon the formation of a full blood bond, though, all lesser sensations are wiped away.
+            </p>
+            <p>
+                Vampire lovers occasionally enter into mutual blood bonds with each other; this is the closest thing the undead can feel to true love. 
+                Even this sensation can turn to disgust or hate over the centuries.
+            </p>
         </div>
     )
 }

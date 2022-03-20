@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/heading-has-content */
+
 import LeftAbilitiesMenu from "./leftAbilitiesMenu"
 import styles from './abilities.module.css';
 import { abilities } from "../../services/abilityService";

@@ -37,7 +37,7 @@ function StatusEffects() {
                     </Routes>
                 </div>
                 <div className={styles.picture}>
-                    <img src={picture} />
+                    <img alt="Blood" src={picture} />
                     <p>Credit: <a href={`https://kathydesign.artstation.com/`} target={`_blank`}>Kathy Design</a></p>
                 </div>
             </div>

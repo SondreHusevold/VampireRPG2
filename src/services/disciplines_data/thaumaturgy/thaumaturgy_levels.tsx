@@ -5,7 +5,7 @@ const level1: DisciplineLevel = {
     description: (
         <>
             <p>
-                This power was developed as a means of testing a foe’s might — an extremely important ability in the tumultuous early nights of Clan Tremere. 
+                This power was developed as a means of testing a foe's might — an extremely important ability in the tumultuous early nights of Clan Tremere. 
             </p>
             <p>
                 By merely touching the blood  of his subject, the caster may determine how much vitae remains in the subject and, if the subject is a vampire, 
@@ -43,8 +43,8 @@ const level2: DisciplineLevel = {
                 such as increasing Physical Attributes or powering Disciplines).
             </p>
             <p>
-                Note that blood points forcibly spent in this manner may exceed the normal “per turn” maximum indicated by the victim’s Generation. 
-                Each success gained also increases the subject’s difficulty to resist frenzy by one. The thaumaturge may not use Blood Rage on herself to circumvent generational limits.
+                Note that blood points forcibly spent in this manner may exceed the normal “per turn” maximum indicated by the victim's Generation. 
+                Each success gained also increases the subject's difficulty to resist frenzy by one. The thaumaturge may not use Blood Rage on herself to circumvent generational limits.
             </p>
         </>
     )
@@ -67,16 +67,16 @@ const level3: DisciplineLevel = {
                 Generation or one hour of effect.
             </p>
             <p>
-                Successes earned must be spent both to decrease the vampire’s Generation and to maintain the change 
+                Successes earned must be spent both to decrease the vampire's Generation and to maintain the change 
                 (this power cannot be activated again until the original application wears off).
             </p>
             <p>
-                If the vampire is diablerized while this power is in effect, it wears off immediately and the diablerist gains power appropriate to the caster’s actual Generation. 
-                Furthermore, any mortals Embraced by the thaumaturge are born to the Generation appropriate to their sire’s original Generation (e.g., a Tenth-Generation Tremere 
+                If the vampire is diablerized while this power is in effect, it wears off immediately and the diablerist gains power appropriate to the caster's actual Generation. 
+                Furthermore, any mortals Embraced by the thaumaturge are born to the Generation appropriate to their sire's original Generation (e.g., a Tenth-Generation Tremere 
                 who has reduced his effective Generation to Eighth still produces Eleventh-Generation childer).
             </p>
             <p>
-                Once the effect wears off, any blood over the character’s blood pool maximum dilutes, leaving the character at his regular blood pool maximum. 
+                Once the effect wears off, any blood over the character's blood pool maximum dilutes, leaving the character at his regular blood pool maximum. 
                 Thus, if a Twelfth-Generation Tremere (maximum blood pool of 11) decreased his Generation to Ninth (maximum blood pool 14), ingested 14 blood points, and had this
                 much vitae in his system when the power wore off, his blood pool would immediately drop to 11.
             </p>
@@ -112,8 +112,8 @@ const level5: DisciplineLevel = {
     description: (
         <>
             <p>
-                A thaumaturge using this power boils her subject’s blood in his veins like water on a stove. The Kindred must touch her subject, 
-                and it is this contact that simmers the subject’s blood.
+                A thaumaturge using this power boils her subject's blood in his veins like water on a stove. The Kindred must touch her subject, 
+                and it is this contact that simmers the subject's blood.
             </p>
             <p>
                 This power is always fatal to mortals, and causes great damage to even the mightiest vampires.

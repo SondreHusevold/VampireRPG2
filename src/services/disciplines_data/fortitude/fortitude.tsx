@@ -18,7 +18,7 @@ const discipline: Discipline = {
     system: (
         <>
             <p>
-                A character’s rating in Fortitude adds to his Stamina for the purposes of soaking normal damage (bashing and lethal). 
+                A character's rating in Fortitude adds to his Stamina for the purposes of soaking normal damage (bashing and lethal). 
             </p>
             <p>
                 A character with this Discipline may also use his dots 

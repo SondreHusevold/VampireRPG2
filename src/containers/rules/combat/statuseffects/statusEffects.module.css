@@ -50,3 +50,14 @@
 :local .twoColumnSection p {
     margin-bottom: 0px;
 }
+
+:local .derangementsList {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 100px;
+    row-gap: 10px;
+}
+
+:local .derangementsList a {
+    justify-self: center;
+}

@@ -38,7 +38,7 @@ function Provocations() {
             <p>
                 The Storyteller has final say in what can or cannot provoke a frenzy. 
                 In some cases the Storyteller might completely ignore what the players feel should send their characters into a rage, and instead have some minor event cause a frenzy. 
-                This is commonly done in situations where the Storyteller feels a frenzy can make a point about a character’s personality, or enhance the events of a story. 
+                This is commonly done in situations where the Storyteller feels a frenzy can make a point about a character's personality, or enhance the events of a story. 
             </p>
             <p>The following list shows common stimuli that can incite a frenzy, and the typical difficulty for a character to resist.</p>
             <p>

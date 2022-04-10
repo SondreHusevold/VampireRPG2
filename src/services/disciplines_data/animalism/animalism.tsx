@@ -18,7 +18,7 @@ const discipline: Discipline = {
         </p>
         <p>
             Animalism is commonly found with vampires of the Gangrel and Nosferatu Clans. Manipulation and Charisma are important for the use of Animalism powers;
-            the stronger the vampire’s personality, the more influence he has over animals.
+            the stronger the vampire's personality, the more influence he has over animals.
         </p>
     </>,
     system: null,

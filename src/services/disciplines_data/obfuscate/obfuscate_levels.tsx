@@ -8,7 +8,7 @@ const level1: DisciplineLevel = {
             <p>
                 At this level, the vampire must rely on nearby shadows and cover to assist in hiding his presence. He steps into an out-of-the-way, shadowed place and eases himself 
                 from normal sight. The vampire remains unnoticed as long as he stays silent, still, under some degree of cover (such as a curtain, bush, door frame, lamppost,
-                or alley), and out of direct lighting. The immortal’s concealment vanishes if he moves, attacks, or falls under direct light. Furthermore, the vampire’s deception
+                or alley), and out of direct lighting. The immortal's concealment vanishes if he moves, attacks, or falls under direct light. Furthermore, the vampire's deception
                 cannot stand up to concentrated observation without fading.
             </p>
         </>
@@ -44,7 +44,7 @@ const level2: DisciplineLevel = {
                 No roll is necessary to use this power unless the character speaks, attacks, or otherwise draws attention to himself. The Storyteller should call for a Wits +
                 Stealth roll under any circumstances that might cause the character to reveal himself. The difficulty of the roll depends on the situation; stepping on a squeaky
                 floorboard might be a 5, while walking through a pool of water may require a 9. Other acts may require a certain number of successes; speaking quietly without giving 
-                away one’s position, for instance, demands at least three successes. Upon success, the vampire, all her clothing, and objects that could fit into a pocket are concealed.
+                away one's position, for instance, demands at least three successes. Upon success, the vampire, all her clothing, and objects that could fit into a pocket are concealed.
             </p>
             <p>
                 Some things are beyond the power of Unseen Presence to conceal. Although the character is cloaked from view while he smashes through a window, yells out, 
@@ -61,13 +61,13 @@ const level3: DisciplineLevel = {
     description: (
         <>
             <p>
-                The vampire can influence the perception of others, causing them to see a face different from his. Although the Kindred’s physical form does not change, any observer 
+                The vampire can influence the perception of others, causing them to see a face different from his. Although the Kindred's physical form does not change, any observer 
                 who cannot sense the truth sees whomever the vampire wishes her to see.
             </p>
             <p>
                 The vampire must have a firm idea of the visage he wishes to project. The primary decision is whether to create an imaginary face or to superimpose the 
                 features of another person. Manufactured features are often more difficult to compose in believable proportions, but such a disguise is easier to maintain than having to
-                impersonate someone else. Of course, things get simpler if the Kindred borrows the face but doesn’t bother with the personality.
+                impersonate someone else. Of course, things get simpler if the Kindred borrows the face but doesn't bother with the personality.
             </p>
         </>
     ),
@@ -77,7 +77,7 @@ const level3: DisciplineLevel = {
                 The player rolls Manipulation + Performance (difficulty 7) to determine how well the disguise works. If the character tries to impersonate someone, he must get a good 
                 look at the subject before putting on the mask. The Storyteller may raise the difficulty if the character catches only a glimpse. The chart below lists the degrees 
                 of success in manufacturing another appearance. Vampires wishing to mask themselves as a person more attractive than they are must pay additional blood points 
-                equal to the difference between the vampire’s Appearance rating and the Appearance of the mask (which means that younger vampires may need to take longer in order 
+                equal to the difference between the vampire's Appearance rating and the Appearance of the mask (which means that younger vampires may need to take longer in order 
                 to spend the blood necessary).
             </p>
             <div className={styles.twoColumnSection}>
@@ -86,7 +86,7 @@ const level3: DisciplineLevel = {
                 <p>1 success</p>
                 <p>The vampire retains the same height and build, with a few slight alterations to his basic features. Nosferatu can appear as normal, albeit ugly, mortals.</p>
                 <p>2 successess</p>
-                <p>He looks unlike himself; people don’t easily recognize him or agree about his appearance.</p>
+                <p>He looks unlike himself; people don't easily recognize him or agree about his appearance.</p>
                 <p>3 successess</p>
                 <p>He looks the way he wants to appear.</p>
                 <p>4 successes</p>
@@ -103,7 +103,7 @@ const level3: DisciplineLevel = {
 }
 
 const level4: DisciplineLevel = {
-    name: "Vanish from the Mind’s Eye",
+    name: "Vanish from the Mind's Eye",
     description: (
         <>
             <p>
@@ -120,14 +120,14 @@ const level4: DisciplineLevel = {
     system: (
         <>
             <p>
-                The player rolls Charisma + Stealth; the difficulty equals the target’s Wits + Alertness (use the highest total in the group if the character disappears in front of a crowd). 
+                The player rolls Charisma + Stealth; the difficulty equals the target's Wits + Alertness (use the highest total in the group if the character disappears in front of a crowd). 
                 With three or fewer successes, the character fades but does not vanish, becoming an indistinct, ghostlike figure. With more than three, he disappears completely. 
-                If the player scores more successes than an observer’s Willpower rating, that person forgets that the vampire was there in the first place.
+                If the player scores more successes than an observer's Willpower rating, that person forgets that the vampire was there in the first place.
             </p>
             <p>
                 Tracking the character accurately while he appears ghostlike requires a Perception + Alertness roll (difficulty 8). A successful roll means the individual can interact 
                 normally with the vampire (although the Kindred looks like a profoundly disturbing ghostly shape). A failed roll results in a +2 difficulty modifier (maximum 10) 
-                when attempting to act upon, or interact with, the vampire. The Storyteller may call for new observation checks if the vampire moves to an environment in which he’s 
+                when attempting to act upon, or interact with, the vampire. The Storyteller may call for new observation checks if the vampire moves to an environment in which he's 
                 difficult to see (heads into shadows, crosses behind an obstacle, proceeds through a crowd). When fully invisible, the vampire is handled as described under 
                 Unseen Presence, above.
             </p>
@@ -158,9 +158,9 @@ const level5: DisciplineLevel = {
         <>
             <p>
                 The character may conceal one extra individual for each dot of Stealth he possesses. He may bestow any single Obfuscate power at a given time to the group. 
-                While the power applies to everyone under the character’s cloak, his player need only make a single roll. 
+                While the power applies to everyone under the character's cloak, his player need only make a single roll. 
                 Each individual must follow the requirements described under the relevant Obfuscate power to remain under its effect; 
-                any person who fails to do so loses the cloak’s protection, but doesn’t expose the others. Only if the vampire himself errs does the power drop for everyone.
+                any person who fails to do so loses the cloak's protection, but doesn't expose the others. Only if the vampire himself errs does the power drop for everyone.
             </p>
         </>
     )

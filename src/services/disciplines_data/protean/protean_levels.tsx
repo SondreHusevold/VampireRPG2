@@ -5,7 +5,7 @@ const level1: DisciplineLevel = {
     description: (
         <>
             <p>
-            The vampire sees perfectly well in pitch darkness, not requiring a light source to notice details in even the darkest basement or cave. The vampire’s Beast is
+            The vampire sees perfectly well in pitch darkness, not requiring a light source to notice details in even the darkest basement or cave. The vampire's Beast is
             evident in his red glowing eyes, a sight sure to disturb most mortals.
             </p>
         </>
@@ -26,10 +26,10 @@ const level2: DisciplineLevel = {
     description: (
         <>
             <p>
-                The vampire’s nails transform into long, bestial claws. These talons are wickedly sharp, able to rend flesh with ease and even carve stone and metal with little trouble.
+                The vampire's nails transform into long, bestial claws. These talons are wickedly sharp, able to rend flesh with ease and even carve stone and metal with little trouble.
             </p>
             <p>
-                The Beast is prominent in the claws as well, making them fearsome weapons against other immortals. It’s rumored that some Gangrel have modified this power to change their 
+                The Beast is prominent in the claws as well, making them fearsome weapons against other immortals. It's rumored that some Gangrel have modified this power to change their 
                 vampiric fangs into vicious tusks.
             </p>
         </>
@@ -37,7 +37,7 @@ const level2: DisciplineLevel = {
     system: (
         <>
             <p>
-                The claws grow automatically in response to the character’s desire, and can grow from both hands and feet. The transformation requires the expenditure of a blood point, 
+                The claws grow automatically in response to the character's desire, and can grow from both hands and feet. The transformation requires the expenditure of a blood point, 
                 takes a single turn to complete, and lasts for a scene.
             </p>
             <p>
@@ -58,12 +58,12 @@ const level3: DisciplineLevel = {
             </p>
             <p>
                 Though a vampire can immerse himself fully into the ground, he cannot move around within it. Further, it is impossible to meld into earth through another substance. 
-                Wood slats, blacktop, even artificial turf blocks Earth Meld’s effectiveness — then again, it’s a relatively simple matter for a vampire at this level of power
+                Wood slats, blacktop, even artificial turf blocks Earth Meld's effectiveness — then again, it's a relatively simple matter for a vampire at this level of power
                 to grow claws and rip apart enough of the flooring to expose the raw soil beneath.
             </p>
             <p>
                 By interring himself in the ground, the vampire gains full protection from daylight when outdoors. It is also the method of choice for those Kindred who wish to
-                sleep away the centuries; these vampires lock themselves in the earth’s embrace, gaining strength and power as they rest. Superstitious and paranoid Kindred
+                sleep away the centuries; these vampires lock themselves in the earth's embrace, gaining strength and power as they rest. Superstitious and paranoid Kindred
                 whisper that thousands of Ancients sleep within the ground and will awaken when Gehenna arrives.
             </p>
             <p>
@@ -116,9 +116,9 @@ const level4: DisciplineLevel = {
                 The vampire remains in his beast form until the next dawn, unless he wishes to change back sooner.
             </p>
             <p>
-                While in the animal’s shape, the vampire can use any Discipline he possesses. Furthermore, each form gives the character the abilities of that creature.
-                In wolf form, the vampire’s teeth and claws inflict Strength + 1 aggravated damage, he can run at double speed, and the difficulties of all Perception rolls are reduced by two. 
-                In bat form, the vampire’s Strength is reduced to 1, but he can fly at speeds of up to 20 miles per hour, difficulties for all hearing-based Perception rolls are reduced 
+                While in the animal's shape, the vampire can use any Discipline he possesses. Furthermore, each form gives the character the abilities of that creature.
+                In wolf form, the vampire's teeth and claws inflict Strength + 1 aggravated damage, he can run at double speed, and the difficulties of all Perception rolls are reduced by two. 
+                In bat form, the vampire's Strength is reduced to 1, but he can fly at speeds of up to 20 miles per hour, difficulties for all hearing-based Perception rolls are reduced 
                 by three, and attacks made against him are at +2 difficulty due to his small size.
             </p>
 
@@ -131,12 +131,12 @@ const level5: DisciplineLevel = {
     description: (
         <>
             <p>
-                This truly unsettling power enables the vampire to turn into mist. His physical shape disperses into a hazy cloud, but one still subject entirely to the immortal’s will. 
+                This truly unsettling power enables the vampire to turn into mist. His physical shape disperses into a hazy cloud, but one still subject entirely to the immortal's will. 
                 He floats at a brisk pace and may slip under doors, through screens, down pipes, and through other tiny openings. 
                 Although strong winds can blow the vampire from his chosen course, even hurricane-force winds cannot disperse his mist shape.
             </p>
             <p>
-                Some Kindred feel that this power is an expression of the vampire’s ultimate control over the material world, while others believe that it is the immortal’s soul made
+                Some Kindred feel that this power is an expression of the vampire's ultimate control over the material world, while others believe that it is the immortal's soul made
                 manifest (damned though it may be).
             </p>
         </>

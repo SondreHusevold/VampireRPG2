@@ -4,7 +4,8 @@ import picture from './statuseffects.jpg';
 import NavigationLinker from '../../../common/navigationLinker';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Fire from './fire';
-import BloodBond from '../../bloodbond/bloodbond';
+import Electrocution from './electrocution';
+import Derangements from './derangements';
 
 function EffectsNavigations() {
     return (
@@ -12,7 +13,8 @@ function EffectsNavigations() {
             <div className={styles.navGrid}>
                 <NavigationLinker to="effects" name="Status Effects"/>
                 <NavigationLinker to="fire" name="Fire"/>
-                <NavigationLinker to="bloodbond" name="Blood Bond"/>
+                <NavigationLinker to="derangements" name="Derangements"/>
+                <NavigationLinker to="electrocution" name="Electrocution"/>
             </div>
         </>
     )
@@ -30,7 +32,8 @@ function StatusEffects() {
             <div className={styles.lowerPage}>
             <div className={styles.textSection}>
                     <Routes>
-                        <Route path={`bloodbond`} element={<BloodBond />} />
+                        <Route path={`derangements`} element={<Derangements />} />
+                        <Route path={`electrocution`} element={<Electrocution />} />
                         <Route path={`fire`} element={<Fire />} />
                         <Route path={`effects`} element={<Effects />} />
                         <Route path={`/`} element={<Navigate to="effects" />} />

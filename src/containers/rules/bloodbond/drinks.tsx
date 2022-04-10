@@ -30,11 +30,11 @@ function BloodBondDrinks() {
             </p>
             <p>
                 At this level, a regnant may use the Dominate Discipline on a thrall, even without the benefit of eye contact. 
-                Merely hearing the regnant’s voice is enough. Additionally, should the thrall try to resist the Dominate (or similar mental control power) for some reason, 
+                Merely hearing the regnant's voice is enough. Additionally, should the thrall try to resist the Dominate (or similar mental control power) for some reason, 
                 the difficulty of such resistance is increased by two. Naturally, a higher-Generation vampire still cannot use Dominate on a lower-Generation thrall.
             </p>
             <p>
-                The blood bond is true love, albeit a twisted and perverse version of it. Ultimately, we can’t reduce the vagaries of love down to a simple “yes/no” system. 
+                The blood bond is true love, albeit a twisted and perverse version of it. Ultimately, we can't reduce the vagaries of love down to a simple “yes/no” system. 
                 Some thralls (particularly people with Conformist or other dependent Natures, or with Willpower 5 or less) will commit any act, including suicide or murder, 
                 for their beloved; other characters have certain core principles that they will not violate.
             </p>

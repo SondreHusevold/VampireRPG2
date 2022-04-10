@@ -13,7 +13,7 @@ const discipline: Discipline = {
         </p>
         <p>
             Transformed Kindred can generally use other Disciplines — vampires in wolf form can still read auras and communicate with other animals, for example. 
-            However, the Storyteller may rule that certain Disciplines may not be used in specific situations. The Kindred’s clothes and personal possessions also change when he transforms 
+            However, the Storyteller may rule that certain Disciplines may not be used in specific situations. The Kindred's clothes and personal possessions also change when he transforms 
             (presumably absorbed within his very substance), although armor and the like do not provide any benefit while transformed.
         </p>
         <p>

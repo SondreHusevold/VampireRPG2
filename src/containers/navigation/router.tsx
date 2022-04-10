@@ -17,6 +17,7 @@ import Maneuvers from "../rules/combat/maneuvers/maneuvers";
 import StatusEffects from "../rules/combat/statuseffects/statusEffects";
 import Frenzy from "../rules/frenzy/frenzy";
 import BloodBond from "../rules/bloodbond/bloodbond";
+import Equipment from "../rules/equipment/equipment";
 
 function NavigationRouter() {
     return (
@@ -39,6 +40,7 @@ function NavigationRouter() {
             <Route path="/rules/frenzy/*" element={<Frenzy />} />
             <Route path="/rules/bloodbond/*" element={<BloodBond />} />
             <Route path="/rules/statuses/*" element={<StatusEffects />} />
+            <Route path="/rules/equipment/*" element={<Equipment />} />
         </Routes>
     )
 }

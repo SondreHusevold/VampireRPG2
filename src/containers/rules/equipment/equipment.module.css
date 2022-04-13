@@ -41,3 +41,35 @@
 :local .picture img {
     border-radius: 10px;
 }
+
+:local .armorCard {
+    grid-template-columns: auto auto;
+}
+
+:local .armorCard h3 {
+    grid-column: span 2;
+}
+
+
+@media screen and (max-width: 1300px) {
+    
+    :local .lowerPage {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    
+    :local .meleeWeapons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    :local .rangedWeapons h2 {
+        font-size: 2.2em;
+    }
+
+    :local .picture {
+        display: none;
+    }
+}

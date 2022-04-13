@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './combatTypes.module.css';
 
 function CombatTypesSection() {
@@ -22,6 +23,7 @@ function CombatTypesSection() {
                 be within two meters of each other to engage in
                 melee.
             </p>
+            <p>Example melee weapons are under the <Link to="/rules/equipment/melee">Melee Equipment</Link> section.</p>
             <h3>Ranged Combat:</h3>
             <p>
                 Armed combat using projectile
@@ -29,6 +31,7 @@ function CombatTypesSection() {
                 must normally be within sight (and weapon range) of
                 each other to engage in a firefight.
             </p>
+            <p>Examples ranged weapons are under the <Link to="/rules/equipment/ranged">Ranged Equipment</Link> section. </p>
         </div>
     )
 }

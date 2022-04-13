@@ -19,10 +19,9 @@ function DamageTypes() {
             <p>
                 Some damage dice pools
                 are based on the attacker's Strength, while others are
-                based on the weapon used. <b>Damage dice rolls are made
-                versus difficulty 6.</b>
+                based on the weapon used.
             </p>
-            
+            <p>Damage dice rolls are made versus difficulty 6.</p>
             <p>
                 Each success on the damage roll inflicts one health level of damage on the target. However, the damage applied may be one of three types:
             </p>

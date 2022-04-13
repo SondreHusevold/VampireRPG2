@@ -1,0 +1,49 @@
+:local .cardGrid {
+    margin-top: 1em;
+    max-width: 100em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Override this if needed. */
+    column-gap: 50px;
+    row-gap: 1em;
+    justify-content: space-between;
+}
+
+:local .card {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1em;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto; /* Override this if needed. */
+}
+
+:local .card p {
+    margin-top: 0px;
+}
+
+:local .card h3 {
+    grid-column: span 3; /* Override this if needed. */
+    justify-self: left;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 1300px) {    
+   
+    :local .cardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    :local .picture {
+        display: none;
+    }
+
+    :local .card {
+        min-width: 300px;
+        padding: 1em;
+        grid-template-columns: auto auto auto;
+    }
+
+    :local .card h3 {
+        grid-column: span 3;
+        justify-self: center;
+    }
+}

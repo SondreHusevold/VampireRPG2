@@ -17,7 +17,7 @@ function Armor() {
                 armor's rating, the armor is destroyed.
             </p>
             <p>
-                To see different armor pieces, go to <Link to="/rules/equipment">Equipment</Link>.
+                To see different armor classes, go to <Link to="/rules/equipment/armor">Equipment</Link>.
             </p>
         </div>
     )

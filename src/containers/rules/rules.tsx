@@ -5,7 +5,7 @@ import styles from './rules.module.css';
 function Combat() {
     return (
         <>
-            <h1>Mechanics</h1>
+            <h1>Rules</h1>
             <div className={styles.rulesGrid}>
                 <Link to="combat/stages">
                     <h1 className='nf nf-fa-sort_numeric_asc'/>

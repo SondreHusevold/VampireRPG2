@@ -1,7 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import NavigationLinker from "../../common/navigationLinker";
+import ArmorEquipment from "./armorequipment";
 import picture from './equipment.jpg';
 import styles from './equipment.module.css';
+import MeleeWeapons from "./meleeweapons";
+import RangedWeapons from "./rangedweapons";
 
 function EquipmentNavigations() {
     return (
@@ -26,9 +29,9 @@ function Equipment() {
             <div className={styles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
-                        <Route path={`armor`} element={<div />} />
-                        <Route path={`ranged`} element={<div />} />
-                        <Route path={`melee`} element={<div />} />
+                        <Route path={`armor`} element={<ArmorEquipment />} />
+                        <Route path={`ranged`} element={<RangedWeapons />} />
+                        <Route path={`melee`} element={<MeleeWeapons />} />
                         <Route path={`/`} element={<Navigate to="melee" />} />
                     </Routes>
                 </div>

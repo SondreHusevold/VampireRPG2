@@ -2,7 +2,8 @@
 
 ## Remaining work:
 ### Smaller tasks:
-- Combat Maneuver chart tables become cards.
+- ~~Combat Maneuver chart tables become cards.~~
+- Add descriptions to close combat descriptions
 - Health chart table become cards.
 - Consolidate CSS
 - Fix gap in longer texts due to picture

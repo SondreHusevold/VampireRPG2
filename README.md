@@ -14,14 +14,6 @@
 - Make more links in text so user easily can go around the pages.
 - Check WebKit compatibility
 - Remove all strange ' from the texts
-
-
-### Larger tasks:
-- Finish "Introduction"
-- Mobile CSS
-- Mobile pictures
-
-- Remove all strange ' from the texts
 - Dockerfile
 
 ### Larger tasks:
@@ -29,6 +21,5 @@
 - Mobile CSS
 - Mobile pictures
 - Create Azure + deploy or use RP4 for deployment.
-
 ### Ridiculously large task:
 - Rewrite all text to not be direct copy paste from the V20 book.

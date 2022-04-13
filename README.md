@@ -14,12 +14,18 @@
 - Make more links in text so user easily can go around the pages.
 - Check WebKit compatibility
 - Remove all strange ' from the texts
+- Dockerfile
 
 
 ### Larger tasks:
 - Finish "Introduction"
 - Mobile CSS
 - Mobile pictures
+### Larger tasks:
+- Finish "Introduction"
+- Mobile CSS
+- Mobile pictures
+- Create Azure + deploy or use RP4 for deployment.
 
 - Remove all strange ' from the texts
 - Dockerfile

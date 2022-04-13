@@ -1,33 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { rangedcombatmaneuversdata } from '../../../../services/maneuvers_data/rangedcombatmaneuverdata';
+import cardStyles from '../../../common/card.module.css';
 import styles from './maneuvers.module.css';
-
-const maneuvers = [
-    {
-        maneuver: "Automatic Fire", traits: "Dex + Firearms",
-        accuracy: "+10", difficulty: "+2",
-        damage: "Special"
-    },
-    {
-        maneuver: "Multiple Shots", traits: "Dex + Firearms",
-        accuracy: "Special", difficulty: "Normal",
-        damage: "Weapon"
-    },
-    {
-        maneuver: "Strafing", traits: "Dex + Firearms",
-        accuracy: "+10", difficulty: "+2",
-        damage: "Special"
-    },
-    {
-        maneuver: "3-Round Burst", traits: "Dex + Firearms",
-        accuracy: "+2", difficulty: "+1",
-        damage: "Weapon"
-    },
-    {
-        maneuver: "Two Weapons", traits: "Dex + Firearms",
-        accuracy: "Normal", difficulty: "+1/Off-Hand",
-        damage: "Weapon"
-    }
-]
 
 function RangedCombatManeuvers() {
     return (
@@ -36,27 +11,53 @@ function RangedCombatManeuvers() {
             <p>See Core Rulebook (page 277 - 278) if you need further information on how these work. Below are all the maneuvers available for ranged weapons.</p>
             <p>
                 Some of these maneuvers require a weapon that can do the action. For example a revolver cannot do automatic fire. 
-                See the ranged weapons chart for types of weapons that support the skills in question.
+                See the <Link to="/rules/equipment/ranged">ranged weapons chart</Link> for types of weapons that support the skills in question.
             </p>
-            <div className={styles.rangedCombatGrid}>
-                <p>Maneuver</p>
-                <p>Traits</p>
-                <p>Accuracy</p>
-                <p>Difficulty</p>
-                <p>Damage</p>
-
-                { 
-                    maneuvers.map(x => {
+            <div className={`${cardStyles.cardGrid} ${styles.closeCombatGrid}`}>
+                {
+                    rangedcombatmaneuversdata.map(x => {
                         return (
-                            <React.Fragment>
-                                <span>{x.maneuver}</span>
-                                <span>{x.traits}</span>
-                                <span>{x.accuracy}</span>
-                                <span>{x.difficulty}</span>
-                                <span>{x.damage}</span>
-                            </React.Fragment>
+                            <div className={`${cardStyles.card} ${styles.maneuverCard}`}>
+                                <h3>{x.maneuver}</h3>
+                                {
+                                    x.traits &&
+                                    <div>
+                                        <label>Traits:</label>
+                                        <p>{x.traits}</p>
+                                    </div>
+                                }
+                                {
+                                    x.accuracy &&
+                                    <div>
+                                        <label>Accuracy:</label>
+                                        <p>{x.accuracy}</p>
+                                    </div>
+                                }
+
+                                {
+                                    x.difficulty && 
+                                    <div>
+                                        <label>Difficulty:</label>
+                                        <p>{x.difficulty}</p>
+                                    </div>
+                                }
+                                {
+                                    x.damage && <div>
+                                        <label>Damage:</label>
+                                        <p>{x.damage}</p>
+                                    </div>
+                                }
+                                {
+                                x.description && 
+                                <div className={styles.maneuverSpan}>
+                                    <label>Description:</label>
+                                    {x.description}
+                                </div>
+                                }
+
+                            </div>
                         )
-                    }) 
+                    })
                 }
             </div>
         </div>

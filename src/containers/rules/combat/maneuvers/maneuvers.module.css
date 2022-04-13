@@ -42,30 +42,14 @@
     border-radius: 10px;
 }
 
-:local .closeCombatGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 0.3em;
+:local .maneuverCard {
+    grid-template-columns: 1fr 1fr !important;
 }
 
-:local .closeCombatGrid p {
-    margin-bottom: 0.5em;
-    font-weight: bold;
+:local .maneuverCard h3 {
+    grid-column: span 2 !important;
 }
 
-:local .closeCombatUnderGrid {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-:local .rangedCombatGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 0.3em;
-}
-
-:local .rangedCombatGrid p {
-    margin-bottom: 0.3em;
-    font-weight: bold;
+:local .maneuverSpan {
+    grid-column: span 2;
 }

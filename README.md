@@ -15,7 +15,6 @@
 - Check WebKit compatibility
 - Remove all strange ' from the texts
 - Dockerfile
-
 ### Larger tasks:
 - Finish "Introduction"
 - Mobile CSS

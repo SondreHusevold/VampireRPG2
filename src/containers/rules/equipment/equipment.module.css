@@ -24,14 +24,6 @@
     margin-bottom: 2em;
 }
 
-:local .fadeInLoad {
-    animation: "fadeIn" 1s;
-}
-
-:local .fadeInLoad h2 { 
-    margin-bottom: 0px;
-}
-
 :local .picture {
     animation: "fadeIn" 1.5s;
     justify-self: center;

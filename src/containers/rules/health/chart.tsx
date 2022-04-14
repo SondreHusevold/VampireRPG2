@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './health.module.css';
+import cardStyles from '../../common/card.module.css';
 import { healthLevels } from './healthLevels';
 
 
@@ -12,26 +13,31 @@ function HealthChart() {
                 It also lists the penalty imposed on your dice pool for each level of injury that your character sustains. 
                 As your character suffers more injuries, her health declines until she becomes incapacitated or dies.
             </p>
-            <div className={styles.chart}>
-                <div className={styles.chartGrid}>
-                    <span>Health Level</span>
-                    <span>Dice Pool Penalty</span>
-                    <span>Movement Penalty</span>
-                    <span className={styles.gridHr} />
-                    {
-                        healthLevels.map((lvl) => {
-                            return (
-                                <React.Fragment>
-                                    <p>{lvl.level}</p>
-                                    <p>{lvl.penalty}</p>
-                                    <p>{lvl.movement}</p>
-                                </React.Fragment>
-                            )
-                        })
-                    }
-                </div>
+            <div className={`${cardStyles.cardGrid} ${styles.healthCardGrid}`}>
+                {
+                    healthLevels.map(x => {
+                        return (
+                            <div className={`${cardStyles.card} ${styles.healthCard}`}>
+                                <h3>{x.level}</h3>
+                                {
+                                    x.penalty &&
+                                    <div>
+                                        <label>Dice Pool Penalty:</label>
+                                        <p>{x.penalty}</p>
+                                    </div>
+                                }
+                                {
+                                    x.movement &&
+                                    <div>
+                                        <label>Movement Penalty:</label>
+                                        <p>{x.movement}</p>
+                                    </div>
+                                }
+                            </div>
+                        )
+                    })
+                }
             </div>
-
         </div>
     )
 }

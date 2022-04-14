@@ -42,19 +42,19 @@
     border-radius: 10px;
 }
 
-:local .chartGrid {
-    display: grid;
-    
-    grid-template-columns: 200px 200px 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
+:local .healthCardGrid {
+    /* grid-template-columns: 1fr; */
 }
 
-:local .gridHr {
-    grid-column: span 3;
-    border-top: 1px solid #e0e0db;
+
+:local .healthCard {
+    grid-template-columns: 1fr;
 }
+
+:local .healthCard h3 {
+    grid-column: auto;
+}
+
 
 :local .applyingExample {
     display: grid;

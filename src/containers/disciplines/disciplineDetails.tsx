@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Discipline } from "../../models/discipline";
 import { disciplines } from "../../services/disciplineService";
+import pageStyles from '../common/pages.module.css';
 import styles from './disciplineDetails.module.css';
 
 function RenderDiscipline(discipline: Discipline) {
@@ -90,7 +91,7 @@ function DisciplineDetails() {
                     </div>
                 }
             </div>
-            <div className={styles.lowerPage} key={`${discipline.name}_lowerPage`}>
+            <div className={pageStyles.lowerPage} key={`${discipline.name}_lowerPage`}>
                 <div className={styles.ownedByClan}>
                     {discipline.clans.map((clan) => {
                         return (
@@ -117,7 +118,7 @@ function DisciplineDetails() {
                     </div>
                 </div>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt={`${discipline.name}`} src={discipline.image.img} />
                     <p>Credit: <a href={`${discipline.image.creditLink}`} target={`_blank`}>{discipline.image.credit}</a></p>
                 </div>

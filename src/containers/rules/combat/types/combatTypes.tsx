@@ -5,11 +5,12 @@ import styles from './combatTypes.module.css';
 import CombatTypesSection from "./combatTypesSection";
 import DamageTypes from "./damageTypes";
 import picture from './combatTypes.jpg';
+import pageStyles from '../../../common/pages.module.css';
 
 function CombatNavigations() {
     return (
         <>
-            <div className={styles.navGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="combat_types" name="Combat types"/>
                 <NavigationLinker to="damage_types" name="Damage types"/>
                 <NavigationLinker to="armor" name="Armor"/>
@@ -21,7 +22,7 @@ function CombatNavigations() {
 function CombatTypes() {
     return (
         <>
-            <div className={styles.headerTop}>
+            <div className={pageStyles.headerTop}>
                 <h1>Combat and Damage types</h1>
                 <p>
                     Close combat, ranged combat and four damage types. Additionally there's armor to reduce damage.
@@ -29,7 +30,7 @@ function CombatTypes() {
             </div>
 
             <CombatNavigations />
-            <div className={styles.lowerPage}>
+            <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`armor`} element={<Armor />} />
@@ -38,7 +39,7 @@ function CombatTypes() {
                         <Route path={`/`} element={<Navigate to="combat_types" />} />
                     </Routes>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt="Combat" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/kamyu`} target={`_blank`}>Carlos Díaz Asenjo</a></p>
                 </div>

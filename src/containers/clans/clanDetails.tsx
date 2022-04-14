@@ -6,6 +6,7 @@ import styles from './clanDetails.module.css';
 import { sects } from "../../services/sectService";
 import { disciplines } from "../../services/disciplineService";
 import NavigationLinker from "../common/navigationLinker";
+import pageStyles from '../common/pages.module.css';
 
 function ClanDescription(clan: Clan) {
     return (
@@ -163,14 +164,14 @@ function ClanDetail() {
                 }
                 <p className={styles.clanHeaderQuote}>"{clan.quote}"</p>
             </div>
-            <div className={styles.detailsNavGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="description" name="Description"/>
                 <NavigationLinker to="appearance" name="Appearance"/>
                 <NavigationLinker to="traits" name="Traits"/>
                 <NavigationLinker to="strengthsandweaknesses" name="Strengths and weaknesses"/>
                 <NavigationLinker to="opinions" name="Opinions"/>
             </div>
-            <div className={styles.lowerPage} key={`${clan.name}_lowerPage`}>
+            <div className={pageStyles.lowerPage} key={`${clan.name}_lowerPage`}>
                 <Routes >
                     <Route path={`description`} element={<ClanDescription {...clan} />}/>
                     <Route path={`appearance`} element={<ClanAppearance {...clan} />}/>
@@ -179,7 +180,7 @@ function ClanDetail() {
                     <Route path={`opinions`} element={<ClanOpinions {...clan} />}/>
                     <Route path={`/`} element={<Navigate to="description" />} />
                 </Routes>
-                <div className={styles.clanPicture}>
+                <div className={pageStyles.picture}>
                     <img alt={`${clan.name}`} src={clan.picture.img} />
                     <p>Credit: <a href={`${clan.picture.link}`} target={`_blank`}>{clan.picture.credit}</a></p>
                 </div>

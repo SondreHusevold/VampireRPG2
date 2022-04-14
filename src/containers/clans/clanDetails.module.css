@@ -9,24 +9,8 @@
     text-decoration: none;
 }
 
-:local .lowerPage {
-    padding: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    animation: "fadeIn" 2s;
-}
-
 :local .clanText {
     animation: "fadeIn" 1s;
-}
-
-:local .clanPicture {
-    animation: "fadeIn" 1s;
-    justify-self: center;
-}
-
-:local .clanPicture img {
-    border-radius: 10px;
 }
 
 :local .clanHeader {
@@ -60,20 +44,6 @@
 
 :local .clanHeaderQuote {
     grid-column: span 3;
-}
-
-:local .clanHeader img {
-    max-height: 200px;
-}
-
-:local .detailsNavGrid {
-    animation: "fadeIn" 1.5s;
-    padding: 1em 0.5em 1em 0.5em;
-    border-top: 1px solid #e0e0db;
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    border-bottom: 1px solid #e0e0db;
 }
 
 :local .sectOpinions {

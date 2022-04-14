@@ -1,3 +1,7 @@
+:local .abilityLowerPage {
+    grid-template-columns: 1fr;
+}
+
 :local .abilitiesTopGrid {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -14,7 +18,6 @@
     column-gap: 5em;
     row-gap: 1em;
 }
-
 
 :local .abilitiesGrid h2 {
     margin-bottom: 0.7em;

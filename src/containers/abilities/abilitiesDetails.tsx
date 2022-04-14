@@ -6,6 +6,7 @@ import { abilities } from "../../services/abilityService";
 import { useParams } from "react-router-dom";
 import { ParseJsonText } from "../../utilities/parser";
 import { PrintDots } from "../../utilities/dotprinter";
+import pageStyles from '../common/pages.module.css';
 
 function findAbility(name: string | undefined) {
     for (const section of abilities) {
@@ -27,7 +28,7 @@ function AbilitiesDetails() {
             <div className={styles.abilityContent} key={`${ability.name}_content`}>
                 <h1 className={styles.headerText}>{ability.name}</h1>
                 <h1 className={`nf ${ability.icon} ${styles.bigIcon}`}/>
-                <div className={styles.lowerPage} key={`${ability.name}_lowerPage`}>
+                <div className={`${pageStyles.lowerPage} ${styles.abilityLowerPage}`} key={`${ability.name}_lowerPage`}>
                     <div className={styles.abilityText}>
                         {ParseJsonText(ability.description)}
                         

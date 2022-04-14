@@ -59,24 +59,8 @@
     align-items: center;
 }
 
-:local .lowerPage {
-    padding: 1.3em 3em 3em 3em;
-    display: grid;
-    grid-template-columns: 1fr 0.7fr;
-    animation: "fadeIn" 2s;
-}
-
 :local .attributeText {
     animation: "fadeIn" 1.5s;
-}
-
-:local .attributePicture {
-    animation: "fadeIn" 1.5s;
-    justify-self: center;
-}
-
-:local .attributePicture img {
-    border-radius: 10px;
 }
 
 :local .attributeHeader {

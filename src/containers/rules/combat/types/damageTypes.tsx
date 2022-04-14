@@ -2,7 +2,7 @@ import styles from './combatTypes.module.css';
 
 function DamageTypes() {
     return (
-        <div className={styles.fadeInLoad}>
+        <div className={"fadeIn"}>
             <h2>Damage Types</h2>
             <p>
                 All attacks have specific damage ratings, indicating 

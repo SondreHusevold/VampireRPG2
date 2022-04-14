@@ -2,7 +2,7 @@ import styles from './combatStages.module.css';
 
 function Soaking() {
     return (
-        <div className={styles.fadeInLoad}>
+        <div className={"fadeIn"}>
             <h2>Soaking</h2>
             <p>
                 Characters can resist a certain degree of physical

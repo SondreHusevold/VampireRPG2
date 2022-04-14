@@ -6,11 +6,12 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Fire from './fire';
 import Electrocution from './electrocution';
 import Derangements from './derangements';
+import pageStyles from '../../../common/pages.module.css';
 
 function EffectsNavigations() {
     return (
         <>
-            <div className={styles.navGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="effects" name="Status Effects"/>
                 <NavigationLinker to="fire" name="Fire"/>
                 <NavigationLinker to="derangements" name="Derangements"/>
@@ -24,12 +25,12 @@ function EffectsNavigations() {
 function StatusEffects() {
     return (
         <div className={`fadeIn`}>
-            <div className={styles.headerTop}>
+            <div className={pageStyles.headerTop}>
                 <h1>Status Effects</h1>
                 <p>Sometimes not everything goes according to plan. Here are some complications and status effects.</p>
             </div>
             <EffectsNavigations/>
-            <div className={styles.lowerPage}>
+            <div className={pageStyles.lowerPage}>
             <div className={styles.textSection}>
                     <Routes>
                         <Route path={`derangements`} element={<Derangements />} />
@@ -39,7 +40,7 @@ function StatusEffects() {
                         <Route path={`/`} element={<Navigate to="effects" />} />
                     </Routes>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt="Blood" src={picture} />
                     <p>Credit: <a href={`https://kathydesign.artstation.com/`} target={`_blank`}>Kathy Design</a></p>
                 </div>

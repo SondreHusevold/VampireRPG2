@@ -5,11 +5,12 @@ import picture from './equipment.jpg';
 import styles from './equipment.module.css';
 import MeleeWeapons from "./meleeweapons";
 import RangedWeapons from "./rangedweapons";
+import pageStyles from '../../common/pages.module.css';
 
 function EquipmentNavigations() {
     return (
         <>
-            <div className={styles.navGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="melee" name="Melee Weapons"/>
                 <NavigationLinker to="ranged" name="Ranged Weapons"/>
                 <NavigationLinker to="armor" name="Armor"/>
@@ -21,12 +22,12 @@ function EquipmentNavigations() {
 function Equipment() {
     return (
         <div className={`fadeIn`}>
-            <div className={styles.headerTop}>
+            <div className={pageStyles.headerTop}>
                 <h1>Equipment</h1>
                 <p>Example weapons and armor.</p>
             </div>
             <EquipmentNavigations/>
-            <div className={styles.lowerPage}>
+            <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`armor`} element={<ArmorEquipment />} />
@@ -35,7 +36,7 @@ function Equipment() {
                         <Route path={`/`} element={<Navigate to="melee" />} />
                     </Routes>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt="Complete Equipment" src={picture} />
                     <p>Credit: <a href={`https://twitter.com/ttguweiz`} target={`_blank`}>Guweiz</a></p>
                 </div>

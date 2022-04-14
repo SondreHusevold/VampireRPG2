@@ -1,0 +1,40 @@
+:local .headerTop {
+    animation: "fadeIn" 1s;
+    text-align: center;
+}
+
+:local .headerTop h1 {
+    margin-bottom: 0px;
+}
+
+:local .navGrid {
+    animation: "fadeIn" 2s;
+    padding: 1em 0.5em 1em 0.5em;
+    border-top: 1px solid #e0e0db;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #e0e0db;
+}
+
+:local .lowerPage {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    padding: 0em 3em 0em 3em;
+    margin-bottom: 2em;
+}
+
+:local .picture {
+    animation: "fadeIn" 1.5s;
+    justify-self: center;
+    margin-top: 3em;
+}
+
+:local .picture p {
+    margin-top: 5px;
+}
+
+:local .picture img {
+    border-radius: 10px;
+}
+

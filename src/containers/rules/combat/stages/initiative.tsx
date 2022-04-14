@@ -2,7 +2,7 @@ import styles from './combatStages.module.css';
 
 function Initiatives() {
     return (
-        <div className={styles.fadeInLoad}>
+        <div className={"fadeIn"}>
             <h2>Initiative</h2>
             <p>This stage organizes the turn and is when you declare your character's action.</p>
             <p>

@@ -7,11 +7,12 @@ import Resolution from "./resolution";
 import Soaking from "./soaking";
 import picture from './Stages.jpg';
 import Summary from "./summary";
+import pageStyles from '../../../common/pages.module.css';
 
 function CombatNavigations() {
     return (
         <>
-            <div className={styles.navGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="summary" name="Summary"/>
                 <NavigationLinker to="initiative" name="Initiative"/>
                 <NavigationLinker to="attack" name="Attack"/>
@@ -25,7 +26,7 @@ function CombatNavigations() {
 function CombatStages() {
     return (
         <>
-            <div className={styles.headerTop}>
+            <div className={pageStyles.headerTop}>
                 <h1>Combat stages</h1>
                 <p>
                     Combat is divided into a series of three-second turns.
@@ -35,7 +36,7 @@ function CombatStages() {
             </div>
 
             <CombatNavigations />
-            <div className={styles.lowerPage}>
+            <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`summary`} element={<Summary />}/>
@@ -46,7 +47,7 @@ function CombatStages() {
                         <Route path={`/`} element={<Navigate to="summary" />} />
                     </Routes>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt="Combat" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/wen-jr`} target={`_blank`}>Jonathan Romeo</a></p>
                 </div>

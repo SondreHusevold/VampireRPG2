@@ -6,11 +6,12 @@ import FrenzyInformation from "./frenzyinfo";
 import FrenzySystem from "./frenzysystem";
 import Provocations from "./provocations";
 import Rotschreck from "./rotschreck";
+import pageStyles from '../../common/pages.module.css';
 
 function FrenzyNavigations() {
     return (
         <>
-            <div className={styles.navGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="information" name="Information"/>
                 <NavigationLinker to="system" name="System"/>
                 <NavigationLinker to="provocations" name="Provocations"/>
@@ -23,12 +24,12 @@ function FrenzyNavigations() {
 function Frenzy() {
     return (
         <div className={`fadeIn`}>
-            <div className={styles.headerTop}>
+            <div className={pageStyles.headerTop}>
                 <h1>Frenzy</h1>
                 <p>Vampires are monsters, possessed of an inner Beast.</p>
             </div>
             <FrenzyNavigations/>
-            <div className={styles.lowerPage}>
+            <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`rotschreck`} element={<Rotschreck />} />
@@ -38,7 +39,7 @@ function Frenzy() {
                         <Route path={`/`} element={<Navigate to="information" />} />
                     </Routes>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt="Complete frenzy" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/jon`} target={`_blank`}>Jon Dunham</a></p>
                 </div>

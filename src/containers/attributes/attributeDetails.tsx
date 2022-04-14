@@ -6,6 +6,7 @@ import { PrintDots } from '../../utilities/dotprinter';
 import { ParseJsonText } from '../../utilities/parser';
 import styles from './attributeDetails.module.css';
 import LeftMenu from './leftMenu';
+import pageStyles from '../common/pages.module.css';
 
 
 function AttributeDetails() {
@@ -18,7 +19,7 @@ function AttributeDetails() {
             <div>
                 <h1 key={`${attribute.name}_title`} className={styles.headerText}> {attribute.name}</h1>
                 <h1 key={`${attribute.name}_title_icon`} className={`nf ${attribute.icon} ${styles.headerTextIcon}`}></h1>
-                <div className={styles.lowerPage} key={`${attribute.name}_lowerPage`}>
+                <div className={pageStyles.lowerPage} key={`${attribute.name}_lowerPage`}>
                     <div className={styles.attributeText}>
                         {ParseJsonText(attribute.description)}
                         <h3>{attribute.name} dots</h3>
@@ -43,7 +44,7 @@ function AttributeDetails() {
                             )
                         })}
                     </div>
-                    <div className={styles.attributePicture}>
+                    <div className={pageStyles.picture}>
                         <img alt={`${attribute.name}`} src={attribute.image.img} />
                         <p>Credit: <a href={`${attribute.image.creditLink}`} target={`_blank`}>{attribute.image.credit}</a></p>
                     </div> 

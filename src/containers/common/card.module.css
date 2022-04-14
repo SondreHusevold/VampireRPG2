@@ -32,10 +32,6 @@
         grid-template-columns: 1fr;
     }
 
-    :local .picture {
-        display: none;
-    }
-
     :local .card {
         min-width: 300px;
         padding: 1em;

@@ -6,11 +6,12 @@ import GeneralManeuvers from './general';
 import DefensiveManeuvers from './defensive';
 import CloseCombatManeuvers from './closeCombat';
 import RangedCombatManeuvers from './rangedCombat';
+import pageStyles from '../../../common/pages.module.css';
 
 function ManeuversNavigations() {
     return (
         <>
-            <div className={styles.navGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="general" name="General"/>
                 <NavigationLinker to="defensive" name="Defensive"/>
                 <NavigationLinker to="close-combat" name="Close-combat"/>
@@ -23,13 +24,13 @@ function ManeuversNavigations() {
 function Maneuvers() {
     return (
         <>
-            <div className={styles.headerTop}>
+            <div className={pageStyles.headerTop}>
                 <h1>Maneuvers</h1>
                 <p>These maneuvers give you a variety of choices in combat. Most of these take one action to execute.</p>
             </div>
 
             <ManeuversNavigations />
-            <div className={styles.lowerPage}>
+            <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`ranged-combat`} element={<RangedCombatManeuvers />} />
@@ -39,7 +40,7 @@ function Maneuvers() {
                         <Route path={`/`} element={<Navigate to="general" />} />
                     </Routes>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt="Dripping" src={picture} />
                     <p>Credit: <a href={`https://www.twitter.com/oshredart`} target={`_blank`}>Oshred</a></p>
                 </div>

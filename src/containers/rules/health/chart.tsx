@@ -6,7 +6,7 @@ import { healthLevels } from './healthLevels';
 
 function HealthChart() {
     return (
-        <div className={styles.fadeInLoad}>
+        <div className={"fadeIn"}>
             <h2>Health chart</h2>
             <p>The health chart on the character sheet helps you track your character's current physical condition.</p>
             <p>

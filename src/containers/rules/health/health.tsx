@@ -6,11 +6,12 @@ import styles from './health.module.css';
 import picture from './Health.jpg';
 import ApplyingDamage from './applying';
 import Healing from './healing';
+import pageStyles from '../../common/pages.module.css';
 
 function HealthNavigations() {
     return (
         <>
-            <div className={styles.navGrid}>
+            <div className={pageStyles.navGrid}>
                 <NavigationLinker to="summary" name="Summary"/>
                 <NavigationLinker to="chart" name="Chart"/>
                 <NavigationLinker to="applying" name="Applying damage"/>
@@ -24,7 +25,7 @@ function HealthNavigations() {
 function Health() {
     return (
         <>
-            <div className={styles.headerTop}>
+            <div className={pageStyles.headerTop}>
                 <h1>Health</h1>
                 <p>
                     Vampires are immortal and do not die naturally, however injury can incapacitate them, drive them into lengthy periods of dormancy, or even kill them once more.
@@ -32,7 +33,7 @@ function Health() {
             </div>
 
             <HealthNavigations />
-            <div className={styles.lowerPage}>
+            <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`healing`} element={<Healing />} />
@@ -42,7 +43,7 @@ function Health() {
                         <Route path={`/`} element={<Navigate to="summary" />} />
                     </Routes>
                 </div>
-                <div className={styles.picture}>
+                <div className={pageStyles.picture}>
                     <img alt="Health" src={picture} />
                     <p>Credit: <a href={`https://www.artstation.com/aoxenuk`} target={`_blank`}>Anton Oxenuk</a></p>
                 </div>

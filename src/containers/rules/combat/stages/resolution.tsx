@@ -2,7 +2,7 @@ import styles from './combatStages.module.css';
 
 function Resolution() {
     return (
-        <div className={styles.fadeInLoad}>
+        <div className={"fadeIn"}>
             <h2>Resolution</h2>
             <p>
                 During this stage, you determine the damage inflicted

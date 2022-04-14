@@ -24,9 +24,8 @@ function RenderSection(props: RenderSectionProps) {
     ];
 
     function goLeftRight(right: boolean) {
-
         const currentIndex = abilitySections.indexOf(props.section.section);
-        if(((currentIndex === 0 && !right) || (currentIndex === 2)) && right) {
+        if(((currentIndex === 0 && !right) || (currentIndex === 2 && right))) {
             return;
         }
         else {
@@ -41,6 +40,7 @@ function RenderSection(props: RenderSectionProps) {
         if(total > 2 || total < 0) {
             return styles.disabled;
         }
+
         return styles.active;
     }
 

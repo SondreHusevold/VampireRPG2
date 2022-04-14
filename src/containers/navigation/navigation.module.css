@@ -17,15 +17,6 @@
   padding-right: 0.5em;
 }
 
-:local .activeLink {
-  opacity: 0.5;
-  transition: opacity 250ms;
-}
-
-:local .activeLink:hover {
-  opacity: 1;
-}
-
 
 @keyframes underliner {
   from {

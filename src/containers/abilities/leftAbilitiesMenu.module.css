@@ -50,7 +50,3 @@
 :local .active:hover {
     opacity: 0.5;
 }
-
-:local .activeLink {
-    opacity: 0.5;
-}

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Attribute, AttributeSections } from '../../models/attribute';
-import styles from './attributeDetails.module.css';
+import styles from './leftMenu.module.css';
 
 interface LeftMenuProps {
     attributes: Attribute[];

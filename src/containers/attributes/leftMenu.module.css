@@ -1,0 +1,23 @@
+
+:local .leftMenuGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em;
+    justify-content: center;
+    border-right: 1px solid #e0e0db;
+    padding-right: 5vw;
+    margin-bottom: 60px;
+    animation: "fadeIn" 2s;
+}
+
+:local .leftMenuItem {
+    font-size: 3em;
+}
+
+:local .leftMenuItem a span {
+    margin-right: 0.7em;
+}
+
+:local .leftMenuSection h3 {
+    margin-bottom: 5px;
+}

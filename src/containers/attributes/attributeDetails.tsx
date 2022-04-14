@@ -17,10 +17,10 @@ function AttributeDetails() {
         <div className={styles.attributesGrid}>
             <LeftMenu attributes={attributes} />
             <div>
-                <h1 key={`${attribute.name}_title`} className={styles.headerText}> {attribute.name}</h1>
+                <h1 key={`${attribute.name}_title`} className={pageStyles.headerTop}> {attribute.name}</h1>
                 <h1 key={`${attribute.name}_title_icon`} className={`nf ${attribute.icon} ${styles.headerTextIcon}`}></h1>
                 <div className={pageStyles.lowerPage} key={`${attribute.name}_lowerPage`}>
-                    <div className={styles.attributeText}>
+                    <div className={"fadeIn"}>
                         {ParseJsonText(attribute.description)}
                         <h3>{attribute.name} dots</h3>
                         <div className={styles.dotLevelSection}>

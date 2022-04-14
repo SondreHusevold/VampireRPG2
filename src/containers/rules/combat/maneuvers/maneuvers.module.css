@@ -42,8 +42,33 @@
     border-radius: 10px;
 }
 
+:local .defensiveGrid {
+    grid-template-columns: 1fr;
+}
+
+:local .defensiveManeuverCard {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+
+:local .defensiveManeuverCard h3 {
+    grid-column: span 4 !important;
+}
+
+:local .defensiveManeuverSpan {
+    grid-column: span 4;
+}
+
 :local .maneuverCard {
     grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 50px 80px 80px 80px 1fr;
+}
+
+:local .rangedManeuverCard {
+    grid-template-columns: 1fr 1fr !important;
+}
+
+:local .rangedManeuverCard h3 {
+    grid-column: span 2 !important;
 }
 
 :local .maneuverCard h3 {

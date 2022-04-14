@@ -1,3 +1,7 @@
+import { defensivemaneuverdata } from '../../../../services/maneuvers_data/defensivemaneuverdata';
+import cardStyles from '../../../common/card.module.css';
+import styles from './maneuvers.module.css';
+
 function DefensiveManeuvers() {
     return (
         <div className="fadeIn">
@@ -15,25 +19,53 @@ function DefensiveManeuvers() {
                 character spends an entire turn defending. The normal
                 multiple-action rules are not used in this case.
             </p>
-            <h3>Blocking</h3>
-            <p>
-                A Dexterity + Brawl maneuver using your character's own body to deflect a hand-to-hand bashing attack. 
-                Lethal and aggravated attacks cannot be blocked unless the defender has Fortitude or is wearing armor.
-            </p>
-            <h3>Dodging</h3>
-            <p>
-                A Dexterity + Athletics maneuver useful for avoiding attacks of all types. If there's no room to maneuver, she must block or parry instead.
-            </p>
-            <h3>Parry</h3>
-            <p>
-                A Dexterity + Melee maneuver using a weapon to block a Brawl or Melee attack.
-            </p>
-            <p>
-                If a character makes a Brawl attack and the defender parries with
-                a weapon that normally causes lethal damage, the attacker can actually be hurt by a successful parry. 
-                If the defender rolls more successes than the attacker does in the resisted action, the defender rolls the weapon's
-                base damage plus the parry's extra successes as a damage dice pool against the attacker.
-            </p>
+            <div className={`${cardStyles.cardGrid} ${styles.defensiveGrid}`}>
+                {
+                    defensivemaneuverdata.map(x => {
+                        return (
+                            <div className={`${cardStyles.card} ${styles.defensiveManeuverCard}`}>
+                                <h3>{x.maneuver}</h3>
+                                {
+                                    x.traits &&
+                                    <div>
+                                        <label>Traits:</label>
+                                        <p>{x.traits}</p>
+                                    </div>
+                                }
+                                {
+                                    x.accuracy &&
+                                    <div>
+                                        <label>Accuracy:</label>
+                                        <p>{x.accuracy}</p>
+                                    </div>
+                                }
+
+                                {
+                                    x.difficulty && 
+                                    <div>
+                                        <label>Difficulty:</label>
+                                        <p>{x.difficulty}</p>
+                                    </div>
+                                }
+                                {
+                                    x.damage && <div>
+                                        <label>Damage:</label>
+                                        <p>{x.damage}</p>
+                                    </div>
+                                }
+                                {
+                                x.description && 
+                                <div className={styles.defensiveManeuverSpan}>
+                                    <label>Description:</label>
+                                    {x.description}
+                                </div>
+                                }
+
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

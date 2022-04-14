@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { rangedcombatmaneuversdata } from '../../../../services/maneuvers_data/rangedcombatmaneuverdata';
 import cardStyles from '../../../common/card.module.css';
@@ -13,11 +12,11 @@ function RangedCombatManeuvers() {
                 Some of these maneuvers require a weapon that can do the action. For example a revolver cannot do automatic fire. 
                 See the <Link to="/rules/equipment/ranged">ranged weapons chart</Link> for types of weapons that support the skills in question.
             </p>
-            <div className={`${cardStyles.cardGrid} ${styles.closeCombatGrid}`}>
+            <div className={`${cardStyles.cardGrid} ${styles.rangedCombatGrid}`}>
                 {
                     rangedcombatmaneuversdata.map(x => {
                         return (
-                            <div className={`${cardStyles.card} ${styles.maneuverCard}`}>
+                            <div className={`${cardStyles.card} ${styles.rangedManeuverCard}`}>
                                 <h3>{x.maneuver}</h3>
                                 {
                                     x.traits &&

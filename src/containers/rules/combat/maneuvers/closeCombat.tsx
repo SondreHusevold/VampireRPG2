@@ -32,12 +32,16 @@ function CloseCombatManeuvers() {
                                     <p>{x.damage}</p>
                                 </div>
                                 {
-                                x.special != null && 
+                                x.feature != null && 
                                 <div className={styles.maneuverSpan}>
                                     <label>Feature:</label>
-                                    <p>{x.special}</p>
+                                    <p>{x.feature}</p>
                                 </div>
                                 }
+                                 <div className={styles.maneuverSpan}>
+                                    <label>Description:</label>
+                                    {x.description}
+                                </div>
 
                             </div>
                         )

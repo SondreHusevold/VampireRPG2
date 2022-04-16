@@ -1,5 +1,5 @@
 import { DisciplineLevel } from "../../../models/discipline"
-import styles from '../disciplineData.module.css';
+import columnStyles from '../../../containers/common/columns.module.css';
 
 const level1: DisciplineLevel = {
     name: "Heightened Senses",
@@ -73,7 +73,7 @@ const level2: DisciplineLevel = {
                 A failure indicates that the play of colors and patterns yields no prevailing impression. A botch indicates a false or erroneous interpretation. 
                 The Storyteller may wish to make this roll, thus keeping the player in the dark as to the veracity of the character's interpretation.
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>
@@ -140,7 +140,7 @@ const level3: DisciplineLevel = {
                 Events involving strong emotions (a giftgiving, a torture, a long family history) likewise leave stronger impressions than short or casual contact do. 
                 Assume that each success offers one piece of information, as per the chart below:
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Information</label>
                 <p>Botch</p>

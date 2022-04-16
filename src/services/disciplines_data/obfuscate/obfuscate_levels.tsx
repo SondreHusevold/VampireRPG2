@@ -1,5 +1,5 @@
 import { DisciplineLevel } from "../../../models/discipline";
-import styles from '../disciplineData.module.css';
+import columnStyles from '../../../containers/common/columns.module.css';
 
 const level1: DisciplineLevel = {
     name: "Cloak of Shadows",
@@ -80,7 +80,7 @@ const level3: DisciplineLevel = {
                 equal to the difference between the vampire's Appearance rating and the Appearance of the mask (which means that younger vampires may need to take longer in order 
                 to spend the blood necessary).
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>

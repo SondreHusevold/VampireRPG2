@@ -1,5 +1,3 @@
-import styles from './health.module.css';
-
 function Healing() {
     return (
         <div className={"fadeIn"}>

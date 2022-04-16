@@ -1,8 +1,0 @@
-:local .twoColumnSection {
-    display: grid;
-    grid-template-columns: 0.3fr 0.5fr;
-}
-
-:local .twoColumnSection p {
-    margin-bottom: 0px;
-}

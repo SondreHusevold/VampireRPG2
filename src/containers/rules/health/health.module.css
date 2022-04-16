@@ -6,7 +6,6 @@
     grid-column: auto;
 }
 
-
 :local .applyingExample {
     display: grid;
     grid-template-columns: 0.5fr 600px;

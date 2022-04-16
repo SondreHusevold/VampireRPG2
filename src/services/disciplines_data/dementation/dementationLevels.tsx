@@ -1,5 +1,5 @@
 import { DisciplineLevel } from '../../../models/discipline';
-import styles from '../disciplineData.module.css';
+import columnStyles from '../../../containers/common/columns.module.css';
 
 const level1: DisciplineLevel = {
     name: "Passion",
@@ -15,7 +15,7 @@ const level1: DisciplineLevel = {
           The number of successes determines the duration of the altered state of feeling. Effects of this power might include one- or two-point additions or subtractions
           to difficulties of frenzy rolls, Virtue rolls, rolls to resist Presence powers, etc.
       </p>
-      <div className={styles.twoColumnSection}>
+      <div className={columnStyles.doubleColumn}>
           <label>Successes</label>
           <label>Result</label>
           <p>1 success</p>
@@ -55,7 +55,7 @@ const level2: DisciplineLevel = {
             The number of successes determines the length of the sensory “visitations.” The precise effects are up to the Storyteller, though particularly eerie or 
             harrowing apparitions can certainly reduce dice pools for a turn or two after the manifestation.
         </p>
-        <div className={styles.twoColumnSection}>
+        <div className={columnStyles.doubleColumn}>
             <label>Successes</label>
             <label>Result</label>
             <p>1 success</p>
@@ -138,7 +138,7 @@ const level5: DisciplineLevel = {
             If the roll is successful, the victim is afflicted with five derangements of the Storyteller's choice (see p. 290). 
             The number of successes determines the duration.
         </p>
-        <div className={styles.twoColumnSection}>
+        <div className={columnStyles.doubleColumn}>
             <label>Successes</label>
             <label>Result</label>
             <p>1 success</p>

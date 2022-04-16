@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './frenzy.module.css';
+import columnStyles from '../../../containers/common/columns.module.css';
 
 const allProvocations = [
     {
@@ -33,7 +33,7 @@ const allProvocations = [
 
 function Provocations() {
     return (
-        <div className={`fadeIn ${styles.provocations}`}>
+        <div className={`fadeIn`}>
             <h2>Provocations</h2>
             <p>
                 The Storyteller has final say in what can or cannot provoke a frenzy. 
@@ -45,15 +45,15 @@ function Provocations() {
                 If the frenzy has the potential to cause the vampire to commit an atrocity (killing a child or other innocent, for example), the Storyteller can rule that
                 the difficulty is 9 minus Conscience or Conviction instead.
             </p>
-            <div className={styles.provocationGrid}>
-                <p>Provocation</p>
-                <p>Difficulty</p>
+            <div className={columnStyles.doubleColumn}>
+                <label>Provocation</label>
+                <label>Difficulty</label>
 
                 {allProvocations.map(x => {
                     return (
                         <React.Fragment>
-                            <span>{x.provocation}</span>
-                            <span>{x.difficulty}</span>
+                            <p>{x.provocation}</p>
+                            <p>{x.difficulty}</p>
                         </React.Fragment>
                     )
                 })}

@@ -1,5 +1,5 @@
 import { DisciplineLevel } from "../../../models/discipline";
-import styles from '../disciplineData.module.css';
+import columnStyles from '../../../containers/common/columns.module.css';
 
 const level1: DisciplineLevel = {
     name: "Feral Whispers",
@@ -79,7 +79,7 @@ const level2: DisciplineLevel = {
                 The call can be as specific as the player desires. A character could call for all bats in the area, for only the male bats nearby, or for only the albino bat with the
                 notched ear he saw the other night.
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>
@@ -164,7 +164,7 @@ const level4: DisciplineLevel = {
                 The player rolls Manipulation + Animal Ken (difficulty 8) as the character looks into the animal's eyes (see sidebar on p. 152). The number of successes allows 
                 the character to employ some mental Disciplines while possessing the animal, as noted below.
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>
@@ -225,7 +225,7 @@ const level5: DisciplineLevel = {
                 The player must announce his preferred target (since it must be someone within sight, Drawing Out the Beast cannot be used if the vampire is alone),
                 then roll Manipulation + Self-Control/Instinct (difficulty 8). Refer to the table below for the results:
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>

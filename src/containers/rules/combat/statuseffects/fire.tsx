@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './statusEffects.module.css';
+import columnStyles from '../../../common/columns.module.css';
 
 function Fire() {
     return (
@@ -20,7 +20,7 @@ function Fire() {
                 If she is reduced to Crippled or Incapacitated by the fire, the burns cover the majority of her body, reducing Appearance by two.
             </p>
             <h3>Soak difficulties</h3>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Soak Difficulty</label>
                 <label>Heat of Fire</label>
                 <p>3</p>
@@ -38,7 +38,7 @@ function Fire() {
             </div>
 
             <h3>Damage per turn</h3>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Health Levels/Turn</label>
                 <label>Size of Fire</label>
                 <p>One</p>

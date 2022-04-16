@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from './frenzy.module.css';
+import columnStyles from '../../common/columns.module.css';
 
 function Rotschreck() {
     return (
@@ -33,7 +33,7 @@ function Rotschreck() {
             <p>One Willpower point may be spent to maintain control for one turn.</p>
             <p>A character who is the victim of a botched Courage roll immediately frenzies and remains in a frenzy until the Storyteller decides otherwise.</p>
             
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Provocation</label>
                 <label>Difficulty</label>
                 <p>Lighting a cigarette</p>

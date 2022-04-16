@@ -1,6 +1,5 @@
 import NavigationLinker from "../../common/navigationLinker";
 import BloodBondIntroduction from "./bloodbondintro";
-import styles from './bloodbond.module.css';
 import { Navigate, Route, Routes } from "react-router-dom";
 import picture from './bloodbond.jpg';
 import BloodBondResistance from "./resistance";
@@ -30,7 +29,7 @@ function BloodBond() {
             </div>
             <BloodBondNavigations/>
             <div className={pageStyles.lowerPage}>
-                <div className={styles.textSection}>
+                <div>
                     <Routes>
                         <Route path={`breaking`} element={<BloodBondBreak />} />
                         <Route path={`resistance`} element={<BloodBondResistance />} />

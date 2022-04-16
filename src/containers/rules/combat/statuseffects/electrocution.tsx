@@ -1,4 +1,4 @@
-import styles from './statusEffects.module.css';
+import columnStyles from '../../../common/columns.module.css';
 
 function Electrocution() {
     return (
@@ -19,7 +19,7 @@ function Electrocution() {
                 If your character falls to Maimed, she is scarred temporarily by the flames (reduce Appearance by one until her wounds recover to Bruised). 
                 If she is reduced to Crippled or Incapacitated by the fire, the burns cover the majority of her body, reducing Appearance by two.
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Health Levels/Turn</label>
                 <label>Electrical Source</label>
                 <p>One</p>

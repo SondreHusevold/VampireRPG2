@@ -1,5 +1,3 @@
-import styles from './combatStages.module.css';
-
 function Attack() {
     return (
         <div className={"fadeIn"}>

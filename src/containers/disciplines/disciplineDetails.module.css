@@ -43,18 +43,6 @@
     opacity: 1;
 }
 
-:local .printedDot {
-    content: '●';
-}
-
-:local .printedEmptyDot {
-    content: '○';
-}
-
-:local .printedEmptyDot:hover {
-    content: '●';
-}
-
 :local .prevNextDisc {
     transform: scale(0.6);
     opacity: 0.3;

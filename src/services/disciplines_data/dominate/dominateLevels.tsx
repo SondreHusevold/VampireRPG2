@@ -1,5 +1,5 @@
 import { DisciplineLevel } from "../../../models/discipline";
-import styles from '../disciplineData.module.css';
+import columnStyles from '../../../containers/common/columns.module.css';
 
 const level1: DisciplineLevel = {
     name: "Command",
@@ -111,7 +111,7 @@ const level3: DisciplineLevel = {
                 The table below indicates the degree of modification possible to the subject's memory. If the successes rolled don't allow for the extent of change the character desired, 
                 the Storyteller reduces the resulting impact on the victim's mind.
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>
@@ -218,7 +218,7 @@ const level5: DisciplineLevel = {
                 assumes control of the mortal shell. Similar to the Animalism power Subsume the Spirit, multiple successes allow the character to utilize some mental Disciplines,
                 noted on the chart below. (Vampires possessing ghouls can use the physical Disciplines the ghoul possesses, but not the mental ones.)
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>

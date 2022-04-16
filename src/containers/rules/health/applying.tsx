@@ -1,5 +1,4 @@
 import Death from "./death";
-import styles from './health.module.css';
 
 function ApplyingDamage() {
     return (

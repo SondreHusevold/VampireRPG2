@@ -1,5 +1,3 @@
-import styles from './combatStages.module.css';
-
 function Resolution() {
     return (
         <div className={"fadeIn"}>

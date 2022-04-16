@@ -1,7 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import NavigationLinker from "../../common/navigationLinker";
 import picture from './frenzy.jpg';
-import styles from './frenzy.module.css';
 import FrenzyInformation from "./frenzyinfo";
 import FrenzySystem from "./frenzysystem";
 import Provocations from "./provocations";
@@ -30,7 +29,7 @@ function Frenzy() {
             </div>
             <FrenzyNavigations/>
             <div className={pageStyles.lowerPage}>
-                <div className={styles.textSection}>
+                <div className={pageStyles.textSection}>
                     <Routes>
                         <Route path={`rotschreck`} element={<Rotschreck />} />
                         <Route path={`provocations`} element={<Provocations />} />

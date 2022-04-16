@@ -1,0 +1,35 @@
+
+:local .headerRoller {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    animation: "fadeIn" 1s;
+    text-align: center;
+}
+
+:local .headerRoller h1 {
+    margin: 0px;
+}
+
+:local .prevNext a {
+    text-decoration: none;
+}
+
+:local .prevNext {
+    transform: scale(0.5);
+    opacity: 0.3;
+    transition: opacity 500ms;
+}
+
+:local .prevNext:hover {
+    opacity: 1;
+}
+
+:local .prevNext h1 {
+    cursor: pointer;
+}
+
+:local .linkIcon {
+    font-size: 11em;
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,12 @@
+:local .doubleColumn {
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr;    
+}
+
+:local .doubleColumn label {
+    padding-bottom: 0.5em;
+}
+
+:local .doubleColumn p {
+    margin-bottom: 0px;
+}

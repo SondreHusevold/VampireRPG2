@@ -1,5 +1,5 @@
 import { DisciplineLevel } from "../../../models/discipline";
-import styles from '../disciplineData.module.css';
+import columnStyles from '../../../containers/common/columns.module.css';
 
 const level1: DisciplineLevel = {
     name: "Awe",
@@ -23,7 +23,7 @@ const level1: DisciplineLevel = {
                 as noted on the chart below. If there are more people present than the character can influence, Awe affects those with lower Willpower ratings first. 
                 The power stays in effect for the remainder of the scene or until the character chooses to drop it.
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>1 success</p>
@@ -102,7 +102,7 @@ const level3: DisciplineLevel = {
                 The vampire may try to keep the subject under her thrall, but can do so only after the initial Entrancement wears off. 
                 Attempting this power while Entrancement is already in operation has no effect.
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>Botch</p>
@@ -159,7 +159,7 @@ const level4: DisciplineLevel = {
             <p>
                 The number of successes indicates the subject's speed and attitude in responding:
             </p>
-            <div className={styles.twoColumnSection}>
+            <div className={columnStyles.doubleColumn}>
                 <label>Successes</label>
                 <label>Result</label>
                 <p>Botch</p>

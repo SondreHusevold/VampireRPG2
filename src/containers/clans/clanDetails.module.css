@@ -9,41 +9,8 @@
     text-decoration: none;
 }
 
-:local .clanText {
-    animation: "fadeIn" 1s;
-}
-
-:local .clanHeader {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    animation: "fadeIn" 1s;
+:local .clanQuote {
     text-align: center;
-}
-
-:local .clanHeader h1 {
-    margin: 0px;
-}
-
-:local .prevNextClan a {
-    text-decoration: none;
-}
-
-:local .prevNextClan {
-    transform: scale(0.5);
-    opacity: 0.3;
-    transition: opacity 500ms;
-}
-
-:local .prevNextClan:hover {
-    opacity: 1;
-}
-
-:local .prevNextClan h1 {
-    cursor: pointer;
-}
-
-:local .clanHeaderQuote {
-    grid-column: span 3;
 }
 
 :local .sectOpinions {
@@ -71,12 +38,6 @@
 :local .opinionClanIcon {
     font-size: 4em;
     margin-right: 0.3em;
-}
-
-:local .clanIcon {
-    font-size: 11em;
-    margin: 0px;
-    padding: 0px;
 }
 
 :local .disciplinesHeader {

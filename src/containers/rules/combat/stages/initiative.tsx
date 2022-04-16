@@ -1,5 +1,3 @@
-import styles from './combatStages.module.css';
-
 function Initiatives() {
     return (
         <div className={"fadeIn"}>

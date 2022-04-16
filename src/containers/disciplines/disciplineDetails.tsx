@@ -3,16 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import { Discipline } from "../../models/discipline";
 import { disciplines } from "../../services/disciplineService";
 import pageStyles from '../common/pages.module.css';
+import HeaderRoller from "../navigation/headerRoller";
 import styles from './disciplineDetails.module.css';
-
-function RenderDiscipline(discipline: Discipline) {
-    return (
-        <div className={styles.headerDiscipline}>
-            <h1 key={`${discipline.name}_title`} className={styles.headerLinkText}>{discipline.name}</h1>
-            <span className={`vtm-icon`}>{discipline.icon}</span>
-        </div>
-    )
-}
 
 function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
     const lvl = props.discipline.levels[props.dots-1];
@@ -61,8 +53,6 @@ function DisciplineDetails() {
     const [dotsChosen, setDotsChosen] = useState<number>(1);
     const { name } = useParams();
     const discipline = disciplines.filter(x => x.name.toLowerCase() === name?.toLowerCase())[0];
-    const prevDisc = disciplines[disciplines.findIndex(x => x === discipline)-1];
-    const nextDisc = disciplines[disciplines.findIndex(x => x === discipline)+1];
 
     useEffect(() => {
         setDotsChosen(1);
@@ -70,27 +60,18 @@ function DisciplineDetails() {
 
     return (
         <div className={styles.disciplinesGrid}> 
-            <div className={`${styles.disciplineHeader}`}>
-            <div className={styles.prevNextDisc}>
-                { 
-                    prevDisc != null && 
-                    <Link to={`/disciplines/${prevDisc.name}`}>
-                        <RenderDiscipline {...prevDisc} />
-                    </Link>
-                }
-                </div>
-                <RenderDiscipline {...discipline} />
-                {
-                    <div className={styles.prevNextDisc}>
-                    { 
-                        nextDisc != null && 
-                        <Link to={`/disciplines/${nextDisc.name}`}>
-                            <RenderDiscipline {...nextDisc} /> 
-                        </Link>
+            <HeaderRoller 
+                iconSet="vtm-icon" 
+                allLinks={disciplines.map(x => {
+                    return {
+                        name: x.name,
+                        link: `/disciplines/${x.name}`,
+                        icon: `${x.icon}`
                     }
-                    </div>
-                }
-            </div>
+                })}
+                currentName={discipline.name}
+            />
+
             <div className={pageStyles.lowerPage} key={`${discipline.name}_lowerPage`}>
                 <div className={styles.ownedByClan}>
                     {discipline.clans.map((clan) => {
@@ -105,7 +86,7 @@ function DisciplineDetails() {
                 <div>
                 {
                     discipline.system &&
-                    <div>
+                    <div className={styles.dotSection}>
                         <h3>System</h3>
                         {discipline.system}
                     </div>

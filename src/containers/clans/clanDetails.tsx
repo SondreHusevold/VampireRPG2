@@ -12,27 +12,18 @@ function ClanDetail() {
     const { name } = useParams();
     const clan = clans.filter(x => x.name.toLowerCase() === name?.toLowerCase())[0];
 
-    if(clan == null) {
-        return (
-            <div>
-                <h1>Super special clan "{name}"...</h1>
-                <Link to="/clans">How about you try again</Link>
-            </div>
-        )
-    }
-
     return (
         <div className={styles.page}>
             <HeaderRoller 
                 iconSet="vtm-clan-icon" 
                 allLinks={clans.map(x => {
                     return {
-                        name: x.name,
+                        name: `Clan ${x.name}`,
                         link: `/clans/${x.name}/description`,
                         icon: `${x.logo}`
                     }
                 })}
-                currentName={clan.name}
+                currentName={`Clan ${clan.name}`}
             />
             <p className={styles.clanQuote}>"{clan.quote}"</p>
             <div className={pageStyles.navGrid}>

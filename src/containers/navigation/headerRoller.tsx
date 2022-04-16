@@ -19,12 +19,15 @@ interface HeaderRollerLinkProps {
 }
 
 function RenderLink(link: HeaderRollerLinkProps) {
-    return (
-        <div>
-            <h1>Clan {link.roller.name}</h1>
-            <h1 className={`${link.iconSet} ${styles.linkIcon}`}>{link.roller.icon}</h1>
-        </div>
-    )
+    if(link?.roller != null) {
+        return (
+            <div>
+                <h1>{link.roller.name}</h1>
+                <h1 className={`${link.iconSet} ${styles.linkIcon}`}>{link.roller.icon}</h1>
+            </div>
+        )
+    }
+    return <div/>
 }
 
 function HeaderRoller(props: HeaderRollerProps) {

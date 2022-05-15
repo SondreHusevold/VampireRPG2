@@ -20,6 +20,7 @@ import BloodBond from "../rules/bloodbond/bloodbond";
 import Equipment from "../rules/equipment/equipment";
 
 function NavigationRouter() {
+
     return (
         <Routes>
             <Route path="/" element={<Haven />} />

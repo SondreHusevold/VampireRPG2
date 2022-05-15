@@ -1,3 +1,5 @@
+import { Artwork } from "./artwork";
+
 interface ClansSectStereotypes {
     sect: string;
     opinion: string;
@@ -6,12 +8,6 @@ interface ClansSectStereotypes {
 interface ClansStereotypes {
     clan: string;
     opinion: string;
-}
-
-interface Artwork {
-    img: string;
-    credit: string;
-    link: string;
 }
 
 export interface Clan {

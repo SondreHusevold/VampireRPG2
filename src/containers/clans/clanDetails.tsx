@@ -1,4 +1,4 @@
-import { Link, Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { clans } from "../../services/clanService";
 import styles from './clanDetails.module.css';
@@ -7,11 +7,17 @@ import pageStyles from '../common/pages.module.css';
 import ClanOpinions from "./clanOpinions";
 import { ClanAppearance, ClanDescription, ClanStrWeak, ClanTraits } from "./clanPages";
 import HeaderRoller from "../navigation/headerRoller";
+import Picture from "../common/picture";
+import { useEffect } from "react";
 
 function ClanDetail() {
     const { name } = useParams();
     const clan = clans.filter(x => x.name.toLowerCase() === name?.toLowerCase())[0];
 
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+      
     return (
         <div className={styles.page}>
             <HeaderRoller 
@@ -26,6 +32,8 @@ function ClanDetail() {
                 currentName={`Clan ${clan.name}`}
             />
             <p className={`fadeIn ${styles.clanQuote}`} key={`${clan.name}_quote`}>"{clan.quote}"</p>
+
+            <Picture {...clan.picture} pos={"30% 15%"} hidden={window.screen.width > 1300 } desc={clan.name} />
             <div className={`fadeIn ${pageStyles.navGrid}`} key={`${clan.name}_navi`}>
                 <NavigationLinker to="description" name="Description"/>
                 <NavigationLinker to="appearance" name="Appearance"/>
@@ -43,11 +51,8 @@ function ClanDetail() {
                     <Route path={`opinions`} element={<ClanOpinions {...clan} />}/>
                     <Route path={`/`} element={<Navigate to="description" />} />
                 </Routes>
-                <div className={pageStyles.picture}>
-                    <img alt={`${clan.name}`} src={clan.picture.img} />
-                    <p>Credit: <a href={`${clan.picture.link}`} target={`_blank`}>{clan.picture.credit}</a></p>
-                </div>
-                
+
+                <Picture {...clan.picture} pos={"N/A"} hidden={window.screen.width <= 1300 } desc={clan.name} />
             </div>
         </div>
     )

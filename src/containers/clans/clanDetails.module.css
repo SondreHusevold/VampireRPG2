@@ -77,3 +77,41 @@
     text-transform: none;
     margin: 0px;
 }
+
+:local .topBackButton {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    :local .page {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    :local .disciplinesHeader {
+        text-align: center;
+    }
+
+    :local .disciplinesFlex {
+        flex-direction: column;
+        justify-content: left;
+        gap: 30px;
+    }
+
+    :local .clanOpinionGrid {
+        grid-template-columns: 1fr;
+    }
+
+    :local .topBackButton {
+        display: flex;
+        background-color: transparent;
+        color: white;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px solid white;
+        width: 100%;
+        justify-content: center;
+        
+    }
+}

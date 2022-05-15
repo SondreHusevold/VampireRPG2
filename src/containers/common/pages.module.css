@@ -25,17 +25,23 @@
     margin-bottom: 2em;
 }
 
-:local .picture {
-    animation: "fadeIn" 1.5s;
-    justify-self: center;
-    margin-top: 3em;
-}
 
-:local .picture p {
-    margin-top: 5px;
-}
+@media screen and (max-width: 1300px) {
+    :local .navGrid {
+        flex-direction: column;
+        gap: 30px;
+    }
 
-:local .picture img {
-    border-radius: 10px;
-}
+    :local .navGrid a {
+        font-size: 1.5em;
+    }
 
+    :local .headerRoller {
+        grid-template-columns: 1fr;
+    }
+
+    :local .lowerPage {
+        padding: 0em 1em 0em 1em;
+        grid-template-columns: 1fr;
+    }
+}

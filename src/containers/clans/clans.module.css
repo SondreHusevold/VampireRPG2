@@ -124,10 +124,10 @@
   }
 
   :local .clansGrid button p {
-    opacity: 1;
+    opacity: 0.7;
   }
 
   :local .gridClanLogo {
-    opacity: 1;
+    opacity: 0.7;
   }
 }

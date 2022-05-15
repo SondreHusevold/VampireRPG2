@@ -33,3 +33,13 @@
     margin: 0px;
     padding: 0px;
 }
+
+@media screen and (max-width: 1300px) {
+    :local .prevNext {
+        display: none;
+    }
+
+    :local .headerRoller {
+        grid-template-columns: 1fr;
+    }
+}

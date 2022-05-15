@@ -25,6 +25,7 @@ interface HeaderRollerLinkProps {
 }
 
 function RenderLink(link: HeaderRollerLinkProps) {
+
     if(link?.roller != null) {
         return (
             <div>
@@ -47,7 +48,7 @@ function HeaderRoller(props: HeaderRollerProps) {
             { 
                 previous != null && 
                 <Link to={`${previous.link}`}>
-                    <RenderLink roller={previous} iconSet={props.iconSet} />
+                    <RenderLink roller={previous} iconSet={props.iconSet}/>
                 </Link>
             }
             </div>

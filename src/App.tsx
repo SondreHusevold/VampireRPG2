@@ -9,10 +9,14 @@ import { useState } from 'react';
 function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+  function setMobileMenu(bool: boolean) {
+    setShowMobileMenu(bool);
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
-        <NavigationBar showMobileMenu={showMobileMenu} setShowMobileMenu={setShowMobileMenu} />
+        <NavigationBar showMobileMenu={showMobileMenu} setShowMobileMenu={setMobileMenu} />
         <div hidden={showMobileMenu} className="vampPage">
           <NavigationRouter />
         </div>

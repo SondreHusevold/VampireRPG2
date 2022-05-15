@@ -37,18 +37,31 @@
 
 :local .hamburgerMenu {
   position: relative;
-  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 3em;
   width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-bottom: 2vh;
-  z-index: 100;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  z-index: 30;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+:local .hamburgerMenu button {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+:local .backButton {
+  font-size: 1.5em;
+}
+
+:local .burgerMenu {
+  font-size: 3em;
+  margin-right: 1em;
 }
 
 @media screen and (min-width: 1300px) {

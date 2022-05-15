@@ -4,13 +4,16 @@ import './App.css';
 import './animations.css'
 import NavigationBar from './containers/navigation/navigationbar';
 import NavigationRouter from './containers/navigation/router';
+import { useState } from 'react';
 
 function App() {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   return (
     <div className="App">
       <BrowserRouter>
-        <NavigationBar />
-        <div className="vampPage">
+        <NavigationBar showMobileMenu={showMobileMenu} setShowMobileMenu={setShowMobileMenu} />
+        <div hidden={showMobileMenu} className="vampPage">
           <NavigationRouter />
         </div>
       </BrowserRouter>

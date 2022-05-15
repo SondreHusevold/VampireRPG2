@@ -10,7 +10,7 @@ function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
     const lvl = props.discipline.levels[props.dots-1];
     return (
         <div className={styles.dotInfoSection} key={`discipline_${lvl.name}`}>
-            <h3>{lvl.name.toUpperCase()}</h3>
+            <h2>{lvl.name.toUpperCase()}</h2>
             {lvl.description}
             <h4>Rules</h4>
             {lvl.system}
@@ -72,26 +72,26 @@ function DisciplineDetails() {
                 currentName={discipline.name}
             />
 
-            <div className={pageStyles.lowerPage} key={`${discipline.name}_lowerPage`}>
-                <div className={styles.ownedByClan}>
+            <div className={`${pageStyles.lowerPage}`} key={`${discipline.name}_lowerPage`}>
+                <div className={`fadeInSlower ${styles.ownedByClan}`} key={`${discipline.name}_owned`}>
                     {discipline.clans.map((clan) => {
                         return (
                             <Link to={`/clans/${clan.name}/description`}>Clan {clan.name}</Link>
                         )
                     })}
                 </div>
-                <div className={styles.disciplineText}>
+                <div className={`fadeInSlower ${styles.disciplineText}`} key={`${discipline.name}_description`}>
                     {discipline.description}
                 </div>
                 <div>
                 {
                     discipline.system &&
-                    <div className={styles.dotSection}>
+                    <div className={`fadeInSlowest ${styles.dotSection}`}>
                         <h3>System</h3>
                         {discipline.system}
                     </div>
                 }
-                <div className={styles.dotSection}>
+                <div className={`fadeInSlowest ${styles.dotSection}`}>
                     <h3>{discipline.name} dots</h3>
                     <RenderDotsNavigation dots={dotsChosen} setDots={setDotsChosen}/>
                     <div className={styles.dotLevelSection} key={`${discipline.name}_dots`}>

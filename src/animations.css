@@ -1,5 +1,6 @@
 .fadeIn {
-  animation: "fadeIn" 1s;
+  animation: "fadeIn" 1s ease-in-out;
+  -webkit-animation: "fadeIn" 1s ease-in;
 }
 
 .fadeInSlower {
@@ -17,4 +18,13 @@
     to {
       opacity: 1;
     }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

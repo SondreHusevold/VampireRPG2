@@ -38,7 +38,7 @@ function BloodBond() {
                         <Route path={`/`} element={<Navigate to="information" />} />
                     </Routes>
                 </div>
-                <div className={picture}>
+                <div className={pageStyles.picture}>
                     <img alt={`Blood bonding`} src={picture} />
                     <p>Credit: <a href={`https://aneyeoni.com/art.htm`} target={`_blank`}>Aleksi Briclot</a></p>
                 </div>

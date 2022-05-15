@@ -1,12 +1,9 @@
 :local .navbar {
     text-align: center;
-    position: absolute;
-    top: 0;
     display: flex;
     width: 100%;
     color: #e0e0db;
     border-bottom: 1px solid #e0e0db;
-    justify-content: space-evenly;
     padding-top: 1em;
     padding-bottom: 1em;
     z-index: 300;
@@ -17,19 +14,72 @@
   padding-right: 0.5em;
 }
 
+:local .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
 
-@keyframes underliner {
-  from {
-    border-bottom: 0px solid #e0e0db;
+:local .closeButton {
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: black;   
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2vh;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+:local .hamburgerMenu {
+  position: relative;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 3em;
+  width: 100%;
+  margin-bottom: 2vh;
+  z-index: 100;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+@media screen and (min-width: 1300px) {
+  :local .hamburgerMenu {
+    display: none;
   }
-  to {
-    border-bottom: 1px solid #e0e0db;
+
+  :local .closeButton {
+    display: none;
   }
 }
 
 @media screen and (max-width: 1300px) {
   :local .navbar {
-      display: none;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      border-bottom: 0px;
+      padding-top: 0px;
+      margin-bottom: 2em;
   }
 
+  :local .links {
+    display: flex;
+    animation: "fadeIn" 0.15s ease-in;
+    -webkit-animation: "fadeIn" 0.15s ease-in;
+    flex-direction: column;
+  }
+
+  :local .navbar a {
+      font-size: 4vh;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+  }
 }

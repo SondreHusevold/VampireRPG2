@@ -25,8 +25,8 @@ function ClanDetail() {
                 })}
                 currentName={`Clan ${clan.name}`}
             />
-            <p className={styles.clanQuote}>"{clan.quote}"</p>
-            <div className={pageStyles.navGrid}>
+            <p className={`fadeIn ${styles.clanQuote}`} key={`${clan.name}_quote`}>"{clan.quote}"</p>
+            <div className={`fadeIn ${pageStyles.navGrid}`} key={`${clan.name}_navi`}>
                 <NavigationLinker to="description" name="Description"/>
                 <NavigationLinker to="appearance" name="Appearance"/>
                 <NavigationLinker to="traits" name="Traits"/>

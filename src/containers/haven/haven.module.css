@@ -23,21 +23,13 @@
 }
 
 :local .frontVideo img {    
-    animation: logoFadein 3s ease-in;
+    animation: "fadeIn" 3s ease-in;
+    -webkit-animation: "fadeIn" 3s ease-in;
     opacity: 1;
 }
 
 @media screen and (max-width: 1800px) {
     :local .frontVideo img {
         width: 100%;
-    }
-}
-
-@keyframes logoFadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }

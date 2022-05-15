@@ -1,5 +1,5 @@
 :local .headerTop {
-    animation: "fadeIn" 1s;
+    animation: "fadeIn" 0.5s;
     text-align: center;
     margin-bottom: 0.3em;
 }

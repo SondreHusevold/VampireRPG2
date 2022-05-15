@@ -58,7 +58,7 @@ ul {
 
 .vampPage {
   margin-left: 4em;
-  margin-top: 6em;
+  margin-top: 2em;
   margin-right: 4em;
 }
 
@@ -95,5 +95,9 @@ a:hover {
     margin-left: 0px;
     margin-top: 0px;
     margin-right: 0px;
+  }
+
+  a {
+    border: none;
   }
 }

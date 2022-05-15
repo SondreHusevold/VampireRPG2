@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from '../common/headerRoller.module.css';
 
+//  ************************************
+//
+//  This is the header at the top of Clans and Disciplines with icon and header text.
+//
+//  ************************************
+
 interface HeaderRollerProps {
     allLinks: HeaderRollerLink[];
     currentName: string;

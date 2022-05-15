@@ -42,6 +42,10 @@
     animation: "fadeIn" 1s;
 }
 
+:local .dotInfoSection h2 {
+    text-align: center;
+}
+
 :local .dotInfoSection h4 {
     text-align: center;
 }

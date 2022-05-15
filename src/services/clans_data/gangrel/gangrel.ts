@@ -8,7 +8,8 @@ const clan: Clan = {
 	picture: {
 		img: picture,
 		credit: "Carmen Cornet",
-		link: "https://www.artstation.com/ccornet"
+		link: "https://www.artstation.com/ccornet",
+		pos: "30% 15%"
 	},
 	description: GangrelDescription(),
 	nickname: "Outlanders",

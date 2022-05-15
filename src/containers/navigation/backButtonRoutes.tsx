@@ -70,7 +70,7 @@ function GoBackTo() {
         <button 
             className={`nf nf-oct-arrow_left ${styles.backButton}`} 
             onClick={() => navigator(currentRouteMatch.backTo)}
-        > {currentRouteMatch.name}</button>
+        > <span className="vtm-hk-grotesk-force">{currentRouteMatch.name}</span></button>
     )
 }
 

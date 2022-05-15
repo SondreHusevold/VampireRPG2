@@ -1,12 +1,13 @@
 :local .navbar {
-    text-align: center;
-    display: flex;
-    width: 100%;
-    color: #e0e0db;
-    border-bottom: 1px solid #e0e0db;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    z-index: 300;
+  position: relative;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  color: #e0e0db;
+  border-bottom: 1px solid #e0e0db;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  z-index: 300;
 }
 
 :local .navbar a {
@@ -56,6 +57,7 @@
 :local .backButton {
   font-size: 1.5em;
   padding-left: 1em;
+  opacity: 0.8;
 }
 
 :local .burgerMenu {

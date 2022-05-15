@@ -8,7 +8,8 @@ const clan: Clan = {
 	picture: {
 		img: picture,
 		credit: "Amy Wilkins",
-		link: "https://www.artstation.com/amywilkinsart"
+		link: "https://www.artstation.com/amywilkinsart",
+		pos: "30% 15%"
 	},
 	description: MalkavianDescription(),
 	nickname: "Lunatics",

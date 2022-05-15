@@ -8,7 +8,8 @@ const clan: Clan = {
 	picture: {
 		img: picture,
 		credit: "Brian Matyas",
-		link: "https://www.artstation.com/bmatyas"
+		link: "https://www.artstation.com/bmatyas",
+		pos: "55% 10%"
 	},
 	description: VentrueDescription(),
 	nickname: "Blue Bloods",

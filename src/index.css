@@ -33,6 +33,10 @@ code {
     monospace;
 }
 
+.vtm-hk-grotesk-force {
+  font-family: "HK Grotesk" !important;
+}
+
 .vtm-icon {
   font-family: "Ankha";
   text-transform: none;

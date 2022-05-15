@@ -8,7 +8,8 @@ const clan: Clan = {
 	picture: {
 		img: picture,
 		credit: "Bella Bergolts",
-		link: "https://www.deviantart.com/bellabergolts"
+		link: "https://www.deviantart.com/bellabergolts",
+		pos: "30% 15%"
 	},
 	description: TremereDescription(),
 	nickname: "Warlocks",

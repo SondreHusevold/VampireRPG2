@@ -6,7 +6,7 @@ function Clans() {
     const navigate = useNavigate();
 
     function goToClan(clan: string) {
-        navigate(`${clan}`, {})
+        navigate(`${clan}/description`, {})
     }
 
     return (

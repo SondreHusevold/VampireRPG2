@@ -8,7 +8,8 @@ const clan: Clan = {
 	picture: {
 		img: picture,
 		credit: "Oshred",
-		link: "https://twitter.com/oshredart"
+		link: "https://twitter.com/oshredart",
+		pos: "30% 15%"
 	},
 	description: ToreadorDescription(),
 	nickname: "Degenerates",

@@ -33,7 +33,7 @@ function ClanDetail() {
             />
             <p className={`fadeIn ${styles.clanQuote}`} key={`${clan.name}_quote`}>"{clan.quote}"</p>
 
-            <Picture {...clan.picture} pos={"30% 15%"} hidden={window.screen.width > 1300 } desc={clan.name} />
+            <Picture {...clan.picture} hidden={window.screen.width > 1300 } desc={clan.name} />
             <div className={`fadeIn ${pageStyles.navGrid}`} key={`${clan.name}_navi`}>
                 <NavigationLinker to="description" name="Description"/>
                 <NavigationLinker to="appearance" name="Appearance"/>

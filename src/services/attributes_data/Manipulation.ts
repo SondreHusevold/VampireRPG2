@@ -17,7 +17,8 @@ const attribute: Attribute = {
 	image: {
 		img: picture,
 		credit: "VtM book",
-		creditLink: ""
+		link: "",
+		pos: "30% 15%"
 	}
 }
 

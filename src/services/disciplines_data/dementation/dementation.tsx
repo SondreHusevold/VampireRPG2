@@ -27,8 +27,9 @@ const discipline: Discipline = {
     icon: "E",
     image: {
         credit: "V20 Core Rulebook (p. 149)",
-        creditLink: "",
-        img: Picture
+        link: "",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

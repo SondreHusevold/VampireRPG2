@@ -6,6 +6,7 @@ import styles from './equipment.module.css';
 import MeleeWeapons from "./meleeweapons";
 import RangedWeapons from "./rangedweapons";
 import pageStyles from '../../common/pages.module.css';
+import Picture from "../../common/picture";
 
 function EquipmentNavigations() {
     return (
@@ -36,10 +37,12 @@ function Equipment() {
                         <Route path={`/`} element={<Navigate to="melee" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt="Complete Equipment" src={picture} />
-                    <p>Credit: <a href={`https://twitter.com/ttguweiz`} target={`_blank`}>Guweiz</a></p>
-                </div>
+
+                <Picture 
+                    credit='Guweiz' desc="Equipment"
+                    img={picture} link={`https://twitter.com/ttguweiz`}
+                    pos={"30% 15%"} hidden={false}
+                />
             </div>
         </div>
     )

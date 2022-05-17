@@ -39,8 +39,9 @@ const discipline: Discipline = {
     icon: "D",
     image: {
         credit: "Oshred",
-        creditLink: "https://twitter.com/oshredart",
-        img: Picture
+        link: "https://twitter.com/oshredart",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

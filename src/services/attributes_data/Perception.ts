@@ -17,7 +17,8 @@ const attribute: Attribute = {
 	image: {
 		img: picture,
 		credit: "Natasha Haiduk",
-		creditLink: "https://www.artstation.com/natahaiduk"
+		link: "https://www.artstation.com/natahaiduk",
+		pos: "30% 15%"
 	}
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Artwork } from "./artwork";
 import { Clan } from "./clan";
 
 export interface DisciplineLevel {
@@ -14,9 +15,5 @@ export interface Discipline {
 	levels: DisciplineLevel[];
 	clans: Clan[];
     icon: string;
-    image: {
-        img: string;
-        credit: string;
-        creditLink: string;
-    }
+    image: Artwork;
 }

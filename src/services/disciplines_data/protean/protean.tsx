@@ -27,8 +27,9 @@ const discipline: Discipline = {
     icon: "J",
     image: {
         credit: "Lilian Helvecio",
-        creditLink: "https://www.pinterest.com/lilianhelvecio/",
-        img: Picture
+        link: "https://www.pinterest.com/lilianhelvecio/",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

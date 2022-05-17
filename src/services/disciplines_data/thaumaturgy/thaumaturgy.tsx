@@ -49,8 +49,9 @@ const discipline: Discipline = {
     icon: "T",
     image: {
         credit: "Eryk Szczygieł",
-        creditLink: "https://www.artstation.com/typhonart",
-        img: Picture
+        link: "https://www.artstation.com/typhonart",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

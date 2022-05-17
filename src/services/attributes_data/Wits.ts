@@ -17,7 +17,8 @@ const attribute: Attribute = {
 	image: {
 		img: picture,
 		credit: "Hetza",
-		creditLink: "https://www.pixiv.net/en/users/46899"
+		link: "https://www.pixiv.net/en/users/46899",
+		pos: "30% 15%"
 	}
 }
 

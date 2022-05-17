@@ -7,6 +7,7 @@ import picture from './Health.jpg';
 import ApplyingDamage from './applying';
 import Healing from './healing';
 import pageStyles from '../../common/pages.module.css';
+import Picture from '../../common/picture';
 
 function HealthNavigations() {
     return (
@@ -20,7 +21,6 @@ function HealthNavigations() {
         </>
     )
 }
-
 
 function Health() {
     return (
@@ -43,10 +43,12 @@ function Health() {
                         <Route path={`/`} element={<Navigate to="summary" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt="Health" src={picture} />
-                    <p>Credit: <a href={`https://www.artstation.com/aoxenuk`} target={`_blank`}>Anton Oxenuk</a></p>
-                </div>
+                
+                <Picture 
+                    credit='Anton Oxenuk' desc="Health"
+                    img={picture} link={`https://www.artstation.com/aoxenuk`}
+                    pos={"30% 15%"} hidden={false}
+                />
             </div>
         </>
     )

@@ -17,7 +17,8 @@ const attribute: Attribute = {
 	image: {
 		img: picture,
 		credit: "Nocturnal Ghost",
-		creditLink: "https://www.reddit.com/r/vtmb/comments/sbi8ay/planning_on_doing_an_illustration_series_of_all/"
+		link: "https://www.reddit.com/r/vtmb/comments/sbi8ay/planning_on_doing_an_illustration_series_of_all/",
+		pos: "30% 15%"
 	}
 }
 

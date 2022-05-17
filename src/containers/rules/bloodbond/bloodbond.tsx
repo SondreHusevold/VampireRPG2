@@ -6,6 +6,7 @@ import BloodBondResistance from "./resistance";
 import BloodBondBreak from "./breaking";
 import BloodBondDrinks from "./drinks";
 import pageStyles from '../../common/pages.module.css';
+import Picture from "../../common/picture";
 
 function BloodBondNavigations() {
     return (
@@ -38,10 +39,8 @@ function BloodBond() {
                         <Route path={`/`} element={<Navigate to="information" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt={`Blood bonding`} src={picture} />
-                    <p>Credit: <a href={`https://aneyeoni.com/art.htm`} target={`_blank`}>Aleksi Briclot</a></p>
-                </div>
+                <Picture credit="Aleksi Briclot" desc="Blood bonding" hidden={false}
+                    img={picture} pos="30% 15%" link="https://aneyeoni.com/art.htm"/>
             </div>
  
         </div>

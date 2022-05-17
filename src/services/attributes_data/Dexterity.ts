@@ -17,7 +17,8 @@ const attribute: Attribute = {
 	image: {
 		img: picture,
 		credit: "Oshred",
-		creditLink: "https://twitter.com/oshredart"
+		link: "https://twitter.com/oshredart",
+		pos: "30% 15%"
 	}
 }
 

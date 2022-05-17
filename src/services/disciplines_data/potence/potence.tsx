@@ -35,8 +35,9 @@ const discipline: Discipline = {
     icon: "P",
     image: {
         credit: "Carmen Cornet",
-        creditLink: "https://www.artstation.com/ccornet",
-        img: Picture
+        link: "https://www.artstation.com/ccornet",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

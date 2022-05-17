@@ -27,8 +27,9 @@ const discipline: Discipline = {
     icon: "I",
     image: {
         credit: "Raquel Cornejo",
-        creditLink: "https://www.artstation.com/raquelcornejo",
-        img: Picture
+        link: "https://www.artstation.com/raquelcornejo",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

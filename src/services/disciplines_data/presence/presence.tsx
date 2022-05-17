@@ -41,8 +41,9 @@ const discipline: Discipline = {
     icon: "R",
     image: {
         credit: "Amy Wilkins",
-        creditLink: "https://www.artstation.com/amywilkinsart",
-        img: Picture
+        link: "https://www.artstation.com/amywilkinsart",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

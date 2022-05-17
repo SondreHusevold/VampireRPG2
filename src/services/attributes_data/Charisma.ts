@@ -17,7 +17,8 @@ const attribute: Attribute = {
 	image: {
 		img: picture,
 		credit: "VtM: Swansong",
-		creditLink: "https://twitter.com/VampireSwansong/status/1479483106209980423"
+		link: "https://twitter.com/VampireSwansong/status/1479483106209980423",
+		pos: "30% 15%"
 	}
 }
 

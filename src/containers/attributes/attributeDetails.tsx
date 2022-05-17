@@ -7,6 +7,7 @@ import { ParseJsonText } from '../../utilities/parser';
 import styles from './attributeDetails.module.css';
 import LeftMenu from './leftMenu';
 import pageStyles from '../common/pages.module.css';
+import Picture from '../common/picture';
 
 
 function AttributeDetails() {
@@ -44,10 +45,8 @@ function AttributeDetails() {
                             )
                         })}
                     </div>
-                    <div className={pageStyles.picture}>
-                        <img alt={`${attribute.name}`} src={attribute.image.img} />
-                        <p>Credit: <a href={`${attribute.image.creditLink}`} target={`_blank`}>{attribute.image.credit}</a></p>
-                    </div> 
+                    
+                    <Picture {...attribute.image} desc={attribute.name} hidden={false} />
                 </div>
             </div>
         </div>

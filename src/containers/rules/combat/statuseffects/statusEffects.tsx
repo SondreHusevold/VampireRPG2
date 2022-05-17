@@ -7,6 +7,7 @@ import Fire from './fire';
 import Electrocution from './electrocution';
 import Derangements from './derangements';
 import pageStyles from '../../../common/pages.module.css';
+import Picture from '../../../common/picture';
 
 function EffectsNavigations() {
     return (
@@ -40,10 +41,12 @@ function StatusEffects() {
                         <Route path={`/`} element={<Navigate to="effects" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt="Blood" src={picture} />
-                    <p>Credit: <a href={`https://kathydesign.artstation.com/`} target={`_blank`}>Kathy Design</a></p>
-                </div>
+
+                <Picture 
+                    credit='Kathy Design' desc="Blood"
+                    img={picture} link={`https://kathydesign.artstation.com/`}
+                    pos={"30% 15%"} hidden={false}
+                />
             </div>
         </div>
     )

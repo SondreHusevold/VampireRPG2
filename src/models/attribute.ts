@@ -1,3 +1,5 @@
+import { Artwork } from "./artwork";
+
 export interface Attribute {
     name: string;
     section: AttributeSections;
@@ -5,11 +7,7 @@ export interface Attribute {
 	levels: string[];
 	specialties: string[];
     icon: string;
-    image: {
-        img: string;
-        credit: string;
-        creditLink: string;
-    }
+    image: Artwork;
 }
 
 export enum AttributeSections {

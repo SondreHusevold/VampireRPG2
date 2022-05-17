@@ -32,8 +32,9 @@ const discipline: Discipline = {
     icon: "F",
     image: {
         credit: "David Demaret",
-        creditLink: "https://www.artstation.com/moonchild",
-        img: Picture
+        link: "https://www.artstation.com/moonchild",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

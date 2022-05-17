@@ -8,6 +8,7 @@ import Soaking from "./soaking";
 import picture from './Stages.jpg';
 import Summary from "./summary";
 import pageStyles from '../../../common/pages.module.css';
+import Picture from "../../../common/picture";
 
 function CombatNavigations() {
     return (
@@ -47,10 +48,11 @@ function CombatStages() {
                         <Route path={`/`} element={<Navigate to="summary" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt="Combat" src={picture} />
-                    <p>Credit: <a href={`https://www.artstation.com/wen-jr`} target={`_blank`}>Jonathan Romeo</a></p>
-                </div>
+                <Picture 
+                    credit='Jonathan Romeo' desc="Combat"
+                    img={picture} link={`https://www.artstation.com/wen-jr`}
+                    pos={"30% 15%"} hidden={false}
+                />
             </div>
         </>
     )

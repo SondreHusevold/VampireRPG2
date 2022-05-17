@@ -6,6 +6,7 @@ import FrenzySystem from "./frenzysystem";
 import Provocations from "./provocations";
 import Rotschreck from "./rotschreck";
 import pageStyles from '../../common/pages.module.css';
+import Picture from "../../common/picture";
 
 function FrenzyNavigations() {
     return (
@@ -38,10 +39,12 @@ function Frenzy() {
                         <Route path={`/`} element={<Navigate to="information" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt="Complete frenzy" src={picture} />
-                    <p>Credit: <a href={`https://www.artstation.com/jon`} target={`_blank`}>Jon Dunham</a></p>
-                </div>
+                
+                <Picture 
+                    credit='Jon Dunham' desc="Complete frenzy"
+                    img={picture} link={`https://www.artstation.com/jon`}
+                    pos={"30% 15%"} hidden={false}
+                />
             </div>
         </div>
     )

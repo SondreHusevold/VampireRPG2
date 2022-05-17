@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Discipline } from "../../models/discipline";
 import { disciplines } from "../../services/disciplineService";
 import pageStyles from '../common/pages.module.css';
+import Picture from "../common/picture";
 import HeaderRoller from "../navigation/headerRoller";
 import styles from './disciplineDetails.module.css';
 
@@ -99,10 +100,7 @@ function DisciplineDetails() {
                     </div>
                 </div>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt={`${discipline.name}`} src={discipline.image.img} />
-                    <p>Credit: <a href={`${discipline.image.creditLink}`} target={`_blank`}>{discipline.image.credit}</a></p>
-                </div>
+                <Picture {...discipline.image} hidden={false} desc={discipline.name}  />
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ export interface Ability {
     // image: {
     //     img: string;
     //     credit: string;
-    //     creditLink: string;
+    //     link: string;
     // }
 }
 

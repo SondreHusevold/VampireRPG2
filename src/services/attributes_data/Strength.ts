@@ -17,7 +17,8 @@ const attribute: Attribute = {
 	image: {
 		img: picture,
 		credit: "Alexey Kruglov",
-		creditLink: "https://www.artstation.com/alexeykruglov"
+		link: "https://www.artstation.com/alexeykruglov",
+		pos: "30% 15%"
 	}
 }
 

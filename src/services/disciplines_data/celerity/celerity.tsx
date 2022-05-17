@@ -64,8 +64,9 @@ const discipline: Discipline = {
     icon: "C",
     image: {
         credit: "Jae Hyeok Jang",
-        creditLink: "https://www.artstation.com/realcrimson",
-        img: Picture
+        link: "https://www.artstation.com/realcrimson",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

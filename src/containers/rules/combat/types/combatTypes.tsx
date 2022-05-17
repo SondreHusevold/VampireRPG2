@@ -6,6 +6,7 @@ import CombatTypesSection from "./combatTypesSection";
 import DamageTypes from "./damageTypes";
 import picture from './combatTypes.jpg';
 import pageStyles from '../../../common/pages.module.css';
+import Picture from "../../../common/picture";
 
 function CombatNavigations() {
     return (
@@ -39,10 +40,12 @@ function CombatTypes() {
                         <Route path={`/`} element={<Navigate to="combat_types" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt="Combat" src={picture} />
-                    <p>Credit: <a href={`https://www.artstation.com/kamyu`} target={`_blank`}>Carlos Díaz Asenjo</a></p>
-                </div>
+
+                <Picture 
+                    credit='Carlos Díaz Asenjo' desc="Combat"
+                    img={picture} link={`https://www.artstation.com/kamyu`}
+                    pos={"30% 15%"} hidden={false}
+                />
             </div>
         </>
     )

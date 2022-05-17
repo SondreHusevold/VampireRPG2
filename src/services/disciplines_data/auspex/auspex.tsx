@@ -21,8 +21,9 @@ const discipline: Discipline = {
     icon: "A",
     image: {
         credit: "Lourdes Saraiva",
-        creditLink: "https://www.artstation.com/lourdessaraiva",
-        img: Picture
+        link: "https://www.artstation.com/lourdessaraiva",
+        img: Picture,
+        pos: "30% 30%"
     }
 }
 

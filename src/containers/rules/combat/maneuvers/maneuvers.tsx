@@ -7,6 +7,7 @@ import DefensiveManeuvers from './defensive';
 import CloseCombatManeuvers from './closeCombat';
 import RangedCombatManeuvers from './rangedCombat';
 import pageStyles from '../../../common/pages.module.css';
+import Picture from '../../../common/picture';
 
 function ManeuversNavigations() {
     return (
@@ -40,10 +41,11 @@ function Maneuvers() {
                         <Route path={`/`} element={<Navigate to="general" />} />
                     </Routes>
                 </div>
-                <div className={pageStyles.picture}>
-                    <img alt="Dripping" src={picture} />
-                    <p>Credit: <a href={`https://www.twitter.com/oshredart`} target={`_blank`}>Oshred</a></p>
-                </div>
+                <Picture 
+                    credit='Oshred' desc="Maneuvers"
+                    img={picture} link={`https://www.twitter.com/oshredart`}
+                    pos={"30% 15%"} hidden={false}
+                />
             </div>
         </>
     )

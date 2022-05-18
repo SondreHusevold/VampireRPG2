@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 
 import LeftAbilitiesMenu from "./leftAbilitiesMenu"
-import styles from './abilities.module.css';
+import styles from './abilitiesDetails.module.css';
 import { abilities } from "../../services/abilityService";
 import { useParams } from "react-router-dom";
 import { ParseJsonText } from "../../utilities/parser";
 import { PrintDots } from "../../utilities/dotprinter";
 import pageStyles from '../common/pages.module.css';
+import { useEffect } from "react";
 
 function findAbility(name: string | undefined) {
     for (const section of abilities) {
@@ -21,6 +22,10 @@ function findAbility(name: string | undefined) {
 function AbilitiesDetails() {
     const { name } = useParams();
     const ability = findAbility(name);
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
 
     return (
         <div className={styles.abilitiesTopGrid}>
@@ -58,7 +63,11 @@ function AbilitiesDetails() {
                                     return (
                                         <div 
                                             className={`${index+1 > 3 ? styles.dotLevelRight : styles.dotLevel }`} 
-                                            style={{gridRow: index+1 > 3 ? ((index + 1) % 4) + 4 : 'auto'}}
+                                            style={
+                                                window.screen.width >= 1300 // Only at bigger screens.
+                                                ? {gridRow: index+1 > 3 ? ((index + 1) % 4) + 4 : 'auto'} 
+                                                : {}
+                                            }
                                         >
                                             <span>{PrintDots(index+1)}</span>
                                             <p>{lvl}</p>

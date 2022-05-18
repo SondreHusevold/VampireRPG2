@@ -1,37 +1,15 @@
-:local .abilityLowerPage {
-    grid-template-columns: 1fr !important;
-}
-
-:local .abilitiesTopGrid {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    gap: 3em;
-    margin-bottom: 2em;
-}
-
 :local .abilitiesGrid {
     animation: "fadeIn" 1s;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: column;
     text-align: center;
     column-gap: 5em;
-    row-gap: 1em;
 }
 
 :local .abilitiesGrid h2 {
     margin-bottom: 0.7em;
 }
 
-:local .abilityContent {
-    margin-left: 5em;
-    margin-right: 5em;
-    animation: "fadeIn" 1s;
-}
-
-:local .abilityContent h1 {
-    margin-top: 0px;
-}
 
 :local .abilitiesColumn {
     display: grid;
@@ -46,7 +24,6 @@
     background-color: transparent;
     color: #e0e0db;
     padding-top: 2em;
-    
     padding-bottom: 2em;
     font-weight: normal;
     display: flex;
@@ -71,64 +48,16 @@
     border-color: #e0e0db;
 }
 
-:local .abilityText {
-    padding-right: 2em;
-}
+@media screen and (max-width: 1300px) {
+    :local .abilitiesGrid {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
 
-:local .knowledgesSection {
-    grid-column: 1;
-}
-
-:local .skillsSection {
-    grid-column: 2;
-}
-
-:local .talentsSection {
-    grid-column: 3;
-}
-
-:local .headerText {
-    text-align: center;
-    margin-bottom: 0.3em;
-}
-
-:local .bigIcon {
-    font-size: 7em;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0.3em;
-}
-
-:local .lowerContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5em;
-}
-
-:local .dotHeader {
-    grid-column: span 2;
-}
-
-:local .dotLevel {
-    display: grid;
-    grid-template-columns: 70px 0.85fr;
-    align-items: center;
-    grid-column: 1;
-}
-
-:local .dotLevelRight {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    align-items: center;
-    grid-column: 2;
-}
-
-:local .dotLevel span {
-    text-align: left;
-}
-
-:local .split {
-    grid-column: span 2;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e0e0db;
+    :local .abilityButton {
+        opacity: 0.6;
+    }
 }

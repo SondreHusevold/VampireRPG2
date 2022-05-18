@@ -26,3 +26,27 @@
     grid-template-columns: 0.15fr 1fr;
     gap: 20px;
 }
+
+@media screen and (max-width: 1300px) {
+    :local .attributesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    :local .dotHeader {
+    }
+    
+    :local .dotLevel {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    :local .printedDots {
+        margin-bottom: 0px;
+        
+    }
+
+    :local .dotsDesc {
+        margin-top: 10px;
+    }
+    
+}

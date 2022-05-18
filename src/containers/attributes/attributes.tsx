@@ -3,37 +3,34 @@ import { AttributeSections } from "../../models/attribute";
 import { attributes } from "../../services/attributesService";
 import styles from './attributes.module.css';
 
-function sectionStyle(attr: AttributeSections) {
-    switch (attr) {
-        case AttributeSections.Social:
-            return styles.socialSection;
-        case AttributeSections.Mental:
-            return styles.mentalSection;
-        default:
-            return styles.physicalSection;
-    }
-}
-
-function Attributes() {
+function RenderColumn(props: { type: AttributeSections }) {
+    
     return (
-        <div className="fadeIn">
-            <div className={styles.attributeGrid}>
-                <h2 className={styles.physicalSection}>Physical</h2>
-                <h2 className={styles.socialSection}>Social</h2>
-                <h2 className={styles.mentalSection}>Mental</h2>
-                {
-                    attributes.map((attribute) => {
+        <div key={`section_${AttributeSections[props.type]}`}>
+            <h2>{AttributeSections[props.type]}</h2>
+            {
+                attributes.map((attribute) => {
+                    if(attribute.section === props.type) {
                         return (
-                            <Link to={`${attribute.name}`} className={`${sectionStyle(attribute.section)} ${styles.attributeButton}`}>
+                            <Link to={`${attribute.name}`} className={`${styles.attributeButton}`}>
                                 <span className={`nf ${attribute.icon}`}/> 
                                 <p>{attribute.name}</p>
                             </Link>
                         )
-                    })
-                }
-            </div>
+                    }
+                })
+            }
         </div>
-     
+    )
+}
+
+function Attributes() {
+    return (
+        <div className={`fadeIn ${styles.attributeGrid}`}>
+            <RenderColumn type={AttributeSections.Physical}/>
+            <RenderColumn type={AttributeSections.Social}/>
+            <RenderColumn type={AttributeSections.Mental}/>
+        </div>
     )
 }
 

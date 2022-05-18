@@ -1,11 +1,10 @@
 :local .attributeGrid {
     animation: "fadeIn" 1s;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: column;
     text-align: center;
     column-gap: 5em;
-    row-gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 :local .attributeGrid h2 {
@@ -25,6 +24,7 @@
     align-items: center;
     cursor: pointer;
     transition: opacity 500ms;
+    margin-bottom: 1em;
 }
 
 :local .attributeButton span {
@@ -41,14 +41,21 @@
     font-weight: normal;
 }
 
-:local .physicalSection {
-    grid-column: 1;
+@media screen and (min-width: 1300px) {
+    :local .attributeGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
-:local .socialSection {
-    grid-column: 2;
-}
+@media screen and (max-width: 1300px) {
+    :local .attributeGrid {
+        grid-template-columns: 1fr;
+    }
 
-:local .mentalSection {
-    grid-column: 3;
+    :local .attributeButton {
+        padding-top: 1.3em;
+        padding-bottom: 0.5em;
+        opacity: 0.5;
+    }
+
 }

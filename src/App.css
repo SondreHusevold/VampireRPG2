@@ -91,6 +91,42 @@ a:hover {
 }
 
 @media screen and (max-width: 1300px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  label {
+    color: #e0e0db;
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  li {
+    color: #e0e0db;
+    font-size: 1em;
+    padding: 0.3em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+  
+  span {
+    font-size: 1em;
+  }
+
   .vampPage {
     margin-left: 0px;
     margin-top: 0px;

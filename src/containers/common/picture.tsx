@@ -21,7 +21,11 @@ function Picture(props: PictureProps) {
                     </div>
             </div>
             <div className={styles.picture}>
-                <img style={{objectPosition: props.pos}} alt={`${props.desc}`} src={props.img} onClick={() => window.screen.width <= 1300 ? setExpanded(true) : {}}/>
+                <img 
+                    style={{objectPosition: props.pos}} 
+                    alt={`${props.desc}`} src={props.img} 
+                    onClick={() => window.screen.width <= 1300 ? setExpanded(true) : {}}
+                />
                 <p>Credit: <a href={`${props.link}`} target={`_blank`}>{props.credit}</a></p>
             </div>
         </div>

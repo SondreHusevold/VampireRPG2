@@ -13,7 +13,7 @@ import Picture from "../../../common/picture";
 function CombatNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="summary" name="Summary"/>
                 <NavigationLinker to="initiative" name="Initiative"/>
                 <NavigationLinker to="attack" name="Attack"/>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Armor() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
           	<h2>Armor</h2>
             <p>
                 Armor adds to your character's soak (see combat stages). The armor's rating combines with your base soak for purposes of reducing damage. Armor restricts flexibility based on whether it is light or heavy.

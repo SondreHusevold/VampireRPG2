@@ -2,7 +2,7 @@ import styles from './combatStages.module.css';
 
 function Summary() {
     return (
-        <div className={`${"fadeIn"} ${styles.summary}`}>
+        <div className={`fadeIn ${styles.summary}`}>
             <h3>Stage 1: Initiative</h3>
             <p>
                 Roll initiative (<b>1x D10 + Dexterity + Wits</b>).

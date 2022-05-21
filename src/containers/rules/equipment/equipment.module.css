@@ -20,4 +20,9 @@
     :local .rangedWeapons h2 {
         font-size: 2.2em;
     }
+
+    :local .page {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }

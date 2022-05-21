@@ -4,9 +4,9 @@ import styles from './rules.module.css';
 
 function Combat() {
     return (
-        <>
-            <h2 className={`fadeIn ${styles.rulesHeader}`}>Rules</h2>
-            <div className={styles.rulesGrid}>
+        <div className={`fadeIn`}>
+            <h2 className={`${styles.rulesHeader}`}>Rules</h2>
+            <div className={`${styles.rulesGrid}`}>
                 <Link to="combat/stages">
                     <h1 className='nf nf-fa-sort_numeric_asc'/>
                     <h4>Combat Stages</h4>
@@ -42,7 +42,7 @@ function Combat() {
                     <h4>Equipment Charts</h4>
                 </Link>
             </div>
-        </>
+        </div>
     )
 }
 

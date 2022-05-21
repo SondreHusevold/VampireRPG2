@@ -3,7 +3,7 @@ import columnStyles from '../../common/columns.module.css';
 
 function Rotschreck() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Rötschreck: The Red Fear</h2>
             <p>
                 Though there are few things that can kill a vampire and though many among the Damned claim to loathe their immortality certain sources of injury frighten all vampires. 

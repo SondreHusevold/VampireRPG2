@@ -5,7 +5,7 @@ import styles from './maneuvers.module.css';
 
 function RangedCombatManeuvers() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Ranged Combat Maneuvers</h2>
             <p>See Core Rulebook (page 277 - 278) if you need further information on how these work. Below are all the maneuvers available for ranged weapons.</p>
             <p>

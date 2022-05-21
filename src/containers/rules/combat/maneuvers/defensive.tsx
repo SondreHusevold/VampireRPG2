@@ -4,7 +4,7 @@ import styles from './maneuvers.module.css';
 
 function DefensiveManeuvers() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Defensive Maneuvers</h2>
             <p>
                 Block, dodge, and parry can be performed as part of

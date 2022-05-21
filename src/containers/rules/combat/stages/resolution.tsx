@@ -1,6 +1,6 @@
 function Resolution() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>Resolution</h2>
             <p>
                 During this stage, you determine the damage inflicted

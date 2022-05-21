@@ -6,7 +6,7 @@ import { disciplines } from "../../services/disciplineService";
 
 export function ClanDescription(clan: Clan) {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h3>Nickname</h3>
             <p>{clan.nickname}</p>
             <h3>Description</h3>
@@ -17,7 +17,7 @@ export function ClanDescription(clan: Clan) {
 
 export function ClanAppearance(clan: Clan) {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h3>Appearance</h3>
             {clan.appearance}
             <h3>Haven</h3>
@@ -28,7 +28,7 @@ export function ClanAppearance(clan: Clan) {
 
 export function ClanTraits(clan: Clan) {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h3>Background</h3>
             {clan.background}
             <h3>Creation</h3>
@@ -62,7 +62,7 @@ export function RenderDisciplinesStrength(clan: Clan) {
 
 export function ClanStrWeak(clan: Clan) {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h3>Curse</h3>
             {clan.weaknesses}
             <h3 className={styles.disciplinesHeader}>Disciplines</h3>

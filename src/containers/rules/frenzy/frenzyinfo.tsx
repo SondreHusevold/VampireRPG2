@@ -1,6 +1,6 @@
 function FrenzyInformation() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Information</h2>
             <p>
                 During a frenzy, a character literally — and usually unwillingly — gives into the darkest instincts of the vampiric nature. 

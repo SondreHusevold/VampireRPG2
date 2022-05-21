@@ -1,6 +1,6 @@
 function Healing() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>Healing Damage</h2>
             <p>A vampire may spend one blood point to heal one normal (bashing or lethal) health level of damage.</p>
             <p>One blood point per turn may be spent to heal one health level.</p>

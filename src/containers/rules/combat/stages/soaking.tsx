@@ -1,6 +1,6 @@
 function Soaking() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>Soaking</h2>
             <p>
                 Characters can resist a certain degree of physical

@@ -4,11 +4,11 @@ import styles from './abilities.module.css';
 
 function Abilities() {
     return (
-        <div className={`${styles.abilitiesGrid}`}>
+        <div className={`fadeIn ${styles.abilitiesGrid}`}>
             {
                 abilities.map((section) => {
                     return (
-                        <div className='fadeIn'>
+                        <div>
                             <h2>{section.name}</h2>
                             <div className={styles.abilitiesColumn}>
                                 {section.abilities.map((ability) => {

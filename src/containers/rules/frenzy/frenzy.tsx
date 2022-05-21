@@ -12,7 +12,7 @@ import styles from './frenzy.module.css';
 function FrenzyNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="information" name="Information"/>
                 <NavigationLinker to="system" name="System"/>
                 <NavigationLinker to="provocations" name="Provocations"/>

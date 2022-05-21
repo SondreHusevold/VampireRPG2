@@ -1,6 +1,6 @@
 function Initiatives() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>Initiative</h2>
             <p>This stage organizes the turn and is when you declare your character's action.</p>
             <p>

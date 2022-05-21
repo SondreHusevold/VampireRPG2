@@ -43,7 +43,7 @@ function HeaderRoller(props: HeaderRollerProps) {
     const previous = props.allLinks[props.allLinks.findIndex(x => x.name === props.currentName)-1];
 
     return (
-        <div className={styles.headerRoller} key={`${props.currentName}_header`}>
+        <div className={`fadeIn ${styles.headerRoller}`} key={`${props.currentName}_header`}>
             <div className={styles.prevNext}>
             { 
                 previous != null && 

@@ -2,7 +2,6 @@
 :local .headerRoller {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    animation: "fadeIn" 1s;
     text-align: center;
 }
 

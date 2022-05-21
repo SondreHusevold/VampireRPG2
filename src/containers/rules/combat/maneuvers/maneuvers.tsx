@@ -12,7 +12,7 @@ import Picture from '../../../common/picture';
 function ManeuversNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="general" name="General"/>
                 <NavigationLinker to="defensive" name="Defensive"/>
                 <NavigationLinker to="close-combat" name="Close-combat"/>

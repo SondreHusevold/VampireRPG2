@@ -7,11 +7,12 @@ import BloodBondBreak from "./breaking";
 import BloodBondDrinks from "./drinks";
 import pageStyles from '../../common/pages.module.css';
 import Picture from "../../common/picture";
+import styles from './bloodbond.module.css';
 
 function BloodBondNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="information" name="Information"/>
                 <NavigationLinker to="drinks" name="Drinks"/>
                 <NavigationLinker to="resistance" name="Resistance"/>
@@ -23,11 +24,15 @@ function BloodBondNavigations() {
 
 function BloodBond() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn ${styles.page}`}>
            <div className={pageStyles.headerTop}>
                 <h1>Blood Bond</h1>
                 <p>The blood bond forms an essential strategy in the Jyhad.</p>
             </div>
+            <Picture 
+                credit="Aleksi Briclot" desc="Blood bonding" link="https://aneyeoni.com/art.htm"
+                img={picture} pos="30% 15%" hidden={window.screen.width > 1300}
+            />
             <BloodBondNavigations/>
             <div className={pageStyles.lowerPage}>
                 <div>
@@ -39,8 +44,9 @@ function BloodBond() {
                         <Route path={`/`} element={<Navigate to="information" />} />
                     </Routes>
                 </div>
-                <Picture credit="Aleksi Briclot" desc="Blood bonding" hidden={false}
-                    img={picture} pos="30% 15%" link="https://aneyeoni.com/art.htm"/>
+                <Picture credit="Aleksi Briclot" desc="Blood bonding" link="https://aneyeoni.com/art.htm"
+                    img={picture} pos="30% 15%" hidden={window.screen.width <= 1300}
+                />
             </div>
  
         </div>

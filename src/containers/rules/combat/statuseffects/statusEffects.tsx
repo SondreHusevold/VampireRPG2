@@ -12,7 +12,7 @@ import Picture from '../../../common/picture';
 function EffectsNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="effects" name="Status Effects"/>
                 <NavigationLinker to="fire" name="Fire"/>
                 <NavigationLinker to="derangements" name="Derangements"/>

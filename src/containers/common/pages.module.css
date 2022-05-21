@@ -1,5 +1,4 @@
 :local .headerTop {
-    animation: "fadeIn" 0.5s;
     text-align: center;
     margin-bottom: 0.3em;
 }
@@ -9,7 +8,6 @@
 }
 
 :local .navGrid {
-    animation: "fadeIn" 2s;
     padding: 1em 0.5em 1em 0.5em;
     border-top: 1px solid #e0e0db;
     display: flex;

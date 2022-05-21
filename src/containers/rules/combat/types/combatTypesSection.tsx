@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function CombatTypesSection() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>Combat Types</h2>
             <p>
                 There are two types of combat, each involving the same basic system with minor differences:

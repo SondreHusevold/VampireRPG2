@@ -1,6 +1,6 @@
 function Attack() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>The attack stage</h2>
             <p>
                 Attacks are the meat of the combat turn. You use a certain Attribute/Ability combination depending on the type of combat in which your character is engaged.

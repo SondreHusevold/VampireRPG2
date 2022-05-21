@@ -11,7 +11,7 @@ import Picture from "../../common/picture";
 function EquipmentNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="melee" name="Melee Weapons"/>
                 <NavigationLinker to="ranged" name="Ranged Weapons"/>
                 <NavigationLinker to="armor" name="Armor"/>
@@ -22,11 +22,16 @@ function EquipmentNavigations() {
 
 function Equipment() {
     return (
-        <div className={`fadeIn`}>
+        <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>
                 <h1>Equipment</h1>
                 <p>Example weapons and armor.</p>
             </div>
+            <Picture 
+                credit='Guweiz' desc="Equipment"
+                img={picture} link={`https://twitter.com/ttguweiz`}
+                pos={"30% 0%"} hidden={window.screen.width > 1300}
+            />
             <EquipmentNavigations/>
             <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
@@ -41,7 +46,7 @@ function Equipment() {
                 <Picture 
                     credit='Guweiz' desc="Equipment"
                     img={picture} link={`https://twitter.com/ttguweiz`}
-                    pos={"30% 15%"} hidden={false}
+                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
                 />
             </div>
         </div>

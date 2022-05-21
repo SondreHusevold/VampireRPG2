@@ -3,9 +3,7 @@
     justify-self: center;
 }
 
-:local .picture {
-    animation: "fadeIn" 1.5s;
-    
+:local .picture {    
     margin-top: 3em;
 }
 

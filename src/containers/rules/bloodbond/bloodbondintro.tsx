@@ -1,6 +1,6 @@
 function BloodBondIntroduction() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Information</h2>
             <p>
                 One of the most wondrous and terrible properties of Kindred vitae is its ability to enslave nearly any being who drinks of it three times. 

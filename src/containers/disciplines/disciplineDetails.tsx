@@ -10,7 +10,7 @@ import styles from './disciplineDetails.module.css';
 function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
     const lvl = props.discipline.levels[props.dots-1];
     return (
-        <div className={styles.dotInfoSection} key={`discipline_${lvl.name}`}>
+        <div className={`fadeIn ${styles.dotInfoSection}`} key={`discipline_${lvl.name}`}>
             <h2>{lvl.name.toUpperCase()}</h2>
             {lvl.description}
             <h4>Rules</h4>

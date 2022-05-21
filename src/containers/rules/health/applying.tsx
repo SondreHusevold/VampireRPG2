@@ -2,7 +2,7 @@ import Death from "./death";
 
 function ApplyingDamage() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>Applying Damage</h2>
             <p>This is where you apply bashing, leathal and aggravated damage. Below is the same chart you have on your character sheet.</p>
             <p>Bashing and lethal damage differ in their effects, but for vampires, both types of damage are considered normal.</p>

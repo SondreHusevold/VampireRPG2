@@ -1,6 +1,6 @@
 function BloodBondResistance() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Resistance</h2>
             <p>
                 It is possible, though difficult, for a vampire to temporarily resist a blood bond. Doing so requires the player to make a Willpower roll (difficulty is typically 8, 

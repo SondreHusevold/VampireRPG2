@@ -9,7 +9,6 @@
 }
 
 :local .headerTextIcon {
-    animation: "fadeIn" 1.5s;
     display: flex;
     justify-content: center;
     font-size: 5em;

@@ -3,7 +3,6 @@
 :local .abilityContent {
     margin-left: 5em;
     margin-right: 5em;
-    animation: "fadeIn" 1s;
 }
 
 :local .abilityContent h1 {

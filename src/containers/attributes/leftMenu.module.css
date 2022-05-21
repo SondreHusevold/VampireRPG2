@@ -7,7 +7,6 @@
     border-right: 1px solid #e0e0db;
     padding-right: 5vw;
     margin-bottom: 60px;
-    animation: "fadeIn" 2s;
 }
 
 :local .leftMenuItem {

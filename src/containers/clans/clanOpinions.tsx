@@ -5,7 +5,7 @@ import { sects } from "../../services/sectService";
 
 function ClanOpinions(clan: Clan) {
     return (
-        <div className={`${"fadeIn"}`}>
+        <div className={`fadeIn`}>
             <h3>{clan.name} Opinons on Sects:</h3>
             <div className={styles.sectOpinions}>
                 {clan.stereotypesSects.map((opinion) => {

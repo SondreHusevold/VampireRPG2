@@ -1,5 +1,4 @@
 :local .attributeGrid {
-    animation: "fadeIn" 1s;
     display: grid;
     text-align: center;
     column-gap: 5em;

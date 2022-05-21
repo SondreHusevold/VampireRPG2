@@ -38,10 +38,6 @@
     margin-bottom: 1em;
 }
 
-:local .dotInfoSection {
-    animation: "fadeIn" 1s;
-}
-
 :local .dotInfoSection h2 {
     text-align: center;
 }

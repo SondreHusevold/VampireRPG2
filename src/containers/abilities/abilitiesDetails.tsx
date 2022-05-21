@@ -30,7 +30,7 @@ function AbilitiesDetails() {
     return (
         <div className={styles.abilitiesTopGrid}>
             <LeftAbilitiesMenu abilities={abilities} chosenAbility={ability} />
-            <div className={styles.abilityContent} key={`${ability.name}_content`}>
+            <div className={`fadeIn ${styles.abilityContent}`} key={`${ability.name}_content`}>
                 <h1 className={styles.headerText}>{ability.name}</h1>
                 <h1 className={`nf ${ability.icon} ${styles.bigIcon}`}/>
                 <div className={`${pageStyles.lowerPage} ${styles.abilityLowerPage}`} key={`${ability.name}_lowerPage`}>

@@ -20,7 +20,7 @@ function Picture(props: PictureProps) {
                         <button>x</button>
                     </div>
             </div>
-            <div className={styles.picture}>
+            <div className={`fadeIn ${styles.picture}`}>
                 <img 
                     style={{objectPosition: props.pos}} 
                     alt={`${props.desc}`} src={props.img} 

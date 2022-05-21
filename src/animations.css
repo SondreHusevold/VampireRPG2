@@ -1,16 +1,16 @@
 .fadeIn {
   animation: "fadeIn" 1s ease-in-out;
-  -webkit-animation: "fadeIn" 1s ease-in;
+  -webkit-animation: "fadeIn" 1s ease-in-out;
 }
 
 .fadeInSlower {
-  animation: "fadeIn" 1.5s;
-  -webkit-animation: "fadeIn" 1s ease-in;
+  animation: "fadeIn" 1.5s ease-in-out;
+  -webkit-animation: "fadeIn" 1.5s ease-in-out;
 }
 
 .fadeInSlowest {
   animation: "fadeIn" 2s;
-  -webkit-animation: "fadeIn" 1s ease-in;
+  -webkit-animation: "fadeIn" 2s ease-in-out;
 }
 
 @keyframes fadeIn {

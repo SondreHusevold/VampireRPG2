@@ -1,6 +1,6 @@
 function BloodBondDrinks() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>The Drinks</h2>
             <p>
                 A blood bond is a mighty force, but it is at its most potent when perpetually reinforced with further drinks. 

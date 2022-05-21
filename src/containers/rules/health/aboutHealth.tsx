@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function AboutHealth() {
     return (
-        <div className={"fadeIn"}>
+        <div className={`fadeIn`}>
             <h2>Summary</h2>
             <p>Every character has seven health levels, ranging from Bruised to Incapacitated. Characters can also be in full health (with no health levels checked off).</p>
             <p>

@@ -47,7 +47,7 @@ function RenderSection(props: RenderSectionProps) {
 
 function LeftMenu(props: LeftMenuProps) {
     return (
-        <div className={styles.leftMenuGrid}>
+        <div className={`fadeInSlower ${styles.leftMenuGrid}`}>
             <RenderSection {... props} section={AttributeSections.Physical} />
             <RenderSection {... props} section={AttributeSections.Social} />
             <RenderSection {... props} section={AttributeSections.Mental} />

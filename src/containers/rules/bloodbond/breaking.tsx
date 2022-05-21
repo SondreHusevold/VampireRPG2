@@ -1,6 +1,6 @@
 function BloodBondBreak() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Breaking</h2>
             <p>
                 A blood bond can be broken, though this requires the thrall to not only avoid the regnant entirely for an extended period of time, but also spend great amounts

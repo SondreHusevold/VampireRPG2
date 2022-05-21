@@ -12,7 +12,7 @@ import Picture from '../../common/picture';
 function HealthNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="summary" name="Summary"/>
                 <NavigationLinker to="chart" name="Chart"/>
                 <NavigationLinker to="applying" name="Applying damage"/>

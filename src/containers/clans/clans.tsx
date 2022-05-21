@@ -10,7 +10,7 @@ function Clans() {
     }
 
     return (
-        <div className={styles.clansGrid}>
+        <div className={`fadeIn ${styles.clansGrid}`}>
             <h2>Clans</h2>
             {
                 clans.map((clan, index) => {

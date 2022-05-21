@@ -11,7 +11,7 @@ import Picture from "../../../common/picture";
 function CombatNavigations() {
     return (
         <>
-            <div className={pageStyles.navGrid}>
+            <div className={`fadeIn ${pageStyles.navGrid}`}>
                 <NavigationLinker to="combat_types" name="Combat types"/>
                 <NavigationLinker to="damage_types" name="Damage types"/>
                 <NavigationLinker to="armor" name="Armor"/>

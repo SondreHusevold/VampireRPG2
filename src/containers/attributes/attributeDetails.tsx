@@ -24,9 +24,9 @@ function AttributeDetails() {
             <LeftMenu attributes={attributes} />
             <div>
                 <h1 key={`${attribute.name}_title`} className={pageStyles.headerTop}> {attribute.name}</h1>
-                <h1 key={`${attribute.name}_title_icon`} className={`nf ${attribute.icon} ${styles.headerTextIcon}`}></h1>
+                <h1 key={`${attribute.name}_title_icon`} className={`fadeIn nf ${attribute.icon} ${styles.headerTextIcon}`}></h1>
                 <div className={pageStyles.lowerPage} key={`${attribute.name}_lowerPage`}>
-                    <div className={"fadeIn"}>
+                    <div className={`fadeIn`}>
                         {ParseJsonText(attribute.description)}
                         <Picture {...attribute.image} desc={attribute.name} hidden={window.screen.width > 1300} />
                         <h3 className={styles.dotHeader}>{attribute.name} dots</h3>

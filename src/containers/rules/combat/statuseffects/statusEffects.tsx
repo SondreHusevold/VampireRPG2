@@ -8,6 +8,7 @@ import Electrocution from './electrocution';
 import Derangements from './derangements';
 import pageStyles from '../../../common/pages.module.css';
 import Picture from '../../../common/picture';
+import { useEffect } from 'react';
 
 function EffectsNavigations() {
     return (
@@ -24,6 +25,10 @@ function EffectsNavigations() {
 
 
 function StatusEffects() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
     return (
         <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>

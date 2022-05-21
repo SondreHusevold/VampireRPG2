@@ -8,6 +8,7 @@ import BloodBondDrinks from "./drinks";
 import pageStyles from '../../common/pages.module.css';
 import Picture from "../../common/picture";
 import styles from './bloodbond.module.css';
+import { useEffect } from "react";
 
 function BloodBondNavigations() {
     return (
@@ -23,6 +24,10 @@ function BloodBondNavigations() {
 }
 
 function BloodBond() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
     return (
         <div className={`fadeIn ${styles.page}`}>
            <div className={pageStyles.headerTop}>

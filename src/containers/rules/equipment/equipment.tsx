@@ -7,6 +7,7 @@ import MeleeWeapons from "./meleeweapons";
 import RangedWeapons from "./rangedweapons";
 import pageStyles from '../../common/pages.module.css';
 import Picture from "../../common/picture";
+import { useEffect } from "react";
 
 function EquipmentNavigations() {
     return (
@@ -21,6 +22,10 @@ function EquipmentNavigations() {
 }
 
 function Equipment() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
     return (
         <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>

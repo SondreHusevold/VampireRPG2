@@ -109,13 +109,4 @@
         grid-column: 1;
         grid-template-columns: 1fr;
     }
-
-    :local .dotLevel span {
-        text-align: center;
-    }
-
-    :local .dotLevelRight span {
-        text-align: center;
-    }
-
 }

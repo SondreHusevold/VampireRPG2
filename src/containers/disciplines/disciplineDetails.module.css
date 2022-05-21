@@ -16,13 +16,22 @@
 
 :local .dots {
     color: #e0e0db;
-    font-size: 4em;
     text-align: center;
+    font-size: 3em;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    margin-bottom: 0em;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :local .dotLevel {
     cursor: pointer;
     opacity: 0.5;
+    padding-left: 0.05em;
+    padding-right: 0.05em;
+
 }
 
 :local .dotHover {
@@ -52,13 +61,17 @@
         gap: 1em;
         text-align: center;
     }
+
     :local .dots {
-        margin-top: 0.3em;
-        font-size: 3em;
+        font-size: 2.5em;
+        text-size-adjust: 80%;
+
     }
 
     :local .dotLevel {
         padding-left: 5px;
         padding-right: 5px;
+        transform: scale(1.0);
     }
+    
 }

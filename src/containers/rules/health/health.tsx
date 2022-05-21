@@ -8,6 +8,7 @@ import ApplyingDamage from './applying';
 import Healing from './healing';
 import pageStyles from '../../common/pages.module.css';
 import Picture from '../../common/picture';
+import { useEffect } from 'react';
 
 function HealthNavigations() {
     return (
@@ -23,8 +24,12 @@ function HealthNavigations() {
 }
 
 function Health() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
     return (
-        <div className={styles.page}>
+        <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>
                 <h1>Health</h1>
                 <p>

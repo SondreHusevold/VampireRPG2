@@ -2,9 +2,10 @@
 import { Link } from 'react-router-dom';
 import styles from './rules.module.css';
 
-function Combat() {
+function Rules() {
+    
     return (
-        <div className={`fadeIn`}>
+        <div className={`fadeIn ${styles.rulesWrap}`}>
             <h2 className={`${styles.rulesHeader}`}>Rules</h2>
             <div className={`${styles.rulesGrid}`}>
                 <Link to="combat/stages">
@@ -46,4 +47,4 @@ function Combat() {
     )
 }
 
-export default Combat;
+export default Rules;

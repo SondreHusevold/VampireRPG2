@@ -8,6 +8,7 @@ import CloseCombatManeuvers from './closeCombat';
 import RangedCombatManeuvers from './rangedCombat';
 import pageStyles from '../../../common/pages.module.css';
 import Picture from '../../../common/picture';
+import { useEffect } from 'react';
 
 function ManeuversNavigations() {
     return (
@@ -23,8 +24,12 @@ function ManeuversNavigations() {
 }
 
 function Maneuvers() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
     return (
-        <div className={`${styles.page}`}>
+        <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>
                 <h1>Maneuvers</h1>
                 <p>These maneuvers give you a variety of choices in combat. Most of these take one action to execute.</p>

@@ -84,7 +84,6 @@
 @media screen and (max-width: 1300px) {
   :local .clansGrid {
     grid-template-columns: 1fr;
-    margin-bottom: 3em;
   }
 
   :local .clansGrid h2 {

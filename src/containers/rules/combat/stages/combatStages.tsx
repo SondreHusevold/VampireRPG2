@@ -9,6 +9,7 @@ import picture from './Stages.jpg';
 import Summary from "./summary";
 import pageStyles from '../../../common/pages.module.css';
 import Picture from "../../../common/picture";
+import { useEffect } from "react";
 
 function CombatNavigations() {
     return (
@@ -25,8 +26,12 @@ function CombatNavigations() {
 }
 
 function CombatStages() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
     return (
-        <div className={styles.page}>
+        <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>
                 <h1>Combat stages</h1>
                 <p>

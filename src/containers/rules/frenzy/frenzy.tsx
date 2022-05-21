@@ -8,6 +8,7 @@ import Rotschreck from "./rotschreck";
 import pageStyles from '../../common/pages.module.css';
 import Picture from "../../common/picture";
 import styles from './frenzy.module.css';
+import { useEffect } from "react";
 
 function FrenzyNavigations() {
     return (
@@ -23,6 +24,10 @@ function FrenzyNavigations() {
 }
 
 function Frenzy() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
     return (
         <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>

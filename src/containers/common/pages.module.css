@@ -39,7 +39,7 @@
     }
 
     :local .lowerPage {
-        padding: 0em 1em 0em 1em;
+        padding: 0em 0.5em 0em 0.5em;
         grid-template-columns: 1fr;
     }
 }

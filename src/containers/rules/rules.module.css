@@ -68,11 +68,11 @@
     grid-template-columns: 1fr;
     margin-left: 2em;
     margin-right: 2em;
-    margin-bottom: 1em;
   }
 
   :local .rulesGrid a {
     padding: 1em;
     padding-top: 1.5em;
   }
+
 }

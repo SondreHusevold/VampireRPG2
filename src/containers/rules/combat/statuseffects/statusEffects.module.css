@@ -8,3 +8,18 @@
 :local .derangementsList a {
     justify-self: center;
 }
+
+@media screen and (max-width: 1300px) {
+    :local .page {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    :local .derangementsList {
+        grid-template-columns: 1fr; 
+    }
+
+    :local .derangementsList a {
+        justify-self: left;
+    }
+    
+}

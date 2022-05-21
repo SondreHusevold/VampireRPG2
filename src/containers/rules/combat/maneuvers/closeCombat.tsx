@@ -5,7 +5,7 @@ import styles from './maneuvers.module.css';
 
 function CloseCombatManeuvers() {
     return (
-        <div className="fadeIn">
+        <div className={`fadeIn`}>
             <h2>Close Combat Maneuvers</h2>
             <p>Check these out in the Core Rulebook (page 275 - 277) if they strike your fancy. Below are all the maneuvers available.</p>
             <p>If your character wants to do something not described below, ask the storyteller.</p>

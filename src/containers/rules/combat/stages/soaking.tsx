@@ -7,7 +7,7 @@ function Soaking() {
                 punishment; this is called soaking damage.
             </p>
             <p>
-                Your character's soak dice pool is equal to her <b>Stamina</b>. A normal human can soak only bashing damage. A vampire (or other supernatural being) is tougher, and can thus use soak dice against lethal damage.
+                Your character's soak dice pool is equal to her Stamina. A normal human can soak only bashing damage. A vampire (or other supernatural being) is tougher, and can thus use soak dice against lethal damage.
             </p>
             <p>
                 After an attack hits and inflicts damage, the defender may make a soak roll to resist. This is considered a reflexive action; characters need not take an action or split a dice pool to soak. Each soak success subtracts one die from the total damage inflicted. 

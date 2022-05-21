@@ -25,11 +25,16 @@ function EffectsNavigations() {
 
 function StatusEffects() {
     return (
-        <div className={`fadeIn`}>
+        <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>
                 <h1>Status Effects</h1>
                 <p>Sometimes not everything goes according to plan. Here are some complications and status effects.</p>
             </div>
+            <Picture 
+                credit='Kathy Design' desc="Blood"
+                img={picture} link={`https://kathydesign.artstation.com/`}
+                pos={"30% 15%"} hidden={window.screen.width > 1300}
+            />
             <EffectsNavigations/>
             <div className={pageStyles.lowerPage}>
             <div className={styles.textSection}>
@@ -45,7 +50,7 @@ function StatusEffects() {
                 <Picture 
                     credit='Kathy Design' desc="Blood"
                     img={picture} link={`https://kathydesign.artstation.com/`}
-                    pos={"30% 15%"} hidden={false}
+                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
                 />
             </div>
         </div>

@@ -7,6 +7,7 @@ import Provocations from "./provocations";
 import Rotschreck from "./rotschreck";
 import pageStyles from '../../common/pages.module.css';
 import Picture from "../../common/picture";
+import styles from './frenzy.module.css';
 
 function FrenzyNavigations() {
     return (
@@ -23,11 +24,17 @@ function FrenzyNavigations() {
 
 function Frenzy() {
     return (
-        <div className={`fadeIn`}>
+        <div className={`fadeIn ${styles.page}`}>
             <div className={pageStyles.headerTop}>
                 <h1>Frenzy</h1>
                 <p>Vampires are monsters, possessed of an inner Beast.</p>
             </div>
+            <Picture 
+                credit='Jon Dunham' desc="Complete frenzy"
+                img={picture} link={`https://www.artstation.com/jon`}
+                pos={"100% 70%"} hidden={window.screen.width > 1300}
+            />
+
             <FrenzyNavigations/>
             <div className={pageStyles.lowerPage}>
                 <div className={pageStyles.textSection}>
@@ -43,7 +50,7 @@ function Frenzy() {
                 <Picture 
                     credit='Jon Dunham' desc="Complete frenzy"
                     img={picture} link={`https://www.artstation.com/jon`}
-                    pos={"30% 15%"} hidden={false}
+                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
                 />
             </div>
         </div>

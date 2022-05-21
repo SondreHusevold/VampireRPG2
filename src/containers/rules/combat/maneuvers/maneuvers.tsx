@@ -24,12 +24,16 @@ function ManeuversNavigations() {
 
 function Maneuvers() {
     return (
-        <>
+        <div className={`${styles.page}`}>
             <div className={pageStyles.headerTop}>
                 <h1>Maneuvers</h1>
                 <p>These maneuvers give you a variety of choices in combat. Most of these take one action to execute.</p>
             </div>
-
+            <Picture 
+                credit='Oshred' desc="Maneuvers"
+                img={picture} link={`https://www.twitter.com/oshredart`}
+                pos={"60% 30%"} hidden={window.screen.width > 1300}
+            />
             <ManeuversNavigations />
             <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
@@ -44,10 +48,10 @@ function Maneuvers() {
                 <Picture 
                     credit='Oshred' desc="Maneuvers"
                     img={picture} link={`https://www.twitter.com/oshredart`}
-                    pos={"30% 15%"} hidden={false}
+                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
                 />
             </div>
-        </>
+        </div>
     )
 }
 

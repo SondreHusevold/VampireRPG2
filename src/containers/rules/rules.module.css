@@ -1,3 +1,7 @@
+:local .rulesHeader {
+  margin-bottom: 1em;
+}
+
 :local .rulesGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12,7 +16,7 @@
 }
 
 :local .rulesGrid a {
-    padding: 3em;
+    padding: 2em;
     font-weight: lighter;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -54,4 +58,22 @@
 
 :local .doubleSpan {
     grid-column: span 2;
+}
+
+@media screen and (max-width: 1300px) {
+  :local .rulesHeader {
+    text-align: center;
+  }
+
+  :local .rulesGrid {
+    grid-template-columns: 1fr;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+
+  :local .rulesGrid a {
+    padding: 1em;
+    padding-top: 1.5em;
+  }
 }

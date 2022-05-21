@@ -22,14 +22,18 @@ function CombatNavigations() {
 
 function CombatTypes() {
     return (
-        <>
+        <div className={styles.page}>
             <div className={pageStyles.headerTop}>
                 <h1>Combat and Damage types</h1>
                 <p>
                     Close combat, ranged combat and four damage types. Additionally there's armor to reduce damage.
                 </p>
             </div>
-
+            <Picture 
+                credit='Carlos Díaz Asenjo' desc="Combat"
+                img={picture} link={`https://www.artstation.com/kamyu`}
+                pos={"80% 15%"} hidden={window.screen.width > 1300}
+            />
             <CombatNavigations />
             <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
@@ -44,10 +48,10 @@ function CombatTypes() {
                 <Picture 
                     credit='Carlos Díaz Asenjo' desc="Combat"
                     img={picture} link={`https://www.artstation.com/kamyu`}
-                    pos={"30% 15%"} hidden={false}
+                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
                 />
             </div>
-        </>
+        </div>
     )
 }
 

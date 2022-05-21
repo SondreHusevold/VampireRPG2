@@ -1,13 +1,12 @@
-:local .disciplines h1 {
+:local .disciplines h2 {
     margin-top: 0px;
-    animation: "fadeIn" 1.5s;
+    margin-bottom: 0.7em;
 }
 
 :local .disciplinesGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3em;
-    animation: "fadeIn" 2s;
 }
 
 :local .disciplineButton {
@@ -38,4 +37,24 @@
 :local .disciplineButton p {
     font-weight: lighter;
     font-size: 1.3em;
+}
+
+@media screen and (max-width: 1300px) {
+    :local .disciplines h2 {
+        text-align: center;
+    }
+
+    :local .disciplinesGrid {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 1em;
+        margin-right: 1em;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+
+    :local .disciplineButton {
+        padding-top: 1.3em;
+        padding-bottom: 0.5em;
+        opacity: 0.7;
+    }
 }

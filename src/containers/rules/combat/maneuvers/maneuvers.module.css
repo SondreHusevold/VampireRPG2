@@ -34,3 +34,35 @@
 :local .maneuverSpan {
     grid-column: span 2;
 }
+
+@media screen and (max-width: 1300px) {
+
+    :local .defensiveManeuverCard {
+        grid-template-columns: 1fr !important;
+    }
+
+    :local .defensiveManeuverCard h3 {
+        grid-column: span 2 !important;
+    }
+        
+    :local .defensiveManeuverSpan {
+        grid-column: span 2;
+    }
+
+
+    :local .maneuverCard {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto;
+    }
+
+
+    :local .rangedManeuverCard {
+        grid-template-columns: 1fr !important;
+    }
+
+
+    :local .page {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}

@@ -24,14 +24,18 @@ function HealthNavigations() {
 
 function Health() {
     return (
-        <>
+        <div className={styles.page}>
             <div className={pageStyles.headerTop}>
                 <h1>Health</h1>
                 <p>
                     Vampires are immortal and do not die naturally, however injury can incapacitate them, drive them into lengthy periods of dormancy, or even kill them once more.
                 </p>
             </div>
-
+            <Picture 
+                credit='Anton Oxenuk' desc="Health"
+                img={picture} link={`https://www.artstation.com/aoxenuk`}
+                pos={"30% 15%"} hidden={window.screen.width > 1300}
+            />
             <HealthNavigations />
             <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
@@ -47,10 +51,10 @@ function Health() {
                 <Picture 
                     credit='Anton Oxenuk' desc="Health"
                     img={picture} link={`https://www.artstation.com/aoxenuk`}
-                    pos={"30% 15%"} hidden={false}
+                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
                 />
             </div>
-        </>
+        </div>
     )
 }
 

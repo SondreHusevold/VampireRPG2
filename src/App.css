@@ -108,15 +108,11 @@ a:hover {
   }
 
   label {
-    color: #e0e0db;
-    font-weight: 700;
     font-size: 1em;
   }
 
   li {
-    color: #e0e0db;
     font-size: 1em;
-    padding: 0.3em;
   }
 
   p {
@@ -136,4 +132,13 @@ a:hover {
   a {
     border: none;
   }
+}
+
+@media screen and (min-width: 3000px) {
+
+  .vampPage {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
 }

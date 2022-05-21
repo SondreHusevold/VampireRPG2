@@ -41,7 +41,7 @@ const discipline: Discipline = {
         credit: "Oshred",
         link: "https://twitter.com/oshredart",
         img: Picture,
-        pos: "30% 30%"
+        pos: "40% 30%"
     }
 }
 

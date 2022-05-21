@@ -60,3 +60,10 @@
     opacity: 1;
 }
 
+
+@media screen and (max-width: 1300px) {
+    :local .page {
+        margin-left: 1em;
+        margin-right: 1em;
+    }    
+}

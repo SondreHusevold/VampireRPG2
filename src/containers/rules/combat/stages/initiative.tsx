@@ -8,8 +8,8 @@ function Initiatives() {
                 if Disciplines will be activated, if Willpower points will be spent, or if the character wants to delay the turn. 
             </p>
             <p>After declaring the action, you wait until the attack stage to implement that action.</p>
-            <p>Everyone, player and Storyteller character alike, <b>rolls one die</b> and adds it to their initiative rating (<b>Dexterity + Wits</b>)</p>
-            <p> Characters declare in <b>reverse</b> order of initiative, thus giving faster characters the opportunity to react to slower characters' actions.</p>
+            <p>Everyone, player and Storyteller character alike, rolls one die and adds it to their initiative rating (Dexterity + Wits)</p>
+            <p> Characters declare in reverse order of initiative, thus giving faster characters the opportunity to react to slower characters' actions.</p>
             <p>
                 Finally, all additional actions that turn (including actions gained through Celerity) occur at the end of the turn. 
                 If two or more characters take multiple actions, the actions occur in order of initiative rating. 

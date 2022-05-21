@@ -26,7 +26,7 @@ function CombatNavigations() {
 
 function CombatStages() {
     return (
-        <>
+        <div className={styles.page}>
             <div className={pageStyles.headerTop}>
                 <h1>Combat stages</h1>
                 <p>
@@ -35,7 +35,11 @@ function CombatStages() {
                     of things.
                 </p>
             </div>
-
+            <Picture 
+                credit='Jonathan Romeo' desc="Combat"
+                img={picture} link={`https://www.artstation.com/wen-jr`}
+                pos={"30% 15%"} hidden={window.screen.width > 1300}
+            />
             <CombatNavigations />
             <div className={pageStyles.lowerPage}>
                 <div className={styles.textSection}>
@@ -51,10 +55,10 @@ function CombatStages() {
                 <Picture 
                     credit='Jonathan Romeo' desc="Combat"
                     img={picture} link={`https://www.artstation.com/wen-jr`}
-                    pos={"30% 15%"} hidden={false}
+                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
                 />
             </div>
-        </>
+        </div>
     )
 }
 

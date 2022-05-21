@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function Disciplines() {
     return (
-        <div className={styles.disciplines}>
-            <h1>Disciplines</h1>
-            <div className={styles.disciplinesGrid}>
+        <div className={`${styles.disciplines}`}>
+            <h2 className='fadeIn'>Disciplines</h2>
+            <div className={`fadeInSlowest ${styles.disciplinesGrid}`}>
                 {
                     disciplines.map((disc) => {
                         return (

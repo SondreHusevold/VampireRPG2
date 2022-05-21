@@ -18,6 +18,9 @@ function RenderColumn(props: { type: AttributeSections }) {
                             </Link>
                         )
                     }
+                    return (
+                        ""
+                    )
                 })
             }
         </div>

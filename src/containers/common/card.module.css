@@ -33,7 +33,7 @@
     }
 
     :local .card {
-        min-width: 300px;
+        min-width: 250px;
         padding: 1em;
         grid-template-columns: auto auto auto;
     }

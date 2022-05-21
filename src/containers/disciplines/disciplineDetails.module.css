@@ -49,3 +49,20 @@
 :local .dotInfoSection h4 {
     text-align: center;
 }
+
+@media screen and (max-width: 1300px) {
+
+    :local .ownedByClan {
+        gap: 1em;
+        text-align: center;
+    }
+    :local .dots {
+        margin-top: 0.3em;
+        font-size: 3em;
+    }
+
+    :local .dotLevel {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

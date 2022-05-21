@@ -56,6 +56,10 @@ function DisciplineDetails() {
     const discipline = disciplines.filter(x => x.name.toLowerCase() === name?.toLowerCase())[0];
 
     useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+    
+    useEffect(() => {
         setDotsChosen(1);
     }, [name])
 
@@ -85,22 +89,26 @@ function DisciplineDetails() {
                     {discipline.description}
                 </div>
                 <div>
-                {
-                    discipline.system &&
+                    <Picture {...discipline.image} hidden={window.screen.width > 1300} desc={discipline.name}  />
+                    {
+                        discipline.system &&
+                        <div className={`fadeInSlowest ${styles.dotSection}`}>
+                            <h3>System</h3>
+                            {discipline.system}
+                        </div>
+                    }
+                    
+
                     <div className={`fadeInSlowest ${styles.dotSection}`}>
-                        <h3>System</h3>
-                        {discipline.system}
-                    </div>
-                }
-                <div className={`fadeInSlowest ${styles.dotSection}`}>
-                    <h3>{discipline.name} dots</h3>
-                    <RenderDotsNavigation dots={dotsChosen} setDots={setDotsChosen}/>
-                    <div className={styles.dotLevelSection} key={`${discipline.name}_dots`}>
-                        <RenderDotInformation discipline={discipline} dots={dotsChosen}/>
+                        <h3>{discipline.name} dots</h3>
+                        <RenderDotsNavigation dots={dotsChosen} setDots={setDotsChosen}/>
+                        <div className={styles.dotLevelSection} key={`${discipline.name}_dots`}>
+                            <RenderDotInformation discipline={discipline} dots={dotsChosen}/>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <Picture {...discipline.image} hidden={false} desc={discipline.name}  />
+
+                <Picture {...discipline.image} hidden={window.screen.width <= 1300} desc={discipline.name}  />
             </div>
         </div>
     )

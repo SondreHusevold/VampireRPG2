@@ -4,8 +4,13 @@
     gap: 1.5em;
 }
 
-:local .clansGrid h1 {
+:local .clansGrid h2 {
   grid-column: span 6;
+  margin-top: 0px;
+}
+
+:local .clansGrid h1 {
+  
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -83,7 +88,7 @@
     margin-bottom: 3em;
   }
 
-  :local .clansGrid h1 {
+  :local .clansGrid h2 {
     grid-column: span 1;
     text-align: center;
   }

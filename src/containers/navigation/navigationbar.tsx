@@ -15,19 +15,17 @@ interface NavigationProps {
 }
 
 function NavigationBar(props: NavigationProps) {
-    if(!props.showMobileMenu && window.screen.width < 1300) {
-        return (
-            <div className={`${styles.hamburgerMenu}`}>
-                <GoBackTo/>
-                <button className={`nf nf-mdi-menu ${styles.burgerMenu}`} onClick={() => props.setShowMobileMenu(true)}/>
-            </div>
-        )
-    }
 
     return (
         <nav className={styles.navbar}>
-            <button className={`nf nf-mdi-menu_up ${styles.closeButton}`} onClick={() => props.setShowMobileMenu(false)}/>
-            <div className={styles.links}>
+            <div className={`${styles.hamburgerMenu} ${props.showMobileMenu ? styles.mobileNotShown : styles.forceShow}`}>
+                <GoBackTo/>
+                <button className={`nf nf-mdi-menu ${styles.burgerMenu}`} onClick={() => props.setShowMobileMenu(true)}/>
+            </div>
+            <button className={`nf nf-mdi-menu_up ${styles.closeButton} ${props.showMobileMenu ? styles.forceShow : styles.mobileNotShown}`} 
+                onClick={() => props.setShowMobileMenu(false)}
+            />
+            <div className={`${styles.links} ${props.showMobileMenu ? styles.forceShow : styles.mobileNotShown}`}>
                 <NavLink className={(navData) => isActivated(navData)} to="/" onClick={() => props.setShowMobileMenu(false)}>Home</NavLink>
                 <NavLink className={(navData) => isActivated(navData)} to="/information" onClick={() => props.setShowMobileMenu(false)}>Information</NavLink>
                 <NavLink className={(navData) => isActivated(navData)} to="/clans" onClick={() => props.setShowMobileMenu(false)}>Clans</NavLink>

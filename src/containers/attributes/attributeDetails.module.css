@@ -30,9 +30,6 @@
     :local .attributesGrid {
         grid-template-columns: 1fr;
     }
-
-    :local .dotHeader {
-    }
     
     :local .dotLevel {
         grid-template-columns: 1fr;
@@ -41,7 +38,6 @@
 
     :local .printedDots {
         margin-bottom: 0px;
-        
     }
 
     :local .dotsDesc {

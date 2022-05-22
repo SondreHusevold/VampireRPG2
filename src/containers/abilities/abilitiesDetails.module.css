@@ -85,6 +85,7 @@
     }
 
     :local .split {
+        display: none;
         grid-column: 1;
     }
 
@@ -102,6 +103,8 @@
     :local .dotLevelRight {
         grid-column: 1;
         grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -109,4 +112,6 @@
         grid-column: 1;
         grid-template-columns: 1fr;
     }
+
+  
 }

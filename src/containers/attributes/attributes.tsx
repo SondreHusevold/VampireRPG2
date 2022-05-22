@@ -6,7 +6,7 @@ import styles from './attributes.module.css';
 function RenderColumn(props: { type: AttributeSections }) {
     
     return (
-        <div key={`section_${AttributeSections[props.type]}`}>
+        <div className={styles.flexer} key={`section_${AttributeSections[props.type]}`}>
             <h2>{AttributeSections[props.type]}</h2>
             {
                 attributes.map((attribute) => {

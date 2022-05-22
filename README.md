@@ -13,7 +13,7 @@
 - ~~Dockerfile~~
 - ~~Fix gap in longer texts due to picture~~
 - Link to clan in opinons
-- Fix the "back loop" bug.
+- ~~Fix the "back loop" bug.~~
 - Combat stages have weird boldings (Resoluton example)
 - Make more links in text so user easily can go around the pages.
 #### Larger tasks:

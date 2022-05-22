@@ -11,7 +11,7 @@
 - ~~Check WebKit compatibility~~
 - ~~Remove all strange ' from the texts~~
 - ~~Dockerfile~~
-- Fix gap in longer texts due to picture
+- ~~Fix gap in longer texts due to picture~~
 - Link to clan in opinons
 - Fix the "back loop" bug.
 - Combat stages have weird boldings (Resoluton example)

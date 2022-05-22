@@ -5,7 +5,7 @@ function Summary() {
         <div className={`fadeIn ${styles.summary}`}>
             <h3>Stage 1: Initiative</h3>
             <p>
-                Roll initiative (<b>1x D10 + Dexterity + Wits</b>).
+                Roll initiative (1x D10 + Dexterity + Wits).
             </p>
             <p>
                 Everyone declares their actions in reverse order to let faster character act on slower characters. The character with highest initiative performs her action first. Actions can be delayed to any time later in the order of initiative.
@@ -15,10 +15,10 @@ function Summary() {
                 pools accordingly. Declare Discipline activation and Willpower expenditure.
             </p>
             <h3>Stage 2: Attack</h3>
-            <p>Uarmed close-combat attacks, roll <b>Dexterity + Brawl.</b></p>
-            <p> Armed close-combat attacks, roll <b>Dexterity + Melee.</b></p>
-            <p>Guns, roll <b>Dexterity + Firearms</b>.</p>
-            <p>Thrown weapons, roll <b>Dexterity + Athletics</b>.</p>
+            <p>Uarmed close-combat attacks, roll Dexterity + Brawl.</p>
+            <p>Armed close-combat attacks, roll Dexterity + Melee.</p>
+            <p>Guns, roll Dexterity + Firearms.</p>
+            <p>Thrown weapons, roll Dexterity + Athletics.</p>
             <p>
                 A character can abort to a defensive action
                 (block, dodge, parry) at any time before her

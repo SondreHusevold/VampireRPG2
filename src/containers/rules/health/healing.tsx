@@ -5,7 +5,7 @@ function Healing() {
             <p>A vampire may spend one blood point to heal one normal (bashing or lethal) health level of damage.</p>
             <p>One blood point per turn may be spent to heal one health level.</p>
             <p>
-                Note that blood expenditure is the <b><i>only</i></b> way that
+                Note that blood expenditure is the <u><i>only</i></u> way that
                 vampires can heal wounds. Just as their immortality
                 prevents the Kindred from aging and dying naturally,
                 so it also inhibits the recuperative processes natural to

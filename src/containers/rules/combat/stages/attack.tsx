@@ -10,14 +10,12 @@ function Attack() {
                 the necessary Ability, fall back to the Attribute (Dexterity).
             </p>
             <p>
-                <b>Close Combat: </b> Dexterity + Brawl (unarmed) or Dexterity + Melee (armed).
+                Close Combat: Dexterity + Brawl (unarmed) or Dexterity + Melee (armed).
             </p>
             <p>
-                <b>
-                Ranged Combat: 	</b>Dexterity + Firearms (guns)
-                or Dexterity + Athletics (thrown weapons).
+                Ranged Combat: Dexterity + Firearms (guns) or Dexterity + Athletics (thrown weapons).
             </p>
-            <p><b>Most attacks are made versus difficulty 6.</b> This can be adjusted however for situational modifiers like long range or cramped quarters.</p>
+            <p>Most attacks are made versus difficulty 6. This can be adjusted however for situational modifiers like long range or cramped quarters.</p>
             <p>
                 In ranged combat, your weapon may modify your dice
                 pool or difficulty (due to rate of fire, a targeting scope, etc.); check the weapon's statistics for details.

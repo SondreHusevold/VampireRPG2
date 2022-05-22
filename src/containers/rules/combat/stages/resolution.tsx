@@ -12,8 +12,9 @@ function Resolution() {
                 simply mean that you do exceptionally well. In combat, each extra success you get on an attack roll equals an additional die 
                 you add automatically to your damage dice pool. This creates cinematic and often fatal combat.
             </p>
+            <h3>Example:</h3>
             <p>
-                <b>Example:</b> You have an axe (Strength +3 damage), your strength is two. If you get one success, you roll 5 dice. 
+                You have an axe (Strength +3 damage), your strength is two. If you get one success, you roll 5 dice. 
                 If you get three successes, you roll 7 dice.
             </p>
             <p>

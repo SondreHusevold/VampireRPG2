@@ -34,9 +34,9 @@ function GeneralManeuvers() {
             <p>
                 Aiming for a specific location incurs an added difficulty, but can bypass armor or cover, or can result in an increased damage effect.
             </p>
-            <p><b>Medium</b> size (limb, briefcase): +1 Difficulty, No damage modifier</p>
-            <p><b>Small</b> size (hand, head, cellphone): +2 Difficulty, +1 damage</p>
-            <p><b>Precise</b> size (Eye, heart, lock): +3 Difficulty, +2 damage</p>
+            <p>Medium size (limb, briefcase): +1 Difficulty, No damage modifier</p>
+            <p>Small size (hand, head, cellphone): +2 Difficulty, +1 damage</p>
+            <p>Precise size (Eye, heart, lock): +3 Difficulty, +2 damage</p>
         </div>
     )
 }

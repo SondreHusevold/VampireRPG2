@@ -15,7 +15,7 @@
 - ~~Link to clan in opinons~~
 - ~~Fix the "back loop" bug.~~
 - ~~`<a>` needs to be proper links when in text.~~
-- Combat stages have weird boldings (Resoluton example)
+- ~~Combat stages have weird boldings (Resoluton example)~~
 - Make more links in text so user easily can go around the pages.
 
 #### Larger tasks:

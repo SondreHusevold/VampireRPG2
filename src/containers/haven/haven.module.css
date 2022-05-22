@@ -28,8 +28,21 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1800px) {
+:local .mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+:local .logo2 {
+    object-fit: scale-down;
+    height: 200px;
+}
+
+@media screen and (max-width: 2500px) {
     :local .frontVideo img {
-        width: 100%;
+        width: 90%;
     }
 }
+

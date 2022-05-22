@@ -49,6 +49,7 @@
         margin-left: 1em;
         margin-right: 1em;
         gap: 1em;
+        padding-bottom: 2.5vh;
     }
 
     :local .disciplineButton {

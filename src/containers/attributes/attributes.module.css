@@ -49,10 +49,11 @@
 @media screen and (max-width: 1300px) {
     :local .attributeGrid {
         grid-template-columns: 1fr;
+        padding-bottom: 2.5vh;
     }
 
     :local .attributeButton {
-        padding-top: 1.3em;
+        padding-top: 1.5em;
         padding-bottom: 0.5em;
         opacity: 0.5;
     }

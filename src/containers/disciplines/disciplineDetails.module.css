@@ -47,6 +47,14 @@
     margin-bottom: 1em;
 }
 
+:local .ownedByClan a {
+    text-decoration: none;
+}
+
+:local .ownedByClan a:hover {
+    text-decoration: none;
+}
+
 :local .dotInfoSection h2 {
     text-align: center;
 }

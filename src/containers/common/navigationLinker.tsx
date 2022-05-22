@@ -4,7 +4,7 @@ import styles from './common.module.css';
 function NavigationLinker(props: { to: string, name: string }) {
     return (
         <NavLink to={props.to} className={
-            ({ isActive }) => isActive ? styles.navigationActive : "" 
+            ({ isActive }) => isActive ? `${styles.navigationActive} navLink` : `${styles.navigationInactive} navLink`
         }>{props.name}</NavLink>
     )
 }

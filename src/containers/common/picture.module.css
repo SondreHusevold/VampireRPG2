@@ -8,6 +8,14 @@
     flex-direction: column;
 }
 
+:local .picture a {
+    text-decoration: none;
+}
+
+:local .picture a:hover {
+    text-decoration: none;
+}
+
 :local .picture p {
     margin-top: 5px;
 }

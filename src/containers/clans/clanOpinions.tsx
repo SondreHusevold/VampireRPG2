@@ -2,8 +2,11 @@ import { Clan } from "../../models/clan";
 import { clans } from "../../services/clanService";
 import styles from './clanDetails.module.css';
 import { sects } from "../../services/sectService";
+import { useNavigate } from "react-router-dom";
 
 function ClanOpinions(clan: Clan) {
+    const navigate = useNavigate();
+    
     return (
         <div className={`fadeIn`}>
             <h3>{clan.name} Opinons on Sects:</h3>
@@ -32,7 +35,10 @@ function ClanOpinions(clan: Clan) {
                     if(opinion.opinion !== ""){
                         return (
                             <div className={styles.clanOpinion}>
-                                <span className={`vtm-clan-icon ${styles.opinionClanIcon}`} title={`${opinion.clan}s`}>{logo}</span>
+                                <span 
+                                    onClick={() => opinion.clan !== "caitiff" && navigate(`/clans/${opinion.clan}/description`)} 
+                                    className={`vtm-clan-icon ${styles.opinionClanIcon}`} title={`${opinion.clan}s`}
+                                >{logo}</span>
                                 <p>"{opinion.opinion}"</p>
                             </div>
                         )

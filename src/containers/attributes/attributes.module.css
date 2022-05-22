@@ -24,6 +24,7 @@
     cursor: pointer;
     transition: opacity 500ms;
     margin-bottom: 1em;
+    text-decoration: none;
 }
 
 :local .attributeButton span {
@@ -33,6 +34,7 @@
 
 :local .attributeButton:hover {
     opacity: 1;
+    text-decoration: none;
     border-color: #e0e0db;
 }
 

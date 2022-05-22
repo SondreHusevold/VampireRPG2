@@ -23,12 +23,14 @@
     border-radius: 15px;
     color: #e0e0db;
     transition: border-color 500ms;
+    text-decoration: none;
 }
 
 :local .rulesGrid a:hover {
   text-decoration-color: rgb(158, 0, 0);  
   cursor: pointer;
   border-color: #e0e0db;
+  text-decoration: none;
 }
 
 :local .rulesGrid a h4 {

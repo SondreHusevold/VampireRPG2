@@ -38,6 +38,7 @@
 :local .opinionClanIcon {
     font-size: 4em;
     margin-right: 0.3em;
+    cursor: pointer;
 }
 
 :local .disciplinesHeader {
@@ -57,10 +58,12 @@
     align-items: center;
     width: 5em;
     transition: all 0.5s ease-in;
+    text-decoration: none;
 }
 
 :local .disciplineButton:hover {
     border-color: transparent;
+    text-decoration: none;
 }
 
 :local .disciplineButton p {

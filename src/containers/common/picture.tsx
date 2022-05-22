@@ -26,7 +26,7 @@ function Picture(props: PictureProps) {
                     alt={`${props.desc}`} src={props.img} 
                     onClick={() => props.mobile ? setExpanded(true) : {}}
                 />
-                <p>Credit: <a href={`${props.link}`} target={`_blank`}>{props.credit}</a></p>
+                <p>Credit: <a className={styles.pictureLink} href={`${props.link}`} target={`_blank`}>{props.credit}</a></p>
             </div>
         </div>
         

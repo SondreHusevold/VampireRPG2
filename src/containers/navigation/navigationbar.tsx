@@ -26,14 +26,14 @@ function NavigationBar(props: NavigationProps) {
                 onClick={() => props.setShowMobileMenu(false)}
             />
             <div className={`${styles.links} ${props.showMobileMenu ? styles.forceShow : styles.mobileNotShown}`}>
-                <NavLink className={(navData) => isActivated(navData)} to="/" onClick={() => props.setShowMobileMenu(false)}>Home</NavLink>
-                <NavLink className={(navData) => isActivated(navData)} to="/information" onClick={() => props.setShowMobileMenu(false)}>Information</NavLink>
-                <NavLink className={(navData) => isActivated(navData)} to="/clans" onClick={() => props.setShowMobileMenu(false)}>Clans</NavLink>
-                <NavLink className={(navData) => isActivated(navData)} to="/attributes" onClick={() => props.setShowMobileMenu(false)}>Attributes</NavLink>
-                <NavLink className={(navData) => isActivated(navData)} to="/abilities" onClick={() => props.setShowMobileMenu(false)}>Abilities</NavLink>
-                <NavLink className={(navData) => isActivated(navData)} to="/disciplines" onClick={() => props.setShowMobileMenu(false)}>Disciplines</NavLink>
-                <NavLink className={(navData) => isActivated(navData)} to="/rules" onClick={() => props.setShowMobileMenu(false)}>Rules</NavLink>
-                <a target={`_blank`} href="/CharacterSheet.pdf">Sheets</a>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/" onClick={() => props.setShowMobileMenu(false)}>Home</NavLink>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/information" onClick={() => props.setShowMobileMenu(false)}>Information</NavLink>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/clans" onClick={() => props.setShowMobileMenu(false)}>Clans</NavLink>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/attributes" onClick={() => props.setShowMobileMenu(false)}>Attributes</NavLink>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/abilities" onClick={() => props.setShowMobileMenu(false)}>Abilities</NavLink>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/disciplines" onClick={() => props.setShowMobileMenu(false)}>Disciplines</NavLink>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/rules" onClick={() => props.setShowMobileMenu(false)}>Rules</NavLink>
+                <a className='navLink' target={`_blank`} href="/CharacterSheet.pdf">Sheets</a>
             </div>
         </nav>
     )

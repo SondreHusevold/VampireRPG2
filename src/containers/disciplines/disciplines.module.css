@@ -22,6 +22,7 @@
     align-items: center;
     cursor: pointer;
     transition: opacity 500ms;
+    text-decoration: none;
 }
 
 :local .disciplineButton span {
@@ -32,6 +33,7 @@
 :local .disciplineButton:hover {
     opacity: 1;
     border-color: #e0e0db;
+    text-decoration: none;
 }
 
 :local .disciplineButton p {

@@ -55,7 +55,7 @@ function RenderSection(props: RenderSectionProps) {
                 props.section.abilities.map((attr) => {
                     return (
                         <div className={styles.leftMenuItem}>
-                            <NavLink to={`/abilities/${attr.name}`} className={(navData) => navData.isActive ? "activeLink" : "" } >
+                            <NavLink to={`/abilities/${attr.name}`} className={(navData) => navData.isActive ? "activeLink navLink" : "navLink" } >
                                 <span className={`nf ${attr.icon}`} />
                                     {attr.name}
                             </NavLink>

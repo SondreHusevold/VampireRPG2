@@ -34,6 +34,7 @@
     align-items: center;
     cursor: pointer;
     transition: opacity 500ms;
+    text-decoration: none;
 }
 
 :local .abilityButton span {
@@ -45,6 +46,7 @@
 :local .abilityButton:hover {
     opacity: 1;
     border-color: #e0e0db;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1300px) {

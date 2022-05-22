@@ -36,7 +36,7 @@ function BloodBond() {
             </div>
             <Picture 
                 credit="Aleksi Briclot" desc="Blood bonding" link="https://aneyeoni.com/art.htm"
-                img={picture} pos="30% 15%" hidden={window.screen.width > 1300}
+                img={picture} pos="30% 15%" mobile={true}
             />
             <BloodBondNavigations/>
             <div className={pageStyles.lowerPage}>
@@ -50,7 +50,7 @@ function BloodBond() {
                     </Routes>
                 </div>
                 <Picture credit="Aleksi Briclot" desc="Blood bonding" link="https://aneyeoni.com/art.htm"
-                    img={picture} pos="30% 15%" hidden={window.screen.width <= 1300}
+                    img={picture} pos="30% 15%" mobile={false}
                 />
             </div>
  

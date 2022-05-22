@@ -37,7 +37,7 @@ function Maneuvers() {
             <Picture 
                 credit='Oshred' desc="Maneuvers"
                 img={picture} link={`https://www.twitter.com/oshredart`}
-                pos={"60% 30%"} hidden={window.screen.width > 1300}
+                pos={"60% 30%"} mobile={true}
             />
             <ManeuversNavigations />
             <div className={pageStyles.lowerPage}>
@@ -53,7 +53,7 @@ function Maneuvers() {
                 <Picture 
                     credit='Oshred' desc="Maneuvers"
                     img={picture} link={`https://www.twitter.com/oshredart`}
-                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
+                    pos={"30% 15%"} mobile={false}
                 />
             </div>
         </div>

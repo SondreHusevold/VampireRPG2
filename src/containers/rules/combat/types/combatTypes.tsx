@@ -37,7 +37,7 @@ function CombatTypes() {
             <Picture 
                 credit='Carlos Díaz Asenjo' desc="Combat"
                 img={picture} link={`https://www.artstation.com/kamyu`}
-                pos={"80% 15%"} hidden={window.screen.width > 1300}
+                pos={"80% 15%"} mobile={true}
             />
             <CombatNavigations />
             <div className={pageStyles.lowerPage}>
@@ -53,7 +53,7 @@ function CombatTypes() {
                 <Picture 
                     credit='Carlos Díaz Asenjo' desc="Combat"
                     img={picture} link={`https://www.artstation.com/kamyu`}
-                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
+                    pos={"30% 15%"} mobile={false}
                 />
             </div>
         </div>

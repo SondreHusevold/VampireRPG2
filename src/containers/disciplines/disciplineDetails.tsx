@@ -89,7 +89,7 @@ function DisciplineDetails() {
                     {discipline.description}
                 </div>
                 <div>
-                    <Picture {...discipline.image} hidden={window.screen.width > 1300} desc={discipline.name}  />
+                    <Picture {...discipline.image} mobile={true} desc={discipline.name}  />
                     {
                         discipline.system &&
                         <div className={`fadeInSlowest ${styles.dotSection}`}>
@@ -108,7 +108,7 @@ function DisciplineDetails() {
                     </div>
                 </div>
 
-                <Picture {...discipline.image} hidden={window.screen.width <= 1300} desc={discipline.name}  />
+                <Picture {...discipline.image} mobile={false} desc={discipline.name}  />
             </div>
         </div>
     )

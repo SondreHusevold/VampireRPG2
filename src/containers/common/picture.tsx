@@ -4,7 +4,7 @@ import styles from './picture.module.css';
 
 interface PictureProps extends Artwork {
     desc: string;
-    hidden: boolean;
+    mobile: boolean;
     pos: string;
 }
 
@@ -12,7 +12,7 @@ function Picture(props: PictureProps) {
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <div hidden={props.hidden} className={styles.pictureContainer}>
+        <div className={styles.pictureContainer}>
             <div hidden={!expanded} onClick={() => setExpanded(false)}>
                 <div className={styles.expandedBG}/>
                     <div className={styles.expandedImg}>
@@ -20,11 +20,11 @@ function Picture(props: PictureProps) {
                         <button>x</button>
                     </div>
             </div>
-            <div className={`fadeIn ${styles.picture}`}>
+            <div className={`fadeIn ${props.mobile ? styles.mobile : styles.desktop} ${styles.picture}`}>
                 <img 
                     style={{objectPosition: props.pos}} 
                     alt={`${props.desc}`} src={props.img} 
-                    onClick={() => window.screen.width <= 1300 ? setExpanded(true) : {}}
+                    onClick={() => props.mobile ? setExpanded(true) : {}}
                 />
                 <p>Credit: <a href={`${props.link}`} target={`_blank`}>{props.credit}</a></p>
             </div>

@@ -43,7 +43,7 @@ function CombatStages() {
             <Picture 
                 credit='Jonathan Romeo' desc="Combat"
                 img={picture} link={`https://www.artstation.com/wen-jr`}
-                pos={"30% 15%"} hidden={window.screen.width > 1300}
+                pos={"30% 15%"} mobile={true}
             />
             <CombatNavigations />
             <div className={pageStyles.lowerPage}>
@@ -60,7 +60,7 @@ function CombatStages() {
                 <Picture 
                     credit='Jonathan Romeo' desc="Combat"
                     img={picture} link={`https://www.artstation.com/wen-jr`}
-                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
+                    pos={"30% 15%"} mobile={false}
                 />
             </div>
         </div>

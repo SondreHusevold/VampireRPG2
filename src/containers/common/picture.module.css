@@ -5,6 +5,7 @@
 
 :local .picture {    
     margin-top: 3em;
+    flex-direction: column;
 }
 
 :local .picture p {
@@ -13,6 +14,14 @@
 
 :local .picture img {
     border-radius: 10px;
+}
+
+:local .mobile {
+    display: none;
+}
+
+:local .desktop {
+    display: inherit;
 }
 
 @media screen and (max-width: 1300px) {
@@ -37,6 +46,14 @@
         width: 100vw;
         height: 100vh;
         z-index: 50;
+    }
+
+    :local .desktop {
+        display: none;
+    }
+
+    :local .mobile {
+        display: inherit;
     }
 
     :local .expandedImg {

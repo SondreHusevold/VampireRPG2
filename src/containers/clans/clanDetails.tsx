@@ -33,7 +33,7 @@ function ClanDetail() {
             />
             <p className={`fadeIn ${styles.clanQuote}`} key={`${clan.name}_quote`}>"{clan.quote}"</p>
 
-            <Picture {...clan.picture} hidden={window.screen.width > 1300 } desc={clan.name} />
+            <Picture {...clan.picture} mobile={window.screen.width > 1300 } desc={clan.name} />
             <div className={`fadeIn ${pageStyles.navGrid}`} key={`${clan.name}_navi`}>
                 <NavigationLinker to="description" name="Description"/>
                 <NavigationLinker to="appearance" name="Appearance"/>
@@ -52,7 +52,7 @@ function ClanDetail() {
                     <Route path={`/`} element={<Navigate to="description" />} />
                 </Routes>
 
-                <Picture {...clan.picture} pos={"N/A"} hidden={window.screen.width <= 1300 } desc={clan.name} />
+                <Picture {...clan.picture} pos={"N/A"} mobile={window.screen.width <= 1300 } desc={clan.name} />
             </div>
         </div>
     )

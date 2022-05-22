@@ -37,7 +37,7 @@ function Frenzy() {
             <Picture 
                 credit='Jon Dunham' desc="Complete frenzy"
                 img={picture} link={`https://www.artstation.com/jon`}
-                pos={"100% 70%"} hidden={window.screen.width > 1300}
+                pos={"100% 70%"} mobile={true}
             />
 
             <FrenzyNavigations/>
@@ -55,7 +55,7 @@ function Frenzy() {
                 <Picture 
                     credit='Jon Dunham' desc="Complete frenzy"
                     img={picture} link={`https://www.artstation.com/jon`}
-                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
+                    pos={"30% 15%"} mobile={false}
                 />
             </div>
         </div>

@@ -35,7 +35,7 @@ function Equipment() {
             <Picture 
                 credit='Guweiz' desc="Equipment"
                 img={picture} link={`https://twitter.com/ttguweiz`}
-                pos={"30% 0%"} hidden={window.screen.width > 1300}
+                pos={"30% 0%"} mobile={true}
             />
             <EquipmentNavigations/>
             <div className={pageStyles.lowerPage}>
@@ -51,7 +51,7 @@ function Equipment() {
                 <Picture 
                     credit='Guweiz' desc="Equipment"
                     img={picture} link={`https://twitter.com/ttguweiz`}
-                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
+                    pos={"30% 15%"} mobile={false}
                 />
             </div>
         </div>

@@ -28,7 +28,7 @@ function AttributeDetails() {
                 <div className={pageStyles.lowerPage} key={`${attribute.name}_lowerPage`}>
                     <div className={`fadeIn`}>
                         {ParseJsonText(attribute.description)}
-                        <Picture {...attribute.image} desc={attribute.name} hidden={window.screen.width > 1300} />
+                        <Picture {...attribute.image} desc={attribute.name} mobile={true} />
                         <h3 className={styles.dotHeader}>{attribute.name} dots</h3>
                         <div className={styles.dotLevelSection}>
                             <div>
@@ -54,7 +54,7 @@ function AttributeDetails() {
                         </div>
                     </div>
 
-                    <Picture {...attribute.image} desc={attribute.name} hidden={window.screen.width <= 1300} />
+                    <Picture {...attribute.image} desc={attribute.name} mobile={false} />
                 </div>
             </div>
         </div>

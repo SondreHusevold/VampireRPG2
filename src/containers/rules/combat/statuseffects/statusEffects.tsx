@@ -38,7 +38,7 @@ function StatusEffects() {
             <Picture 
                 credit='Kathy Design' desc="Blood"
                 img={picture} link={`https://kathydesign.artstation.com/`}
-                pos={"30% 15%"} hidden={window.screen.width > 1300}
+                pos={"30% 15%"} mobile={true}
             />
             <EffectsNavigations/>
             <div className={pageStyles.lowerPage}>
@@ -55,7 +55,7 @@ function StatusEffects() {
                 <Picture 
                     credit='Kathy Design' desc="Blood"
                     img={picture} link={`https://kathydesign.artstation.com/`}
-                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
+                    pos={"30% 15%"} mobile={false}
                 />
             </div>
         </div>

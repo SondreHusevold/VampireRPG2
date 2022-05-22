@@ -39,7 +39,7 @@ function Health() {
             <Picture 
                 credit='Anton Oxenuk' desc="Health"
                 img={picture} link={`https://www.artstation.com/aoxenuk`}
-                pos={"30% 15%"} hidden={window.screen.width > 1300}
+                pos={"30% 15%"} mobile={true}
             />
             <HealthNavigations />
             <div className={pageStyles.lowerPage}>
@@ -56,7 +56,7 @@ function Health() {
                 <Picture 
                     credit='Anton Oxenuk' desc="Health"
                     img={picture} link={`https://www.artstation.com/aoxenuk`}
-                    pos={"30% 15%"} hidden={window.screen.width <= 1300}
+                    pos={"30% 15%"} mobile={false}
                 />
             </div>
         </div>

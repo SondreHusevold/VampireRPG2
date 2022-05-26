@@ -23,7 +23,7 @@ function BiteDescription() {
                 Alternatively, a player can declare her vampire's bite to be a “Kiss” attack. A Kiss is resolved in the same way as a normal bite, but inflicts no health levels of damage.
             </p>
             <p>
-                Upon connecting with a Kiss, the vampire may begin to drain the victim’s blood at the normal rate, and the victim is typically helpless to resist (see p. 269 for specifics). 
+                Upon connecting with a Kiss, the vampire may begin to drain the victim's blood at the normal rate, and the victim is typically helpless to resist (see p. 269 for specifics). 
                 Following the Kiss, a vampire may, if she chooses, lick the puncture wound of the Kiss closed, thereby removing any evidence that she has fed.
             </p>
         </div>
@@ -64,10 +64,10 @@ function DisarmDescription() {
     return (
         <div>
             <p>
-                To strike an opponent’s weapon, the attacker must make an attack roll at +1 difficulty. If successful, the attacker rolls damage normally. 
-                If successes rolled exceed the opponent’s Strength rating, the opponent takes no damage but is disarmed.
+                To strike an opponent's weapon, the attacker must make an attack roll at +1 difficulty. If successful, the attacker rolls damage normally. 
+                If successes rolled exceed the opponent's Strength rating, the opponent takes no damage but is disarmed.
             </p>
-            <p>A botch usually means the attacker drops her own weapon or is struck by her target’s weapon.</p>
+            <p>A botch usually means the attacker drops her own weapon or is struck by her target's weapon.</p>
         </div>
     )
 }
@@ -77,7 +77,7 @@ function HoldDescription() {
         <div>
             <p>
                 This attack inflicts no damage, as the intent is to immobilize rather than injure the subject. 
-                On a successful roll, the attacker holds the target until the subject’s next action.
+                On a successful roll, the attacker holds the target until the subject's next action.
             </p>
             <p>
                 At that time, both combatants roll resisted Strength + Brawl actions; the subject remains immobilized
@@ -90,8 +90,8 @@ function HoldDescription() {
 function KickDescription() {
     return (
         <div>
-            <p>Kicks range from simple front kicks to aerial spins. The base attack is at +1 difficulty and inflicts the attacker’s Strength +1 in damage.</p>
-            <p>These ratings may be modified further at the Storyteller’s discretion, increasing in damage and/or difficulty as the maneuver increases in complexity.</p>
+            <p>Kicks range from simple front kicks to aerial spins. The base attack is at +1 difficulty and inflicts the attacker's Strength +1 in damage.</p>
+            <p>These ratings may be modified further at the Storyteller's discretion, increasing in damage and/or difficulty as the maneuver increases in complexity.</p>
         </div>
     )
 }
@@ -99,7 +99,7 @@ function KickDescription() {
 function StrikeDescription() {
     return (
         <div>
-            <p>The attacker lashes out with a fist. The base attack is a standard action and inflicts the character’s Strength in damage.</p>
+            <p>The attacker lashes out with a fist. The base attack is a standard action and inflicts the character's Strength in damage.</p>
             <p>The Storyteller may adjust the difficulty and/or damage depending on the type of punch: hook, jab, haymaker, karate strike.</p>
         </div>
     )
@@ -122,7 +122,7 @@ function TackleDescription() {
         <div>
             <p>The attacker rushes her opponent, tackling him to the ground. The attack roll is at +1 difficulty, and the maneuver inflicts Strength +1 damage.</p>
             <p>Additionally, both combatants must roll Dexterity + Athletics (difficulty 7) or suffer a knockdown.</p>
-            <p>Even if the target’s Athletics roll succeeds, he is unbalanced, suffering +1 difficulty to his actions for the next turn.</p>
+            <p>Even if the target's Athletics roll succeeds, he is unbalanced, suffering +1 difficulty to his actions for the next turn.</p>
         </div>
     )
 }

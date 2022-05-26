@@ -16,11 +16,11 @@ function Derangements() {
             <p>
                 Other examples of derangement-inducing events include killing a loved one while in a frenzy, being buried alive as part of a Sabbat ritual, 
                 or seeing hundreds of years of careful scheming dashed in an instant of bad luck. Generally, any experience that causes intense and unpleasant 
-                emotion or thoroughly violates a character’s beliefs or ethics is severe enough to cause a derangement. 
+                emotion or thoroughly violates a character's beliefs or ethics is severe enough to cause a derangement. 
             </p>
             <p>
                 The Storyteller determines which derangement a character receives, working with the player to choose (or create) one appropriate to the
-                character’s personality and the circumstances of the event that caused the disorder.
+                character's personality and the circumstances of the event that caused the disorder.
             </p>
             <p>
                 It must be noted that people who are “crazy” are neither funny nor arbitrary in their actions. Insanity is frightening to those who are watching someone rage
@@ -29,12 +29,12 @@ function Derangements() {
             </p>
             <p>
                 The insane, however, are only responding to a pattern known to them, stimuli that they perceive in their own minds. 
-                To their skewed perceptions, what’s happening to them is perfectly normal.
+                To their skewed perceptions, what's happening to them is perfectly normal.
             </p>
             <p>
-                Your vampire’s derangement is there for a reason, whether he’s a Malkavian who resided at Bedlam before his Embrace or a 
+                Your vampire's derangement is there for a reason, whether he's a Malkavian who resided at Bedlam before his Embrace or a 
                 Ventrue pack member who escaped from five months of torture at the hands of an Inquisitor. What stimuli is his insanity inflicting
-                on him, and how is he reacting to what’s happening? The player should work with his Storyteller to create a pattern of provocations for his derangement, 
+                on him, and how is he reacting to what's happening? The player should work with his Storyteller to create a pattern of provocations for his derangement, 
                 and then decide how his character reacts to such provocation.
             </p>
             <p>

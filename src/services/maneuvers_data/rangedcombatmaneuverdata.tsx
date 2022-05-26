@@ -60,7 +60,7 @@ function TwoWeapons() {
     return (
         <div>
             <p>Firing two weapons is considered performing a multiple action, complete with dividing the dice of the lowest pool between two different targets. </p>
-            <p>Additionally, the attacker suffers +1 difficulty for the attack with her off-hand (unless she’s ambidextrous).</p>
+            <p>Additionally, the attacker suffers +1 difficulty for the attack with her off-hand (unless she's ambidextrous).</p>
             <p>Each attack is rolled and resolved separately, multiple attacks made against the same target are covered by maneuvers such as “Automatic Fire” and “Three-Round Burst.”</p>
         </div>
     )
@@ -69,7 +69,7 @@ function TwoWeapons() {
 function CoverDescription() {
     return (
         <div>
-            <p>Cover increases an attacker’s difficulty to hit a target (and often the target’s ability to fire back).</p>
+            <p>Cover increases an attacker's difficulty to hit a target (and often the target's ability to fire back).</p>
             <p>
                 Difficulty penalties for hitting a target under various types of cover are listed below. 
                 A character who fires back from behind cover is also at something of a disadvantage to hit, as he exposes himself and ducks back under protection.
@@ -78,7 +78,7 @@ function CoverDescription() {
                 Firearms attacks made by a defender who is under cover are at one lower difficulty than listed below. 
                 (If a listed difficulty is +1, then the defender suffers no penalty to make attacks from under that cover.)
             </p>
-            <p>If your character hides behind a wall, attackers’ Firearms rolls have a +2 difficulty. Your character’s attacks staged from behind that wall are at +1 difficulty.</p>
+            <p>If your character hides behind a wall, attackers' Firearms rolls have a +2 difficulty. Your character's attacks staged from behind that wall are at +1 difficulty.</p>
             <p>
                 Note that difficulties for combatants who are both under cover are cumulative. If one combatant is prone and one is behind a wall, attacks staged by the prone
                 character are at +2 difficulty, while attacks staged by the character behind the wall are also at +2 difficulty.
@@ -90,7 +90,7 @@ function CoverDescription() {
 function ReloadDescription() {
     return (
         <div>
-            <p>Reloading takes one full turn and requires the character’s concentration.</p>
+            <p>Reloading takes one full turn and requires the character's concentration.</p>
             <p>Like any other maneuver, reloading can be performed as part of a multiple action.</p>
         </div>
     )

@@ -48,20 +48,20 @@ function GainingBlood() {
             </p>
             <p>A vampire may take:</p>
             <ul>
-                <li>Only 20 percent of a vessel’s blood (2 blood points for a normal human) and leave it relatively safe.</li>
-                <li>Half of a vessel’s blood necessitates hospitalization for that vessel.</li>
-                <li>All a vessel’s blood will kill it.</li>
+                <li>Only 20 percent of a vessel's blood (2 blood points for a normal human) and leave it relatively safe.</li>
+                <li>Half of a vessel's blood necessitates hospitalization for that vessel.</li>
+                <li>All a vessel's blood will kill it.</li>
             </ul>
             <p>A vampire may take up to three blood points from a given vessel in a turn. The shorter the turn, the more forcefully the Kindred steals the vitae.</p>
             <p>
                 It is generally impossible to take more than three blood points from a vessel in three seconds (the shortest a turn gets), 
                 though some Nosferatu with hideously distended mouths are able to take more through sheer surface area bleed.
             </p>
-            <p>Most vampires drink their victim’s blood slowly, so as to savor the luscious fluid and draw as much pleasure as possible out of the experience.</p>
+            <p>Most vampires drink their victim's blood slowly, so as to savor the luscious fluid and draw as much pleasure as possible out of the experience.</p>
             <h3>The Kiss</h3>
             <p>
-                Once the Kindred breaks her vessel’s skin with her fangs, that vessel no longer resists the vampire (if he did in the first place). 
-                Indeed, the ecstasy caused by the vampire’s bite is called the Kiss, and it engenders as much exquisite, subtly painful pleasure in vampires as it does in mortals. 
+                Once the Kindred breaks her vessel's skin with her fangs, that vessel no longer resists the vampire (if he did in the first place). 
+                Indeed, the ecstasy caused by the vampire's bite is called the Kiss, and it engenders as much exquisite, subtly painful pleasure in vampires as it does in mortals. 
             </p>
             <p>
                 Exceptionally strong-willed mortals (9+ Willpower) may continue to resist, but even these vessels eventually succumb to the pleasure. 
@@ -83,7 +83,7 @@ function GainingBlood() {
                 The blood of animals is not as nourishing as the blood of humans. Though an animal may physically have a greater volume of blood than a man, vampires draw less sustenance from it. 
                 Hence, animals have fewer blood points, even if they have more blood.
             </p>
-            <p>Old blood is never as nourishing as fresh blood. In fact, many vampires refuse to drink old blood, whether it comes from human corpses, blood banks, or a vampire’s private reserve.</p>
+            <p>Old blood is never as nourishing as fresh blood. In fact, many vampires refuse to drink old blood, whether it comes from human corpses, blood banks, or a vampire's private reserve.</p>
             <p> However, the blood of other vampires, particularly elders, is quite potent. When drinking from elder vampires, each blood point taken may be so concentrated that it is actually worth two — or more! — normal blood points in use. </p>
             <p>Thus it is possible to obtain a vast amount of blood points by partaking of elder blood, though such prized vitae is rarely available to neonates or even ancillae. </p>
             <p>Essentially, elders have greater blood pools not because they are bodily larger than younger vampires, but because the blood they ingest is more concentrated in their ancient veins.</p>

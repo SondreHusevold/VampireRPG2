@@ -24,5 +24,7 @@
 - ~~Make Willpower and Blood Pool section.~~
 - Finish "Introduction"
 - Create Azure + deploy or use RP4 for deployment.
+- Swiping on mobile.
+
 #### Ridiculously large task:
 - Rewrite all text to not be direct copy paste from the V20 book.

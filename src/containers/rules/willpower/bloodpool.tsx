@@ -7,12 +7,12 @@ function BloodPool() {
             <p>Vampires must subtract one blood point from their blood pools every night, whether they rise for the evening or not, as the unnatural magics animating their dead bodies consume the vitae they have taken from their prey. </p>
             <p>Blood points may also be spent in a variety of ways, and may be replenished only by consuming blood.</p>
             <p>
-                Blood pool also affects Self-Control (or Instinct) rolls, which come into play when a character’s frenzy becomes imminent. 
+                Blood pool also affects Self-Control (or Instinct) rolls, which come into play when a character's frenzy becomes imminent. 
                 A player may never roll more dice for a Self-Control or Instinct roll than the character has blood pool.
             </p>
             <p>
                 For example, if a character has only two blood points left, her player may roll only two dice for a Self-Control roll, 
-                even if the character’s Self-Control rating is 4. Voracious vampires just don’t fight the Beast very well.
+                even if the character's Self-Control rating is 4. Voracious vampires just don't fight the Beast very well.
             </p>
             <p>The amount of blood points a vampire can use per turn is dependent on the vampire's Generation.</p>
             
@@ -63,9 +63,9 @@ function BloodPool() {
                 A vampire may give a number of blood points to another Kindred, thereby enabling the recipient to use the blood as if it were her own.
                 This is often a grisly prospect, as the “donor” must open his own vein and physically deliver the blood to the needy Kindred.
             </p>
-            <p>Of course, if a vampire is ever in a situation in which she needs blood, she’s likely all out of it herself, and may frenzy and take too much from the donor. </p>
+            <p>Of course, if a vampire is ever in a situation in which she needs blood, she's likely all out of it herself, and may frenzy and take too much from the donor. </p>
             <p>
-                If a vampire (or mortal) partakes of another Kindred’s blood three times, she becomes bound to that vampire through the mystical properties of vitae. 
+                If a vampire (or mortal) partakes of another Kindred's blood three times, she becomes bound to that vampire through the mystical properties of vitae. 
                 This is known as the <Link to="/rules/bloodbond/information">blood bond</Link>.
             </p>
             

@@ -14,8 +14,8 @@ function Willpower() {
             </p>
             <p>For extended rolls, these extra successes may make the critical difference between accomplishment and failure.</p>
             <p>
-                Note: You must declare that you are spending a Willpower point before you make an actual roll for a character’s action; 
-                you can’t retroactively cancel a botch by spending a Willpower point at the last minute. Also, the Storyteller may declare that a Willpower
+                Note: You must declare that you are spending a Willpower point before you make an actual roll for a character's action; 
+                you can't retroactively cancel a botch by spending a Willpower point at the last minute. Also, the Storyteller may declare that a Willpower
                 point may not be spent on a given action (such as attacking in combat).
             </p>
             <h3>Reactive Maneuver</h3>
@@ -25,16 +25,16 @@ function Willpower() {
                 The Storyteller may allow a player to spend a Willpower point and avoid taking this reactive maneuver.    
             </p>
             <p>
-                It should be noted that the impulse may return at the Storyteller’s discretion; 
+                It should be noted that the impulse may return at the Storyteller's discretion; 
                 a player may need to spend multiple Willpower points over the course of a few turns to stay on task.
             </p>
             <p>
-                Sometimes the urge may be overcome by the force of the character’s will;  at other times, the character has no choice but to follow his instinct 
+                Sometimes the urge may be overcome by the force of the character's will;  at other times, the character has no choice but to follow his instinct 
                 (i.e., the character runs out of Willpower points or no longer wishes to expend them).
             </p>
             <h3>Prevent derangements</h3>
             <p>
-                A Willpower point may be spent to prevent a derangement from manifesting, with the Storyteller’s permission. 
+                A Willpower point may be spent to prevent a derangement from manifesting, with the Storyteller's permission. 
                 Eventually, if enough Willpower points are spent (as determined by the Storyteller), the derangement may be overcome and eliminated, as enough
                 denial of the derangement remedies the aberration.
             </p>

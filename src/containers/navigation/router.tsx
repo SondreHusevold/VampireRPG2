@@ -18,6 +18,7 @@ import StatusEffects from "../rules/combat/statuseffects/statusEffects";
 import Frenzy from "../rules/frenzy/frenzy";
 import BloodBond from "../rules/bloodbond/bloodbond";
 import Equipment from "../rules/equipment/equipment";
+import WillpowerBloodPool from "../rules/willpower/wpbp";
 
 function NavigationRouter() {
 
@@ -42,6 +43,7 @@ function NavigationRouter() {
             <Route path="/rules/bloodbond/*" element={<BloodBond />} />
             <Route path="/rules/statuses/*" element={<StatusEffects />} />
             <Route path="/rules/equipment/*" element={<Equipment />} />
+            <Route path="/rules/willpower/*" element={<WillpowerBloodPool />} />
         </Routes>
     )
 }

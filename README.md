@@ -21,6 +21,7 @@
 #### Larger tasks:
 - ~~Mobile CSS~~
 - ~~Mobile pictures~~
+- ~~Make Willpower and Blood Pool section.~~
 - Finish "Introduction"
 - Create Azure + deploy or use RP4 for deployment.
 #### Ridiculously large task:

@@ -24,7 +24,10 @@ function Rules() {
                     <h1 className='nf nf-mdi-heart_half_full'/>
                     <h4>Health</h4>
                 </Link>
-
+                <Link to="willpower/willpower">
+                    <h1 className='nf nf-mdi-rhombus'/>
+                    <h4>Willpower {`&`} Blood</h4>
+                </Link>
                 <Link to="frenzy/information">
                     <h1 className={`nf nf-oct-flame`}/>
                     <h4>Frenzy</h4>
@@ -33,6 +36,7 @@ function Rules() {
                     <h1 className={`nf nf-fae-drop`}/>
                     <h4>Blood Bond</h4>
                 </Link>
+
                 <Link to="statuses/effects">
                     <h1 className='nf nf-fa-low_vision'/>
                     <h4>Status Effects</h4>

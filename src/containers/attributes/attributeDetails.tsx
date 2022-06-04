@@ -23,7 +23,7 @@ function AttributeDetails() {
         <div className={styles.attributesGrid}>
             <LeftMenu attributes={attributes} />
             <div>
-                <h1 key={`${attribute.name}_title`} className={pageStyles.headerTop}> {attribute.name}</h1>
+                <h1 key={`${attribute.name}_title`} className={`fadeIn ${pageStyles.headerTop} center`}> {attribute.name}</h1>
                 <h1 key={`${attribute.name}_title_icon`} className={`fadeIn nf ${attribute.icon} ${styles.headerTextIcon}`}></h1>
                 <div className={pageStyles.lowerPage} key={`${attribute.name}_lowerPage`}>
                     <div className={`fadeIn`}>

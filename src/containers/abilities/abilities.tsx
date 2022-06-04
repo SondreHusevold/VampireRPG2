@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { abilities } from '../../services/abilityService';
 import styles from './abilities.module.css';
+import pageStyles from '../common/pages.module.css';
 
 function Abilities() {
     return (
@@ -9,7 +10,7 @@ function Abilities() {
                 abilities.map((section) => {
                     return (
                         <div>
-                            <h2>{section.name}</h2>
+                            <h2 className={pageStyles.headerTop}>{section.name}</h2>
                             <div className={styles.abilitiesColumn}>
                                 {section.abilities.map((ability) => {
                                     return (

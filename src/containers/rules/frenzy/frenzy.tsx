@@ -30,8 +30,8 @@ function Frenzy() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Frenzy</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Frenzy</h1>
                 <p>Vampires are monsters, possessed of an inner Beast.</p>
             </div>
             <Picture 
@@ -41,7 +41,7 @@ function Frenzy() {
             />
 
             <FrenzyNavigations/>
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div className={pageStyles.textSection}>
                     <Routes>
                         <Route path={`rotschreck`} element={<Rotschreck />} />

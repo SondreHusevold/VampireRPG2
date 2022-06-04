@@ -28,8 +28,8 @@ function Equipment() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Equipment</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Equipment</h1>
                 <p>Example weapons and armor.</p>
             </div>
             <Picture 
@@ -38,7 +38,7 @@ function Equipment() {
                 pos={"30% 0%"} mobile={true}
             />
             <EquipmentNavigations/>
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`armor`} element={<ArmorEquipment />} />

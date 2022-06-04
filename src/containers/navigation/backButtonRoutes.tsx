@@ -34,6 +34,11 @@ const matcher: RouteMatcher[] = [
         backTo: "/rules",
         name: "Rules"
     },
+    {
+        current: "/misc/",
+        backTo: "/misc",
+        name: "Miscellaneous"
+    },
 ]
 
 function GoBackTo() {

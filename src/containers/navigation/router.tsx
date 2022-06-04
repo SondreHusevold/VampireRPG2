@@ -19,6 +19,8 @@ import Frenzy from "../rules/frenzy/frenzy";
 import BloodBond from "../rules/bloodbond/bloodbond";
 import Equipment from "../rules/equipment/equipment";
 import WillpowerBloodPool from "../rules/willpower/wpbp";
+import Misc from "../miscellaneous/misc";
+import Music from "../miscellaneous/music";
 
 function NavigationRouter() {
 
@@ -44,6 +46,8 @@ function NavigationRouter() {
             <Route path="/rules/statuses/*" element={<StatusEffects />} />
             <Route path="/rules/equipment/*" element={<Equipment />} />
             <Route path="/rules/willpower/*" element={<WillpowerBloodPool />} />
+            <Route path="/misc/" element={<Misc />} />
+            <Route path="/misc/music/*" element={<Music />} />
         </Routes>
     )
 }

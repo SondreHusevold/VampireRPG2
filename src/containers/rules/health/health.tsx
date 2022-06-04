@@ -30,8 +30,8 @@ function Health() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Health</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Health</h1>
                 <p>
                     Vampires are immortal and do not die naturally, however injury can incapacitate them, drive them into lengthy periods of dormancy, or even kill them once more.
                 </p>
@@ -42,7 +42,7 @@ function Health() {
                 pos={"30% 15%"} mobile={true}
             />
             <HealthNavigations />
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`healing`} element={<Healing />} />

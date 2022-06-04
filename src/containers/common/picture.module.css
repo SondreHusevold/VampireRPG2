@@ -4,7 +4,6 @@
 }
 
 :local .picture {    
-    margin-top: 3em;
     flex-direction: column;
 }
 

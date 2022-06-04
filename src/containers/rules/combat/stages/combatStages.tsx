@@ -32,8 +32,8 @@ function CombatStages() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Combat stages</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Combat stages</h1>
                 <p>
                     Combat is divided into a series of three-second turns.
                     Each combat turn has three stages to make it easier to keep track
@@ -46,7 +46,7 @@ function CombatStages() {
                 pos={"30% 15%"} mobile={true}
             />
             <CombatNavigations />
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`summary`} element={<Summary />}/>

@@ -28,8 +28,8 @@ function CombatTypes() {
 
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Combat and Damage types</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Combat and Damage types</h1>
                 <p>
                     Close combat, ranged combat and four damage types. Additionally there's armor to reduce damage.
                 </p>
@@ -40,7 +40,7 @@ function CombatTypes() {
                 pos={"80% 15%"} mobile={true}
             />
             <CombatNavigations />
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`armor`} element={<Armor />} />

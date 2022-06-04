@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import { AttributeSections } from "../../models/attribute";
 import { attributes } from "../../services/attributesService";
 import styles from './attributes.module.css';
+import pageStyles from '../common/pages.module.css';
 
 function RenderColumn(props: { type: AttributeSections }) {
     
     return (
         <div className={styles.flexer} key={`section_${AttributeSections[props.type]}`}>
-            <h2>{AttributeSections[props.type]}</h2>
+            <h2 className={pageStyles.headerTop}>{AttributeSections[props.type]}</h2>
             {
                 attributes.map((attribute) => {
                     if(attribute.section === props.type) {

@@ -64,6 +64,7 @@
 @media screen and (max-width: 1300px) {
   :local .rulesHeader {
     text-align: center;
+    margin-bottom: 0.5em;
   }
 
   :local .rulesGrid {

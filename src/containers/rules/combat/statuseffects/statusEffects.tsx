@@ -31,8 +31,8 @@ function StatusEffects() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Status Effects</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Status Effects</h1>
                 <p>Sometimes not everything goes according to plan. Here are some complications and status effects.</p>
             </div>
             <Picture 
@@ -41,7 +41,7 @@ function StatusEffects() {
                 pos={"30% 15%"} mobile={true}
             />
             <EffectsNavigations/>
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
             <div className={styles.textSection}>
                     <Routes>
                         <Route path={`derangements`} element={<Derangements />} />

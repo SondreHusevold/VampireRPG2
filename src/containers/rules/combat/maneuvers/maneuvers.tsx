@@ -30,8 +30,8 @@ function Maneuvers() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Maneuvers</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Maneuvers</h1>
                 <p>These maneuvers give you a variety of choices in combat. Most of these take one action to execute.</p>
             </div>
             <Picture 
@@ -40,7 +40,7 @@ function Maneuvers() {
                 pos={"60% 30%"} mobile={true}
             />
             <ManeuversNavigations />
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div className={styles.textSection}>
                     <Routes>
                         <Route path={`ranged-combat`} element={<RangedCombatManeuvers />} />

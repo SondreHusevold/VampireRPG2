@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 import { Link } from 'react-router-dom';
 import styles from './rules.module.css';
+import pageStyles from '../common/pages.module.css';
 
 function Rules() {
     
     return (
         <div className={`fadeIn ${styles.rulesWrap}`}>
-            <h2 className={`${styles.rulesHeader}`}>Rules</h2>
+            <h2 className={`${styles.rulesHeader} ${pageStyles.headerTop}`}>Rules</h2>
             <div className={`${styles.rulesGrid}`}>
                 <Link to="combat/stages/summary">
                     <h1 className='nf nf-fa-sort_numeric_asc'/>

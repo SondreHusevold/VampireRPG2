@@ -68,6 +68,7 @@
     :local .ownedByClan {
         gap: 1em;
         text-align: center;
+        margin-top: 1.5em;
     }
 
     :local .dots {

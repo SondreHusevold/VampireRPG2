@@ -30,8 +30,8 @@ function BloodBond() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-           <div className={pageStyles.headerTop}>
-                <h1>Blood Bond</h1>
+           <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Blood Bond</h1>
                 <p>The blood bond forms an essential strategy in the Jyhad.</p>
             </div>
             <Picture 
@@ -39,7 +39,7 @@ function BloodBond() {
                 img={picture} pos="30% 15%" mobile={true}
             />
             <BloodBondNavigations/>
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div>
                     <Routes>
                         <Route path={`breaking`} element={<BloodBondBreak />} />

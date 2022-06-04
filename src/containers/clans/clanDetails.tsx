@@ -42,7 +42,7 @@ function ClanDetail() {
                 <NavigationLinker to="opinions" name="Opinions"/>
             </div>
 
-            <div className={pageStyles.lowerPage} key={`${clan.name}_lowerPage`}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`} key={`${clan.name}_lowerPage`}>
                 <Routes >
                     <Route path={`description`} element={<ClanDescription {...clan} />}/>
                     <Route path={`appearance`} element={<ClanAppearance {...clan} />}/>
@@ -51,7 +51,7 @@ function ClanDetail() {
                     <Route path={`opinions`} element={<ClanOpinions {...clan} />}/>
                     <Route path={`/`} element={<Navigate to="description" />} />
                 </Routes>
-
+                
                 <Picture {...clan.picture} pos={"N/A"} mobile={false} desc={clan.name} />
             </div>
         </div>

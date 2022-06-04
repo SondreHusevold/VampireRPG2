@@ -33,7 +33,7 @@ function NavigationBar(props: NavigationProps) {
                 <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/abilities" onClick={() => props.setShowMobileMenu(false)}>Abilities</NavLink>
                 <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/disciplines" onClick={() => props.setShowMobileMenu(false)}>Disciplines</NavLink>
                 <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/rules" onClick={() => props.setShowMobileMenu(false)}>Rules</NavLink>
-                <a className='navLink' target={`_blank`} href="/CharacterSheet.pdf">Sheets</a>
+                <NavLink className={(navData) => isActivated(navData) + ` navLink`} to="/misc" onClick={() => props.setShowMobileMenu(false)}>Miscellaneous</NavLink>
             </div>
         </nav>
     )

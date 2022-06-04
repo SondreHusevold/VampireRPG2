@@ -30,8 +30,8 @@ function WillpowerBloodPool() {
     
     return (
         <div className={`fadeIn ${styles.page}`}>
-            <div className={pageStyles.headerTop}>
-                <h1>Willpower {`&`} Blood</h1>
+            <div className={`center`}>
+                <h1 className={pageStyles.headerTop}>Willpower {`&`} Blood</h1>
                 <p>A strong will and blood is necessity.</p>
             </div>
             <Picture 
@@ -41,7 +41,7 @@ function WillpowerBloodPool() {
             />
 
             <WillpowerNavigations/>
-            <div className={pageStyles.lowerPage}>
+            <div className={`${pageStyles.lowerPage} ${pageStyles.picturePadding}`}>
                 <div className={pageStyles.textSection}>
                     <Routes>
                         <Route path={`gaining-bloodpool`} element={<GainingBlood />} />

@@ -45,7 +45,7 @@ function RenderSection(props: RenderSectionProps) {
     }
 
     return (
-        <div className={styles.leftMenuSection}>
+        <div className={`fadeIn ${styles.leftMenuSection}`}>
             <h3 onClick={() => goLeftRight(false)} className={`nf nf-mdi-arrow_left_bold ${disableArrow(false)}`}/>
             <h3>
                 {props.section.name}

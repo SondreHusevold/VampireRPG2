@@ -22,6 +22,8 @@
 - ~~Mobile CSS~~
 - ~~Mobile pictures~~
 - ~~Make Willpower and Blood Pool section.~~
+- ~~Make misc section.~~
+- ~~Make music page.~~
 - Finish "Introduction"
 - Create Azure + deploy or use RP4 for deployment.
 - Swiping on mobile.

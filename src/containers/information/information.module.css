@@ -17,7 +17,6 @@
     background-color: black;
     width: 100vw;
     height: 100vh;
-
 }
 
 :local .nineteenninityninesection {
@@ -45,4 +44,24 @@
     background-color: black;
     width: 100vw;
     height: 100vh;
+}
+
+:local .camarillaSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 50vh;
+}
+
+:local .innerText {
+    padding-left: 10vw;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 4em;
+}
+
+:local .pictureRight {
+    width: 30vw;
 }

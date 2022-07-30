@@ -71,12 +71,12 @@ function LeftAbilitiesMenu(props: LeftMenuProps) {
     const [chosenSection, setChosenSection] = useState(props.chosenAbility.section);
 
     return (
-        <div className={styles.leftMenuGrid}>
+        <div className={`fadeIn ${styles.leftMenuGrid}`}>
             { props.abilities.filter(x => x.section === chosenSection).map((section) => {
                 return (
                     <RenderSection section={section} setSection={setChosenSection}/>
                 )
-            })}
+              })}
         </div>
     )
 }

@@ -140,6 +140,11 @@
         width: 100%
     }
 
+
+    :local .informationWidth p {
+        font-size: 1.2em;
+    }
+
     :local .characterGrid {
         grid-template-columns: 1fr;
     }
@@ -169,6 +174,10 @@
         padding: 10vw;
         width: auto;
     }
+
+    :local .camarillaheader {
+        height: 50vh;
+    }    
 
     :local .camarillaSection {
         display: flex;

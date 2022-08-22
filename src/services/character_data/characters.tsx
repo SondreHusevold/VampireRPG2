@@ -10,7 +10,7 @@ const jonathan: InformationCharacter = {
     description: (
         <>
             <p>The Prince of Miami after Poe met his Final Death. He leads the Tremere and all the kindred of the city. He is the childe of Maximilian Strauss and has much respect for Strauss to the point he chose to replace his last name with Strauss' first name.</p>
-            <p>As the leader of the Camarilla of the city, Jonathan has immense say in city business. However unlike his predecessor he does not have unlimited pockets and has extra responsibilities both to the Chantry and to the Pyramid.</p>
+            <p>As the leader of the Camarilla of the city, Jonathan has immense say in city business. However unlike his predecessor he does not have unending pockets and has extra responsibilities both to the Chantry and to the Pyramid.</p>
         </>
     )
 }

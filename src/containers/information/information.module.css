@@ -129,10 +129,21 @@
     margin-bottom: 1.3em;
 }
 
-
 :local .characterGrid {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
+}
+
+:local .traditions p {
+    width: 700px;
+}
+
+:local .traditions h1 {
+    margin-bottom: 0px;
+}
+
+:local .traditions h3 {
+    margin-top: 0px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -202,5 +213,16 @@
         font-size: 1.7em !important;
     }
     
+    :local .traditions p {
+        width: auto;
+    }
+
+    :local .traditions h1 {
+        font-size: 8.1vw;
+    }
+
+    :local .traditions h3 {
+        font-size: 5vw;
+    }
 
 }

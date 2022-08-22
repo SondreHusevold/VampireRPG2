@@ -30,7 +30,7 @@ function Information() {
             </div>
             <div className={styles.nineteenninityninesection}>
                 <AnimationOnScroll animateIn='fadeIn'>
-                    <p>It has been two months since you were embraced.</p>
+                    <p>It has been three months since you were embraced.</p>
                     <p>It might feel like years ago, but forever has only just started.</p>             
                 </AnimationOnScroll>
             </div>
@@ -77,7 +77,8 @@ function Information() {
 
             <div className={styles.nineteenninityninesection}>
                 <AnimationOnScroll animateIn='fadeIn'>
-                    <p>A grey lie only you know. Not to be spoken of ever again.</p>
+                    <p>A grey lie only you know.</p>
+                    <p>Not to be spoken of ever again.</p>
                 </AnimationOnScroll>
             </div>
 
@@ -134,7 +135,7 @@ function Information() {
                         <div>
                             <p>'Uprising' has very recently been rebranded to 'No Mercy' and opened back up with Rosalie as the new owner and Henry as a major stakeholder.</p>
                             <p>This Elysium has now become one of the more frequent places for the Kindred of the city to mingle around.</p>
-                            <p>While all Elysiums are neutral ground and every Kindred are welcome on it's grounds, this one is particularily impartial due to the joint effort between the Ventrue, Toreador, Brujah and the Malkavians in running the club.</p>
+                            <p>While all Elysiums are neutral ground and every Kindred are welcome on its grounds, this one is particularily impartial due to the joint effort between the Ventrue, Toreador, Brujah and the Malkavians in running the club.</p>
                         </div>
 
                         <img className={styles.pictureRight} src={nomercyPicture} />
@@ -150,7 +151,7 @@ function Information() {
                                 Another Elysium, the bar known as 'The Firmament' previously ran by Angel has been taken ownership of by the Brujah, as the Toreador run two Elysiums already and none of the other clans were interested in a pub. 
                             </p>
                             <p>
-                                Due to how Eduardo Cortez is barely a leader for the Brujah to the Prince's frustration, 'The Firmament' is currently closed, but in fine shape. 
+                                Due to how Eduardo Cortez is barely a leader for the Brujah, to the Prince's frustration, 'The Firmament' is currently closed, but in fine shape. 
                             </p>
                         </div>
                         <img className={styles.pictureRight} src={thefirmamentPicture} />
@@ -203,6 +204,65 @@ function Information() {
                         )
                     })
                 }
+            </div>
+            <div className={styles.camarillaheader}>
+                <AnimationOnScroll animateIn='fadeIn'>
+                    <h1>The Traditions</h1>
+                </AnimationOnScroll>
+            </div>
+
+            <div className={`${styles.nineteenninityninesection}`}>
+                <AnimationOnScroll animateIn='fadeIn' className={`${styles.traditions}`}>
+                    <h1>First Tradition</h1>
+                    <h3>The Masquerade</h3>
+                    <p>Thou shall not reveal thy true nature to those not of the Blood.</p>
+                    <p>Doing such shall renounce thy claims of Blood.</p>
+                </AnimationOnScroll>
+            </div>
+            <div className={styles.nineteenninityninesection}>
+                <AnimationOnScroll animateIn='fadeIn' className={`${styles.traditions}`}>
+                    <h1>Second Tradition</h1>
+                    <h3>The Domain</h3>
+                    <p>Thy domain is thine own concern.</p>
+                    <p>All others owe thee respect while in it.</p>
+                    <p>None may challenge thy word while in thy domain.</p>
+                </AnimationOnScroll>
+            </div>
+            <div className={styles.nineteenninityninesection}>
+                <AnimationOnScroll animateIn='fadeIn' className={`${styles.traditions}`}>
+                    <h1>Third Tradition</h1>
+                    <h3>The Progeny</h3>
+                    <p>Thou shall only Sire another with the permission of thine Elder.</p>
+                    <p>If thou createst another without thine Elder's leave, both thou and thy Progeny shall be slain.</p>
+                </AnimationOnScroll>
+            </div>
+            <div className={styles.nineteenninityninesection}>
+                <AnimationOnScroll animateIn='fadeIn' className={`${styles.traditions}`}>
+                    <h1>Fourth Tradition</h1>
+                    <h3>The Accounting</h3>
+                    <p>Those thou create are thine own children.</p>
+                    <p>Until thy Progeny shall be Released, thou shall command them in all things.</p>
+                    <p>Their sins are thine to endure.</p>
+                </AnimationOnScroll>
+            </div>
+            <div className={styles.nineteenninityninesection}>
+                <AnimationOnScroll animateIn='fadeIn' className={`${styles.traditions}`}>
+                    <h1>Fifth Tradition</h1>
+                    <h3>The Hospitality</h3>
+                    <p>Honor one another's domain.</p>
+                    <p>When thou comest to a foreign city, thou shall present thyself to the one who ruleth there.</p>
+                    <p>Without the word of acceptance, thou art nothing.</p>
+                </AnimationOnScroll>
+            </div>
+            <div className={styles.nineteenninityninesection}>
+                <AnimationOnScroll animateIn='fadeIn' className={`${styles.traditions}`}>
+
+                    <h1>Sixth Tradition</h1>
+                    <h3>The Destruction</h3>
+                    <p>Thou art forbidden to destroy another of thy kind.</p>
+                    <p>The right of destruction belongeth only to thine Elder.</p>
+                    <p>Only the Eldest among thee shall call the Blood Hunt. </p>
+                </AnimationOnScroll>
             </div>
         </div>
         </div>

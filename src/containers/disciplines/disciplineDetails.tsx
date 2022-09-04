@@ -21,8 +21,8 @@ function RenderDotInformation(props: { discipline: Discipline, dots: number }) {
 
 function RenderDot(props: { filled: boolean, setDots: () => void, hovering: boolean }) {
     return <span className={
-        `${styles.dotLevel} ${props.hovering ? styles.dotHover : ''}`
-    } onMouseEnter={props.setDots}>{ props.filled ? '●' : '○'}</span>
+        `${styles.dotLevel} ${props.hovering ? styles.dotHover : ''} ${props.filled ? styles.filled : ""}`
+    } onMouseEnter={props.setDots}></span>
 }
 
 interface RenderDotsNavigationProps {

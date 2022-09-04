@@ -15,8 +15,12 @@
 }
 
 :local .dots {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: center;
+    gap: 0.3em;
     color: #e0e0db;
-    text-align: center;
     font-size: 3em;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -29,9 +33,14 @@
 :local .dotLevel {
     cursor: pointer;
     opacity: 0.5;
-    padding-left: 0.05em;
-    padding-right: 0.05em;
+    padding: 0.25em;
+    border: 3px solid #e0e0db;
+    border-radius: 400px;
+}
 
+
+:local .filled {
+    background-color: #e0e0db;
 }
 
 :local .dotHover {
@@ -71,16 +80,5 @@
         margin-top: 1.5em;
     }
 
-    :local .dots {
-        font-size: 2.5em;
-        text-size-adjust: 80%;
-
-    }
-
-    :local .dotLevel {
-        padding-left: 5px;
-        padding-right: 5px;
-        transform: scale(1.0);
-    }
     
 }

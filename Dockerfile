@@ -17,6 +17,10 @@ EXPOSE 80
 ENV NODE_ENV production
 
 COPY --from=builder /app/build /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+#COPY nginx.conf /etc/nginx/conf.d/default.conf
+#COPY .htpasswd /etc/nginx/conf.d/htpasswd
+
+VOLUME [ "/etc/nginx/conf.d" ]
+
 # Start nginx
 CMD ["nginx", "-g", "daemon off;"]

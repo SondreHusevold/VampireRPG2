@@ -20,7 +20,8 @@ COPY --from=builder /app/build /usr/share/nginx/html
 #COPY nginx.conf /etc/nginx/conf.d/default.conf
 #COPY .htpasswd /etc/nginx/conf.d/htpasswd
 
-VOLUME [ "/etc/nginx/conf.d" ]
+VOLUME [ "/etc/nginx/conf.d/default.conf" ]
+VOLUME [ "/etc/nginx/conf.d/htpasswd.key" ]
 
 # Start nginx
 CMD ["nginx", "-g", "daemon off;"]

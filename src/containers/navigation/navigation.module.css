@@ -29,11 +29,11 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   background-color: black;   
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2vh;
-  font-size: 3em;
+  margin-bottom: 0.5vh;
+  font-size: 2em;
   text-align: center;
-  padding-top: 0.4em;
-  padding-bottom: 0.3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.38em;
 }
 
 :local .hamburgerMenu {
@@ -44,8 +44,8 @@
   width: 100vw;
   margin-bottom: 2vh;
   z-index: 30;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
 }
 
 :local .hamburgerMenu button {

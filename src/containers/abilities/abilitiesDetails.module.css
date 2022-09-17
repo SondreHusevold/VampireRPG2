@@ -80,8 +80,8 @@
     }
 
     :local .abilityContent {
-        margin-left: 0em;
-        margin-right: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     :local .split {
@@ -99,19 +99,29 @@
         grid-template-columns: 1fr;
     }
 
+    :local .dotHeader {
+        font-size: 2em;
+        text-align: center;
+    }
+
 
     :local .dotLevelRight {
         grid-column: 1;
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
-
     :local .dotLevel {
+        text-align: center;
         grid-column: 1;
         grid-template-columns: 1fr;
     }
 
-  
+    :local .dotLevel span {
+        text-align: center;
+    }
+
+
 }

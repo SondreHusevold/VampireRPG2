@@ -74,6 +74,12 @@
 
 @media screen and (max-width: 1300px) {
 
+    :local .disciplinesGrid {
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+
     :local .ownedByClan {
         gap: 1em;
         text-align: center;

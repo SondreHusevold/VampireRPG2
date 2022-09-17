@@ -44,7 +44,7 @@ function AttributeDetails() {
                             }
                             </div>
                         </div>
-                        <h3 className={styles.dotHeader}>Specialties</h3>
+                        <h3 >Specialties</h3>
                         <div className={styles.specialties}>
                             {attribute.specialties.map((special, index) => {
                             return (

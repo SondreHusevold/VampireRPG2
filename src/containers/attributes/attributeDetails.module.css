@@ -29,6 +29,8 @@
 @media screen and (max-width: 1300px) {
     :local .attributesGrid {
         grid-template-columns: 1fr;
+        margin-left: 1em;
+        margin-right: 1em;
     }
     
     :local .dotLevel {
@@ -37,10 +39,19 @@
     }
 
     :local .printedDots {
+        text-align: center;
+
         margin-bottom: 0px;
     }
 
+    :local .dotHeader {
+        text-align: center;
+
+    }
+
     :local .dotsDesc {
+        text-align: center;
+
         margin-top: 10px;
     }
     

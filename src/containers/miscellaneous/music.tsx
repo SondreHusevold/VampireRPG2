@@ -40,10 +40,10 @@ function Music() {
                     <h1 className={`nf nf-mdi-spotify`}/>
                     <h4>Bar</h4>
                 </a>
-                <div className={styles.disabled}>
+                <a target={`_blank`} href="https://open.spotify.com/playlist/07lKP06r25F6y2VdxDRtYJ?si=8497e7735a794649">
                     <h1 className={`nf nf-mdi-spotify`}/>
                     <h4>Special</h4>
-                </div>
+                </a>
             </div>
             <Picture img={picture} credit={`Angel Ganev`} desc="Newly turned" link='https://www.artstation.com/angelganev' mobile={false} pos={`30% 15%`} />
         </div>

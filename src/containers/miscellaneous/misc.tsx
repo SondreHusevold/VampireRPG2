@@ -19,6 +19,10 @@ function Misc() {
                             <h1 className={`nf nf-mdi-spotify`}/>
                             <h4>Music</h4>
                         </Link>
+                        <Link to="sessions">
+                            <h1 className={`nf nf-mdi-book`}/>
+                            <h4>Sessions</h4>
+                        </Link>
                     </div>
                     <Picture img={picture} credit={`Nixeu`} desc="Looking at you" link='https://www.artstation.com/nixeu' mobile={false} pos={`30% 15%`} />
                 </div>

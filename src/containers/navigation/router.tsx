@@ -21,6 +21,7 @@ import Equipment from "../rules/equipment/equipment";
 import WillpowerBloodPool from "../rules/willpower/wpbp";
 import Misc from "../miscellaneous/misc";
 import Music from "../miscellaneous/music";
+import Sessions from "../miscellaneous/sessions";
 
 function NavigationRouter() {
 
@@ -48,6 +49,8 @@ function NavigationRouter() {
             <Route path="/rules/willpower/*" element={<WillpowerBloodPool />} />
             <Route path="/misc/" element={<Misc />} />
             <Route path="/misc/music/*" element={<Music />} />
+            <Route path="/misc/sessions/*" element={<Sessions />} />
+
         </Routes>
     )
 }
